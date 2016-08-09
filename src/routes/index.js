@@ -9,14 +9,14 @@ export const createRoutes = (store) => ({
   path: '/',
   component: Page,
   indexRoute: Page,
-  getChildRoutes (location, cb) {
-    require.ensure([], (require) => {
-      cb(null, [
-        // Remove imports!
-        require('./Manifest').default(store)
-      ])
-    })
-  }
+  // getChildRoutes (location, cb) {
+  //   require.ensure([], (require) => {
+  //     cb(null, [
+  //       // Remove imports!
+  //       require('./Manifest').default(store)
+  //     ])
+  //   })
+  // }
 })
 
 /*  Note: childRoutes can be chunked or otherwise loaded programmatically

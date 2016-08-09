@@ -1,8 +1,8 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
-import TitleToolbar from './TitleToolbar'
-import CurrentView from './CurrentView'
-import SecondaryToolbar from './SecondaryToolbar'
+import TitleToolbar from '../TitleToolbar'
+import CurrentView from '../CurrentView'
+import SecondaryToolbar from '../SecondaryToolbar'
 
 class DigitalArtifact extends Component {
 

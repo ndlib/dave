@@ -1,8 +1,8 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
-import DigitalArtifact from './DigitalArtifact'
-import Metadata from './Metadata'
-import Branding from './Branding'
+import DigitalArtifact from '../DigitalArtifact'
+import Metadata from '../Metadata'
+import Branding from '../Branding'
 import classes from './Page.scss'
 import '../../styles/core.scss'
 
