@@ -26,6 +26,11 @@ const history = syncHistoryWithStore(browserHistory, store, {
   selectLocationState: (state) => state.router
 })
 
+import { loadManifest } from './actions/manifestActions.js';
+store.dispatch(loadManifest('id1'));
+store.dispatch(loadManifest('id2'));
+store.dispatch(loadManifest('id3'));
+
 // ========================================================
 // Developer Tools Setup
 // ========================================================
@@ -86,4 +91,5 @@ if (__DEV__) {
 // ========================================================
 // Go!
 // ========================================================
+
 render()

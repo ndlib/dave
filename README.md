@@ -17,7 +17,7 @@ Open browser to `http://localhost:3024`.
 
 :source/:manifestId/:sequence/:view/:pageID/detail
 
- * :source = `encodeURIComponent(referring url)``
+ * :source = `encodeURIComponent(referring url)`
  * :manifestId = currently manifest `id`
  * :sequence = `[ 0, 1, 2 ... ]` = current sequence
  * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
