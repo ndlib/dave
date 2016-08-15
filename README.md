@@ -1,5 +1,5 @@
 # dave
-D.A.V.E. - The Digital Artifact Viewing Engine
+D.A.V.E. - The Digital Artifact Viewing Experience
 
 Installation:
 

@@ -1,10 +1,8 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
-import DigitalArtifact from '../DigitalArtifact'
-import Metadata from '../Metadata'
-import Branding from '../Branding'
-import classes from './Page.scss'
-import '../../styles/core.scss'
+import Branding from '../Branding/';
+import DigitalArtifact from '../DigitalArtifact/';
+import Metadata from '../Metadata/'
 
 class Page extends Component {
 
@@ -14,7 +12,7 @@ class Page extends Component {
 
   render() {
     return (
-      <div className='container text-center'>
+      <div>
         <DigitalArtifact />
         <Metadata />
         <Branding />
@@ -23,4 +21,4 @@ class Page extends Component {
   }
 }
 
-export default Page
+export default Page;

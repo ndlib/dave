@@ -1,7 +1,7 @@
 {
   "name": "dave",
   "version": "0.0.1",
-  "description": "Digital Artifact Viewing Engine",
+  "description": "Digital Artifact Viewing Experience",
   "main": "index.js",
   "engines": {
     "node": ">=4.2.0",
