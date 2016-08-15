@@ -28,7 +28,6 @@ export function recieveManifest (value: string): Action {
 }
 
 export const fetchManifest = (manifestUrl): Function => {
-  console.log('manifestUrl:', manifestUrl)
   return (dispatch: Function): Promise => {
     dispatch(requestManifest())
     return fetch(manifestUrl)
