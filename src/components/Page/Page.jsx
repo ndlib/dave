@@ -11,6 +11,7 @@ class Page extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div>
         <DigitalArtifact />
@@ -19,6 +20,11 @@ class Page extends Component {
       </div>
      );
   }
+}
+
+Page.propTypes = {
+  data: React.PropTypes.object.isRequired
+
 }
 
 export default Page;

@@ -13,7 +13,9 @@ export default (initialState = {}, history) => {
   // ======================================================
   // Store Enhancers
   // ======================================================
-  const enhancers = [ persistState() ]
+  const enhancers = [
+    //persistState()
+  ]
   if (__DEBUG__) {
     const devToolsExtension = window.devToolsExtension
     if (typeof devToolsExtension === 'function') {
