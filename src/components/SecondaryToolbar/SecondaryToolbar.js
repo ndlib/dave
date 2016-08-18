@@ -17,4 +17,9 @@ class SecondaryToolbar extends Component {
   }
 }
 
+SecondaryToolbar.propTypes = {
+  data: React.PropTypes.object.isRequired,
+  params: React.PropTypes.object.isRequired
+}
+
 export default SecondaryToolbar

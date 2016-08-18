@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import Branding from '../Branding/';
 import DigitalArtifact from '../DigitalArtifact/';
 import Metadata from '../Metadata/'
+import { Link } from 'react-router'
 
 class Page extends Component {
 
@@ -11,11 +12,20 @@ class Page extends Component {
   }
 
   render() {
-    console.log(this.props);
+    // link for testing routing and params
+    var link = '/x/manifest-1/1/2/' + Math.floor(Math.random() * 10)
+
     return (
       <div>
-        <DigitalArtifact />
-        <Metadata />
+        <Link to={ link }>Click</Link>
+        <DigitalArtifact
+          data={ this.props.data }
+          params={ this.props.params }
+        />
+        <Metadata
+          data={ this.props.data }
+          params={ this.props.params }
+        />
         <Branding />
       </div>
      );
@@ -23,8 +33,8 @@ class Page extends Component {
 }
 
 Page.propTypes = {
-  data: React.PropTypes.object.isRequired
-
+  data: React.PropTypes.object.isRequired,
+  params: React.PropTypes.object.isRequired
 }
 
 export default Page;
