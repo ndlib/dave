@@ -17,18 +17,18 @@ class Manifest extends Component {
 
   }
 
-  componentDidUpdate() {
-    console.table(
-      [
-        ['source', this.props.params.source],
-        ['manifest', this.props.params.manifest],
-        ['sequence', this.props.params.sequence],
-        ['view', this.props.params.view],
-        ['pageId', this.props.params.pageId],
-        ['detail', this.props.params.detail]
-      ]
-    );
-  }
+  // componentDidUpdate() {
+  //   console.table(
+  //     [
+  //       ['source', this.props.params.source],
+  //       ['manifest', this.props.params.manifest],
+  //       ['sequence', this.props.params.sequence],
+  //       ['view', this.props.params.view],
+  //       ['pageId', this.props.params.pageId],
+  //       ['detail', this.props.params.detail]
+  //     ]
+  //   );
+  // }
 
   render() {
     if(this.props.data) {
