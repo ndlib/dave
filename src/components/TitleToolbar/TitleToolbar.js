@@ -17,6 +17,9 @@ class TitleToolbar extends Component {
           <FontIcon className="material-icons">keyboard_backspace</FontIcon>
           <ToolbarTitle text={ this.props.data.label } />
         </ToolbarGroup>
+        <ToolbarGroup lastChild={true}>
+          <div>Sequence Selector</div>
+        </ToolbarGroup>
       </Toolbar>
     )
   }
