@@ -14,7 +14,7 @@ class TitleToolbar extends Component {
     return (
       <Toolbar>
         <ToolbarGroup firstChild={true}>
-          <i className="material-icons">backspace</i>
+          <FontIcon className="material-icons">keyboard_backspace</FontIcon>
           <ToolbarTitle text={ this.props.data.label } />
         </ToolbarGroup>
       </Toolbar>
