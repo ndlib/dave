@@ -1,6 +1,8 @@
-function setView(currentProps, targetView) {
-  var target = 'new_link' + currentProps + targetView;
-  console.log(target);
-  return target;
+import targetPath from '../../../modules/targetPath'
+function setView(currentParams, targetView) {
+  var newParams = currentParams;
+  newParams.view = targetView;
+  console.log(targetPath(newParams))
+  return targetPath(newParams);
 }
 export default setView

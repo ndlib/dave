@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { FlatButton } from 'material-ui'
+import { FontIcon } from 'material-ui'
 import { Link } from 'react-router'
 import classes from './SecondaryToolbar.scss'
 import setView from './modules/setView.js'
@@ -10,24 +10,21 @@ class SecondaryToolbar extends Component {
 
   constructor(props) {
     super(props);
-
   }
-
 
   render () {
     return (
       <Toolbar>
         <ToolbarGroup firstChild={true}>
-          <FlatButton
-            icon={<i className="material-icons">looks_one</i>}
-            onClick={ setView.bind('a', 'b', 'c') }
-          />
-          <FlatButton
-            icon={<i className="material-icons">looks_two</i>}
-          />
-          <FlatButton
-            icon={<i className="material-icons">view_module</i>}
-          />
+          <Link to={ setView(this.props.params, '1')}>
+            <FontIcon className="material-icons">looks_one</FontIcon>
+          </Link>
+          <Link to={ setView(this.props.params, '2')}>
+            <FontIcon className="material-icons">looks_two</FontIcon>
+          </Link>
+          <Link to={ setView(this.props.params, 'g')}>
+            <FontIcon className="material-icons">view_module</FontIcon>
+          </Link>
         </ToolbarGroup>
       </Toolbar>
     )

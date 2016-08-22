@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react';
 import Branding from '../Branding/';
 import DigitalArtifact from '../DigitalArtifact/';
 import Metadata from '../Metadata/'
-import { Link } from 'react-router'
 
 class Page extends Component {
 
@@ -17,7 +16,6 @@ class Page extends Component {
 
     return (
       <div>
-        <Link to={ link }>Click</Link>
         <DigitalArtifact
           data={ this.props.data }
           params={ this.props.params }
