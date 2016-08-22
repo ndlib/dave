@@ -11,9 +11,6 @@ class Page extends Component {
   }
 
   render() {
-    // link for testing routing and params
-    var link = '/x/manifest-1/1/2/' + Math.floor(Math.random() * 10)
-
     return (
       <div>
         <DigitalArtifact
