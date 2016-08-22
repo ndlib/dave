@@ -13,13 +13,26 @@ class DigitalArtifact extends Component {
   render() {
     return (
       <div>
-        <TitleToolbar />
-        <CurrentView />
-        <SecondaryToolbar />
+        <TitleToolbar
+          data={ this.props.data }
+          params={ this.props.params }
+        />
+        <CurrentView
+          data={ this.props.data }
+          params={ this.props.params }
+        />
+        <SecondaryToolbar
+          data={ this.props.data }
+          params={ this.props.params }
+        />
       </div>
      );
   }
 }
 
+DigitalArtifact.propTypes = {
+  data: React.PropTypes.object.isRequired,
+  params: React.PropTypes.object.isRequired
+}
 
 export default DigitalArtifact;

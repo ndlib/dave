@@ -12,7 +12,9 @@ class Branding extends Component {
   render() {
     return (
       <div className={ classes.branding }>
-        <img src={ Logo } />
+        <a href="http://library.nd.edu" >
+          <img src={ Logo } />
+        </a>
       </div>
      );
   }

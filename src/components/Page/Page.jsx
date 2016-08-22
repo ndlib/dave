@@ -13,12 +13,23 @@ class Page extends Component {
   render() {
     return (
       <div>
-        <DigitalArtifact />
-        <Metadata />
+        <DigitalArtifact
+          data={ this.props.data }
+          params={ this.props.params }
+        />
+        <Metadata
+          data={ this.props.data }
+          params={ this.props.params }
+        />
         <Branding />
       </div>
      );
   }
+}
+
+Page.propTypes = {
+  data: React.PropTypes.object.isRequired,
+  params: React.PropTypes.object.isRequired
 }
 
 export default Page;

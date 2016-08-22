@@ -1,8 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
-import classes from './Metadata.scss';
 
-class Metadata extends Component {
+class OneUpView extends Component {
 
   constructor(props) {
     super(props);
@@ -10,14 +9,14 @@ class Metadata extends Component {
 
   render() {
     return (
-       <div className={ classes.content }>Metadata</div>
+      <div>1 Current Artifact View { this.props.params.pageId}</div>
      );
   }
 }
 
-Metadata.propTypes = {
+OneUpView.propTypes = {
   data: React.PropTypes.object.isRequired,
   params: React.PropTypes.object.isRequired
 }
 
-export default Metadata;
+export default OneUpView;
