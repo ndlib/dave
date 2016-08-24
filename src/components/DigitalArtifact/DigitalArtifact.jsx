@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import TitleToolbar from '../TitleToolbar'
 import CurrentView from '../CurrentView'
 import SecondaryToolbar from '../SecondaryToolbar'
+import classes from './DigitalArtifact.scss'
 
 class DigitalArtifact extends Component {
 
@@ -12,12 +13,7 @@ class DigitalArtifact extends Component {
 
   render() {
     return (
-      <div style={{
-          backgroundColor: '#444444',
-          height: '90vh',
-          overflow: 'hidden',
-          position: 'relative'
-        }}>
+      <div className={ classes.outer }>
         <TitleToolbar
           data={ this.props.data }
           params={ this.props.params }
@@ -26,12 +22,7 @@ class DigitalArtifact extends Component {
           data={ this.props.data }
           params={ this.props.params }
         />
-        <div
-          style={{
-            bottom: '0',
-            position: 'absolute',
-            width: '100%'
-          }}>
+      <div className={ classes.bottomBar }>
           <SecondaryToolbar
             data={ this.props.data }
             params={ this.props.params }
