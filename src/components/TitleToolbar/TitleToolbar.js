@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
-import classes from './TitleToolbar.scss'
 
 import { FontIcon, Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
 
