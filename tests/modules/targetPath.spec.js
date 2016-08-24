@@ -13,6 +13,7 @@ describe('(Module) targetPath', () => {
 
     expect(_path).to.equal('/source/manifest/0/g/0')
   })
+
   it('Takes params and returns a path', () => {
 
     const _params = {
