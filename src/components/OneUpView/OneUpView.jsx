@@ -1,5 +1,8 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
+import ArtifactImage from '../ArtifactImage/'
+import buildArtifactImage from '../../modules/buildArtifactImage.js'
+import classes from './OneUpView.scss'
 
 class OneUpView extends Component {
 
@@ -8,8 +11,15 @@ class OneUpView extends Component {
   }
 
   render() {
+    const imageObject = buildArtifactImage(this.props.data, this.props.params)
     return (
-      <div>1 Current Artifact View { this.props.params.pageId}</div>
+      <div className={ classes.outer }>
+        <div className={ classes.display }>
+          <ArtifactImage
+            imageObject={ imageObject }
+          />
+        </div>
+      </div>
      );
   }
 }

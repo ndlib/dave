@@ -1,7 +1,7 @@
 import targetPath from '../../../modules/targetPath'
-function setView(currentParams, targetView) {
+function setPage(currentParams, targetPage) {
   var newParams = Object.assign({}, currentParams);
-  newParams.view = targetView;
+  newParams.pageId = targetPage;
   return targetPath(newParams);
 }
-export default setView
+export default setPage

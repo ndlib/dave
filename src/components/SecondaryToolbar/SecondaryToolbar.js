@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import classes from './SecondaryToolbar.scss'
 import NavigationPanel from '../NavigationPanel/'
 import ViewSelectionPanel from '../ViewSelectionPanel/'
 import { Toolbar, ToolbarGroup } from 'material-ui'
