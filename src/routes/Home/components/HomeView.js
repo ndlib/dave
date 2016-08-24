@@ -1,9 +1,8 @@
 import React from 'react'
-import classes from './HomeView.scss'
 
 export const HomeView = () => (
   <div>
-    <h4>DAVE</h4>
+    <h4>DAVE - Digital Artifact Viewing Experience</h4>
   </div>
 )
 
