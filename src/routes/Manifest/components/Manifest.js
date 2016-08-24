@@ -9,12 +9,10 @@ class Manifest extends Component {
 
   constructor(props) {
     super(props);
-
   }
 
   componentWillMount() {
     this.props.fetchManifest(this.props.params.manifest);
-
   }
 
   // componentDidUpdate() {

@@ -1,0 +1,10 @@
+.outer {
+  width: 100%;
+  height: calc(90vh - 112px);
+}
+.splitDisplay {
+  display: inline-block;
+  width: 50vw;
+  overflow: hidden;
+  height: 100%;
+}

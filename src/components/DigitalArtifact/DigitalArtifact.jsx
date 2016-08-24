@@ -12,7 +12,12 @@ class DigitalArtifact extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{
+          backgroundColor: '#444444',
+          height: '90vh',
+          overflow: 'hidden',
+          position: 'relative'
+        }}>
         <TitleToolbar
           data={ this.props.data }
           params={ this.props.params }
@@ -21,10 +26,17 @@ class DigitalArtifact extends Component {
           data={ this.props.data }
           params={ this.props.params }
         />
-        <SecondaryToolbar
-          data={ this.props.data }
-          params={ this.props.params }
-        />
+        <div
+          style={{
+            bottom: '0',
+            position: 'absolute',
+            width: '100%'
+          }}>
+          <SecondaryToolbar
+            data={ this.props.data }
+            params={ this.props.params }
+          />
+        </div>
       </div>
      );
   }
