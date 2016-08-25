@@ -1,7 +1,6 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import classes from './Manifest.scss';
-import type { ManifestObject } from '../interfaces/manifest';
 import Page from '../../../components/Page/';
 import { CircularProgress } from 'material-ui'
 
