@@ -13,6 +13,11 @@ describe('(View) Page', () => {
     _page = shallow(<Page data={ _data } params={ _params }/>)
   })
 
+  it('Has a data and params properties', () => {
+    expect(_page.props().data).to.be.defined
+    expect(_page.props().params).to.be.defined
+  })
+  
   it('Renders a <Page/> with an outer div wrapper', () => {
     expect(_page.find('div')).to.exist
   })

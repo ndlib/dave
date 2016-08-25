@@ -1,5 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react';
+import classes from './Artifact.scss'
+
 class ArtifactImage extends Component {
 
   constructor(props) {
@@ -8,7 +10,7 @@ class ArtifactImage extends Component {
 
   render() {
     return (
-      <div style={{ textAlign: 'center', height: '100%' }}>
+      <div className={ classes.wrapper }>
         <img
           src={ this.props.imageObject.imageUri }
           alt={ this.props.imageObject.alt }
