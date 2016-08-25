@@ -20,6 +20,5 @@ describe('(View) ArtifactImage', () => {
   it('Renders an image', () => {
     const image = _component.find('img')
     expect(_component.find('img')).to.have.length(1);
-    //expect(image.src).to.be.equalTo(_imageObject.imageUri)
   })
 })

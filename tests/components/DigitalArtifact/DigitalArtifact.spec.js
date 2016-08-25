@@ -11,7 +11,8 @@ describe('(View) DigitalArtifact', () => {
   let _params = {}
 
   beforeEach(() => {
-    _component = shallow(<DigitalArtifact />)
+    _component = shallow(
+      <DigitalArtifact data={ _data } params={ _params }/>)
   })
 
   it('Has a data and params properties', () => {
