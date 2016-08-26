@@ -17,8 +17,8 @@ class TwoUpView extends Component {
     var pageId = parseInt(this.props.params.pageId);
     var lastPageId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
     var pageIsEven = (pageId % 2 === 1)
-    
-    if(pageId === 0 || (pageId === lastPageId && pageIsEven)) {
+
+    if(pageId === 0 || ((pageId === lastPageId) && pageIsEven)) {
       return (
         <OneUpView
           data={ this.props.data }
