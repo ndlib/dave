@@ -9,6 +9,12 @@ Installation and running the application:
 
 Open browser to `http://localhost:3024`.
 
+## Testing
+
+To run tests:
+
+`npm run test`
+
 ## React Routes
 
 :source/:manifestId/:sequence/:view/
@@ -28,7 +34,3 @@ Example:
 
 ` http://dave.library.nd.edu/source/manifest-1/0/1/3/detail
 `
-
-To run tests:
-
-`npm run test`
