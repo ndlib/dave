@@ -5,5 +5,5 @@ export type ManifestObject = {
 
 export type ManifestStateObject = {
   fetching: boolean,
-  data: <ManifestObject>
+  data: Array<ManifestObject>
 }

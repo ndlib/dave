@@ -1,7 +1,6 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import classes from './Manifest.scss';
-import type { ManifestObject } from '../interfaces/manifest';
 import Page from '../../../components/Page/';
 import { CircularProgress } from 'material-ui'
 
@@ -14,19 +13,6 @@ class Manifest extends Component {
   componentWillMount() {
     this.props.fetchManifest(this.props.params.manifest);
   }
-
-  // componentDidUpdate() {
-  //   console.table(
-  //     [
-  //       ['source', this.props.params.source],
-  //       ['manifest', this.props.params.manifest],
-  //       ['sequence', this.props.params.sequence],
-  //       ['view', this.props.params.view],
-  //       ['pageId', this.props.params.pageId],
-  //       ['detail', this.props.params.detail]
-  //     ]
-  //   );
-  // }
 
   render() {
     if(this.props.data) {

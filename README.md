@@ -1,7 +1,7 @@
 # dave
 D.A.V.E. - The Digital Artifact Viewing Experience
 
-Installation:
+Installation and running the application:
 
 `npm install`
 
@@ -26,5 +26,9 @@ Open browser to `http://localhost:3024`.
 
 Example:
 
-` http://dave.library.nd.edu/collections.library.nd.edu%2F2fb06059c8%2Fvestigia-vaticana/manifest-1/0/1/3/detail
+` http://dave.library.nd.edu/source/manifest-1/0/1/3/detail
 `
+
+To run tests:
+
+`npm run test`
