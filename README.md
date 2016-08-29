@@ -15,6 +15,14 @@ To run tests:
 
 `npm run test`
 
+## Building
+
+To build for deployment:
+
+`npm run deploy`
+
+File will be compiled to `~/dist`
+
 ## React Routes
 
 :source/:manifestId/:sequence/:view/
