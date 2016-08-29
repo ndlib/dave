@@ -1,6 +1,6 @@
 # D.A.V.E. - The Digital Artifact Viewing Experience
 
-## Installing and running for developemtn
+## Installing and running for development
 
 Installation and running the application:
 
