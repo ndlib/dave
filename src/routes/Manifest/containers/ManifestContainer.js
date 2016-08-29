@@ -1,6 +1,6 @@
 /* @flow */
 import { connect } from 'react-redux'
-import { fetchManifest} from '../modules/manifest'
+import { fetchManifest } from '../modules/manifest'
 
 import Manifest from '../components/Manifest'
 
@@ -11,7 +11,7 @@ const mapActionCreators: {fetchManifest: Function} = {
 }
 
 const mapStateToProps = (state): { manifest: ?ManifestObject } => ({
-  data: state.manifest.data,
+  data: state.manifest.data
 })
 
 export default connect(mapStateToProps, mapActionCreators)(Manifest)

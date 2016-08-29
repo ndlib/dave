@@ -10,37 +10,32 @@
 
  */
 
+function targetPath (params) {
+  var path = '/' + params.source + '/' + params.manifest
 
-function targetPath(params) {
-  var path = '/' + params.source + '/' + params.manifest;
-
-  if(params.sequence) {
-    path += '/' + params.sequence;
-  }
-  else {
+  if (params.sequence) {
+    path += '/' + params.sequence
+  } else {
     path += '/0'
   }
 
-  if(params.view) {
-    path += '/' + params.view;
-  }
-  else {
+  if (params.view) {
+    path += '/' + params.view
+  } else {
     path += '/g'
   }
 
-  if(params.pageId) {
-    path += '/' + params.pageId;
-  }
-  else {
+  if (params.pageId) {
+    path += '/' + params.pageId
+  } else {
     path += '/0'
   }
 
-  if(params.detail) {
-    path += '/detail';
+  if (params.detail) {
+    path += '/detail'
   }
 
-  return path;
-
+  return path
 }
 
 export default targetPath

@@ -11,8 +11,8 @@ class AppContainer extends Component {
     store: PropTypes.object.isRequired
   }
 
-  getChildContext() {
-    return { muiTheme: getMuiTheme(baseTheme) };
+  getChildContext () {
+    return { muiTheme: getMuiTheme(baseTheme) }
   }
 
   render () {
@@ -28,6 +28,6 @@ class AppContainer extends Component {
   }
 }
 AppContainer.childContextTypes = {
-  muiTheme: React.PropTypes.object.isRequired,
+  muiTheme: React.PropTypes.object.isRequired
 }
 export default AppContainer

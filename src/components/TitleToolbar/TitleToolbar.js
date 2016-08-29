@@ -1,22 +1,15 @@
 import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
-
 import { FontIcon, Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
 
 class TitleToolbar extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   render () {
     return (
       <Toolbar>
-        <ToolbarGroup firstChild={true}>
-          <FontIcon className="material-icons">keyboard_backspace</FontIcon>
-          <ToolbarTitle text={ this.props.data.label } />
+        <ToolbarGroup firstChild>
+          <FontIcon className='material-icons'>keyboard_backspace</FontIcon>
+          <ToolbarTitle text={this.props.data.label} />
         </ToolbarGroup>
-        <ToolbarGroup lastChild={true}>
+        <ToolbarGroup lastChild>
           <div>Sequence Selector</div>
         </ToolbarGroup>
       </Toolbar>
@@ -25,8 +18,8 @@ class TitleToolbar extends Component {
 }
 
 TitleToolbar.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  params: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  params: PropTypes.object.isRequired
 }
 
 export default TitleToolbar
