@@ -1,22 +1,18 @@
 'use strict'
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
 
 class GridView extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+  render () {
     return (
-      <div>GRID Current Artifact View { this.props.params.pageId}</div>
-     );
+      <div>GRID Current Artifact View {this.props.params.pageId}</div>
+    )
   }
 }
 
 GridView.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  params: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  params: PropTypes.object.isRequired
 }
 
-export default GridView;
+export default GridView

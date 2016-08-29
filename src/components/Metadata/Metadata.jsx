@@ -1,23 +1,18 @@
 'use strict'
-import React, { Component, PropTypes } from 'react';
-import classes from './Metadata.scss';
+import React, { Component, PropTypes } from 'react'
+import classes from './Metadata.scss'
 
 class Metadata extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+  render () {
     return (
-       <div className={ classes.content }>Metadata</div>
-     );
+      <div className={classes.content}>Metadata</div>
+    )
   }
 }
 
 Metadata.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  params: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  params: PropTypes.object.isRequired
 }
 
-export default Metadata;
+export default Metadata
