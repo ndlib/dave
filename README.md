@@ -1,5 +1,4 @@
-# dave
-D.A.V.E. - The Digital Artifact Viewing Experience
+# D.A.V.E. - The Digital Artifact Viewing Experience
 
 ## Installing and running for developemtn
 
