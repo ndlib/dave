@@ -1,6 +1,8 @@
 # dave
 D.A.V.E. - The Digital Artifact Viewing Experience
 
+## Installing and running for developemtn
+
 Installation and running the application:
 
 `npm install`
@@ -21,7 +23,7 @@ To build for deployment:
 
 `npm run deploy`
 
-File will be compiled to `~/dist`
+Files will be compiled to `~/dist`.
 
 ## React Routes
 
