@@ -1,12 +1,19 @@
 function buildArtifactImage (data, params, offset = 0) {
-  var pageId = parseInt(params.pageId) + offset
-  var sequence = parseInt(params.sequence)
-  var canvas = data.sequences[sequence].canvases[pageId]
-  var imageUri = canvas.images[0].resource['@id']
+  const pageId = parseInt(params.pageId) + offset
+  const sequence = parseInt(params.sequence)
+  const canvas = data.sequences[sequence].canvases[pageId]
+  const imageUri = canvas.images[0].resource['@id']
+  const zoomLink = '/' + params.source +
+              '/' + params.manifest +
+              '/' + params.sequence +
+              '/' + params.view +
+              '/' + pageId +
+              '/detail'
   return {
     pageId: pageId,
     alt: canvas.label,
-    imageUri: imageUri
+    imageUri: imageUri,
+    zoomLink: zoomLink
   }
 }
 
