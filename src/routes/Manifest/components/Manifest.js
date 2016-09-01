@@ -22,10 +22,8 @@ class Manifest extends Component {
 }
 
 Manifest.propTypes = {
-  // @danthewolfe data is missing a propTypes validation please verify that data should be an object
-  // data: PropTypes.object,
-  // @danthewolfe params is missing a propTypes validation please verify that prarmas should be an object
-  // params: PropTypes.object,
+  data: PropTypes.object,
+  params: PropTypes.object,
   manifest: PropTypes.object,
   fetchManifest: PropTypes.func.isRequired
 }
