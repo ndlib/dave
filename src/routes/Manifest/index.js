@@ -1,7 +1,7 @@
 import { injectReducer } from '../../store/reducers'
 export default (store) => ({
 
-  path: ':source/:manifest(/:sequence)(/:view)(/:pageId)(/detail)',
+  path: ':source/:manifest(/:sequence)(/:view)(/:pageId)(/:detail)',
   getComponent (nextState, next) {
     require.ensure([
       './containers/ManifestContainer',
