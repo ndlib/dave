@@ -12,11 +12,10 @@ describe('(View) OpenSeaDragonButton', () => {
     _component = shallow(<OpenSeaDragonButton id={ _id } icon={ _icon }/>)
   })
 
-  it('Does something', () => {
-    it('Has a data and params properties', () => {
-      expect(_component.props().id).to.be.defined
-      expect(_component.props().icon).to.be.defined
-    })
+
+  it('Has a data and params properties', () => {
+    expect(_component.props().id).to.be.defined
+    expect(_component.props().icon).to.be.defined
   })
 
   it('Renders a <li> tag, a <a> tag and a <FontIcon/> component', () => {
