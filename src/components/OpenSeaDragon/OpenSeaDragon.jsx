@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from 'react'
 import OpenSeadragon from './library/openseadragon.min.js'
 import OpenSeaDragonControls from '../OpenSeaDragonControls/'
+import OpenSeaDragonNavigator from '../OpenSeaDragonNavigator/'
 import classes from './OpenSeaDragon.scss'
 import loadImage from './modules/loadImage.js'
 
@@ -29,8 +30,8 @@ class OpenSeaDragon extends Component {
         rotateRightButton: 'rotate-right',
         showRotationControl: true,
         fullPageButton: 'full-page',
-        // showNavigator: true,
-        // navigatorId: 'navigator',
+        showNavigator: true,
+        navigatorId: 'navigator',
         tileSources: {
           type: type,
           levels: [ { url: image, height: data.naturalHeight, width: data.naturalWidth } ]
@@ -44,6 +45,7 @@ class OpenSeaDragon extends Component {
     return (
       <div className={classes.ocd}>
         <div className={classes.openseadragon} id={id}></div>
+        <OpenSeaDragonNavigator />
         <OpenSeaDragonControls />
       </div>
     )

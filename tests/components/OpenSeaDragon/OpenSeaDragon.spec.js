@@ -1,6 +1,7 @@
 import React from 'react'
 import OpenSeaDragon from 'components/OpenSeaDragon'
 import OpenSeaDragonControls from 'components/OpenSeaDragonControls'
+imoprt OpenSeaDragonNavigator from 'components/OpenSeaDragonNavigator'
 import { shallow } from 'enzyme'
 
 describe('(View) OpenSeaDragon', () => {
@@ -17,6 +18,10 @@ describe('(View) OpenSeaDragon', () => {
 
   it('Renders a <OpenSeaDragonControls/> component', () => {
       expect(_component.find(OpenSeaDragonControls)).to.exist
+  })
+
+  it('Renders a <OpenSeaDragonNavigator/> component', () => {
+      expect(_component.find(OpenSeaDragonNavigator)).to.exist
   })
 
 })
