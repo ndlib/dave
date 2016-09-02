@@ -11,17 +11,22 @@ describe('(View) OpenSeaDragonControls', () => {
     expect(_component.find('ul')).to.have.lengthOf(1)
   })
 
-  it('Renders three <OpenSeaDragonButton/> components on mobile', () => {
-    let window.navigator.userAgent = 'iPad'
-    _component = shallow(<OpenSeaDragonControls />)
-    expect(_component.find(OpenSeaDragonButton)).to.have.lengthOf(3)
-
-  })
-
   it('Renders six <OpenSeaDragonButton/> components on desktop', () => {
-    let window.navigator.userAgent = null
+    global.navigator = {
+      userAgent: null
+    };
     _component = shallow(<OpenSeaDragonControls />)
     expect(_component.find(OpenSeaDragonButton)).to.have.lengthOf(6)
 
   })
+
+  it('Renders three <OpenSeaDragonButton/> components on mobile', () => {
+    global.navigator = {
+      userAgent: 'iPad'
+    };
+    _component = shallow(<OpenSeaDragonControls />)
+    expect(_component.find(OpenSeaDragonButton)).to.have.lengthOf(3)
+  })
+
+
 })

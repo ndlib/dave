@@ -1,5 +1,6 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
+import MobileDetect from 'mobile-detect'
 import OpenSeadragon from './library/openseadragon.min.js'
 import OpenSeaDragonControls from '../OpenSeaDragonControls/'
 import OpenSeaDragonNavigator from '../OpenSeaDragonNavigator/'
@@ -7,6 +8,13 @@ import classes from './OpenSeaDragon.scss'
 import loadImage from './modules/loadImage.js'
 
 class OpenSeaDragon extends Component {
+
+  constructor (props) {
+    super(props)
+    let _mobileDetect = new MobileDetect(navigator.userAgent)
+    // mobile() will return null for desktop browsers or a string for mobile devices
+    this._mobile = _mobileDetect.mobile()
+  }
 
   componentDidMount () {
     this.initSeaDragon()
@@ -30,7 +38,7 @@ class OpenSeaDragon extends Component {
         rotateRightButton: 'rotate-right',
         showRotationControl: true,
         fullPageButton: 'full-page',
-        showNavigator: true,
+        showNavigator: this._mobile ? false : true,
         navigatorId: 'navigator',
         tileSources: {
           type: type,

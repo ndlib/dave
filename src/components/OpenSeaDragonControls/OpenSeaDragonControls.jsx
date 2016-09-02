@@ -8,7 +8,7 @@ class OpenSeaDragonControls extends Component {
 
   constructor (props) {
     super(props)
-    let _mobileDetect = new MobileDetect(window.navigator.userAgent)
+    let _mobileDetect = new MobileDetect(navigator.userAgent)
     // mobile() will return null for desktop browsers or a string for mobile devices
     this._mobile = _mobileDetect.mobile()
     this.desktopOnlyButtons = this.desktopOnlyButtons.bind(this)
