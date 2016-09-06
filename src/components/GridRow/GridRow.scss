@@ -1,13 +1,6 @@
-.outer {
-  display: inline-block;
-  height: 50vh;
-  width: 100%;
-}
-
-.display {
-  display: inline-block;
-  height: calc(90vh - 112px);
-  height: 50%;
-  overflow: hidden;
-  width: 33%;
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
 }

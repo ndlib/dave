@@ -2,3 +2,13 @@
   height: 100%;
   text-align: center;
 }
+
+.flexwrapper {
+  align-self: auto;
+  width: 32%;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
