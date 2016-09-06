@@ -1,4 +1,4 @@
-import linkBuilder from 'components/NavigationPanel/modules/linkBuilder.js'
+import linkBuilder from 'modules/linkBuilder.js'
 
 describe('(Module) linkBuilder', () => {
   const _data = {

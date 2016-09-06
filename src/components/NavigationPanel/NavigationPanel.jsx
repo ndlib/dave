@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react'
 import { ToolbarGroup } from 'material-ui'
 import NavigationButton from '../NavigationButton/'
 import NavigationPanelCurrent from '../NavigationPanelCurrent/'
-import linkBuilder from './modules/linkBuilder.js'
+import linkBuilder from '../../modules/linkBuilder.js'
 
 class NavigationPanel extends Component {
 

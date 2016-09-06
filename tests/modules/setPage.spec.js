@@ -1,4 +1,4 @@
-import setPage from 'components/NavigationPanel/modules/setPage.js'
+import setPage from 'modules/setPage.js'
 
 describe('(Module) setPage', () => {
 
