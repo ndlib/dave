@@ -1,0 +1,19 @@
+.controls {
+  bottom: 0px;
+  position: fixed;
+  right: 0px;
+
+  li {
+
+    list-style: none;
+
+    a {
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+}

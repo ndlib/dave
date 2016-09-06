@@ -1,5 +1,6 @@
 import React from 'react'
 import ArtifactImage from 'components/ArtifactImage'
+import { Link } from 'react-router'
 import { shallow } from 'enzyme'
 
 describe('(View) ArtifactImage', () => {
@@ -14,11 +15,17 @@ describe('(View) ArtifactImage', () => {
   })
 
   it('Has an imageObject property', () => {
-      expect(_component.props().imageObject).to.be.defined
+    expect(_component.props().imageObject).to.be.defined
+  })
+
+  it('Renders a <Link/> component', () => {
+    const linkTag = _component.find('Link')
+    expect(linkTag).to.exist
+    expect(linkTag.props('to')).to.exist
+
   })
 
   it('Renders an image', () => {
-    const image = _component.find('img')
-    expect(_component.find('img')).to.have.length(1);
+    expect(_component.find('img')).to.have.lengthOf(1);
   })
 })

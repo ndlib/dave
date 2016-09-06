@@ -1,36 +1,32 @@
 import React from 'react'
 import Page from 'components/Page/'
-import DigitalArtifact from 'components/DigitalArtifact'
-import Metadata from 'components/Metadata'
-import Branding from 'components/Branding'
+import ContentPage from 'components/ContentPage'
+import OpenSeaDragonPage from 'components/OpenSeaDragonPage'
 import { shallow } from 'enzyme'
 
 describe('(View) Page', () => {
-  let _page
+  let _component
   let _data = {}
   let _params = {}
-  beforeEach(() => {
-    _page = shallow(<Page data={ _data } params={ _params }/>)
-  })
-
+  let _paramsDetail = {
+    detail: 'detail'
+  }
   it('Has a data and params properties', () => {
-    expect(_page.props().data).to.be.defined
-    expect(_page.props().params).to.be.defined
-  })
-  
-  it('Renders a <Page/> with an outer div wrapper', () => {
-    expect(_page.find('div')).to.exist
+    _component = shallow(<Page data={ _data } params={ _params } />)
+    expect(_component.props().data).to.be.defined
+    expect(_component.props().params).to.be.defined
   })
 
-  it('Contains a <DigitalArtifact/> component', () => {
-    expect(_page.find(DigitalArtifact)).to.exist
+  it('Renders a <ContentPage/> component by default', () =>{
+    _component = shallow(<Page data={ _data } params={ _params } />)
+    expect(_component.find('ContentPage')).to.exist
+    expect(_component.find('OpenSeaDragonPage')).to.not.exist
   })
 
-  it('Contains a <Metadata /> component', () => {
-    expect(_page.find(Metadata)).to.exist
+  it('Renders a <OpenSeaDragonPage/> component when "detail" is in url', () =>{
+    _component = shallow(<Page data={ _data } params={ _paramsDetail } />)
+    expect(_component.find('OpenSeaDragonPage')).to.exist
+    expect(_component.find('ContentPage')).to.not.exist
   })
 
-  it('Contains a <Branding/> component', () => {
-    expect(_page.contains(<Branding />)).to.be.true
-  })
 })

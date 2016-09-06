@@ -1,24 +1,25 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
-import Branding from '../Branding/'
-import DigitalArtifact from '../DigitalArtifact/'
-import Metadata from '../Metadata/'
+import ContentPage from '../ContentPage/'
+import OpenSeaDragonPage from '../OpenSeaDragonPage/'
 
 class Page extends Component {
   render () {
-    return (
-      <div>
-        <DigitalArtifact
+    if (this.props.params.detail === 'detail') {
+      return (
+        <OpenSeaDragonPage
           data={this.props.data}
           params={this.props.params}
         />
-        <Metadata
+      )
+    } else {
+      return (
+        <ContentPage
           data={this.props.data}
           params={this.props.params}
         />
-        <Branding />
-      </div>
-    )
+      )
+    }
   }
 }
 
