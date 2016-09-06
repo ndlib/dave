@@ -1,11 +1,12 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
+import GridRow from '../GridRow/'
 
 class GridView extends Component {
 
   render () {
     return (
-      <div>GRID Current Artifact View {this.props.params.pageId}</div>
+      <GridRow data={this.props.data} params={this.props.params} />
     )
   }
 }
