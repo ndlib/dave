@@ -18,6 +18,7 @@ class GridRow extends Component {
           imageObject={imageObject}
           key={i}
           imageContainerWidth={artifactWidth}
+          imageContainerLeftPadding={1.5}
           useFlexLayout
         />
       )

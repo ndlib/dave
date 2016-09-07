@@ -7,7 +7,13 @@ class ArtifactImage extends Component {
   render () {
     const wrapperClass = this.props.useFlexLayout ? classes.flexwrapper : classes.wrapper
     return (
-      <div className={wrapperClass} style={{ width: this.props.imageContainerWidth + '%' }} >
+      <div
+        className={wrapperClass}
+        style={{
+          width: this.props.imageContainerWidth + '%',
+          marginLeft: this.props.imageContainerLeftPadding + '%'
+        }}
+       >
         <Link to={this.props.imageObject.zoomLink}>
           <img
             src={this.props.imageObject.imageUri}
@@ -24,11 +30,13 @@ class ArtifactImage extends Component {
 ArtifactImage.propTypes = {
   imageObject: PropTypes.object.isRequired,
   imageContainerWidth: PropTypes.number,
+  imageContainerLeftPadding: PropTypes.number,
   useFlexLayout: PropTypes.bool
 }
 
 ArtifactImage.defaultProps = {
   imageContainerWidth: 100,
+  imageContainerLeftPadding: 0,
   useFlexLayout: false
 }
 

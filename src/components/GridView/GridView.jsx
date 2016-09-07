@@ -1,6 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import GridRow from '../GridRow/'
+import classes from './GridView.scss'
 
 class GridView extends Component {
   numberOfColumns () {
@@ -46,7 +47,7 @@ class GridView extends Component {
       start = start + columnCount
     }
     return (
-      <div ref='gridView'>
+      <div className={classes.gridview}>
         {gridRows}
       </div>
     )

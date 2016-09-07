@@ -3,8 +3,6 @@ function buildArtifactImage (data, params, offset = 0) {
   const pageId = parseInt(params.pageId) + offset
   const sequence = parseInt(params.sequence)
   const canvas = data.sequences[sequence].canvases[pageId]
-  console.log('buildArtifactImage')
-  console.log(canvas)
   const imageUri = canvas.images[0].resource['@id']
   const zoomLink = '/' + params.source +
               '/' + params.manifest +
