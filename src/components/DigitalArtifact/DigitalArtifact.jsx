@@ -4,27 +4,33 @@ import TitleToolbar from '../TitleToolbar'
 import CurrentView from '../CurrentView'
 import SecondaryToolbar from '../SecondaryToolbar'
 import classes from './DigitalArtifact.scss'
+import SwipeArea from '../SwipeArea'
 
 class DigitalArtifact extends Component {
 
   render () {
     return (
-      <div className={classes.outer}>
-        <TitleToolbar
-          data={this.props.data}
-          params={this.props.params}
-        />
-        <CurrentView
-          data={this.props.data}
-          params={this.props.params}
-        />
-        <div className={classes.bottomBar}>
-          <SecondaryToolbar
+      <SwipeArea
+        data={this.props.data}
+        params={this.props.params}
+      >
+        <div className={classes.outer}>
+          <TitleToolbar
             data={this.props.data}
             params={this.props.params}
           />
+          <CurrentView
+            data={this.props.data}
+            params={this.props.params}
+          />
+          <div className={classes.bottomBar}>
+            <SecondaryToolbar
+              data={this.props.data}
+              params={this.props.params}
+            />
+          </div>
         </div>
-      </div>
+      </SwipeArea>
      )
   }
 }
