@@ -8,6 +8,7 @@ class GridRow extends Component {
 
   render () {
     const artifactWidth = Math.round(100 / this.props.maxColumns) - 1
+
     let artifactImages = []
     let i = this.props.start
     let end = this.props.start + this.props.count
@@ -23,9 +24,15 @@ class GridRow extends Component {
         />
       )
     }
+    const imageRange = '(' + this.props.start + '\u200A–\u200A' + end + ')'
     return (
-      <div className={classes.row}>
-        {artifactImages}
+      <div>
+        <div className={classes.row}>
+          {artifactImages}
+        </div>
+        <div className={classes.annotation}>
+          {imageRange}
+        </div>
       </div>
     )
   }
