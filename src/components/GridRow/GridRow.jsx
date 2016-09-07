@@ -7,7 +7,7 @@ import classes from './GridRow.scss'
 class GridRow extends Component {
 
   render () {
-    let artifactWidth = Math.round(100 / this.props.count) - 1
+    const artifactWidth = Math.round(100 / this.props.maxColumns) - 1
     let artifactImages = []
     let i = this.props.start
     let end = this.props.start + this.props.count
@@ -34,11 +34,13 @@ GridRow.propTypes = {
   data: PropTypes.object.isRequired,
   params: PropTypes.object.isRequired,
   count: PropTypes.number,
+  maxColumns: PropTypes.number,
   start: PropTypes.number
 }
 
 GridRow.defaultProps = {
   count: 3,
+  maxColumns: 3,
   start: 0
 }
 export default GridRow
