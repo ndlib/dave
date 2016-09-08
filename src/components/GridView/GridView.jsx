@@ -4,14 +4,37 @@ import GridRow from '../GridRow/'
 import classes from './GridView.scss'
 
 class GridView extends Component {
-  numberOfColumns () {
-    const windowWidth = document.documentElement.offsetWidth
-    const thumbnailWidth = this.props.maxThumbnailWidth
-    const calculatedColumnCount = Math.round(windowWidth / thumbnailWidth)
-    if (calculatedColumnCount > this.props.minColumnCount) {
+  constructor (props) {
+    super(props)
+    this.updateWindowWidth = this.updateWindowWidth.bind(this)
+  }
+
+  updateWindowWidth (e) {
+    this.setState({windowWidth: window.innerWidth})
+  }
+
+  componentWillMount () {
+    this.updateWindowWidth()
+  }
+
+  componentDidMount () {
+    window.addEventListener('resize', this.updateWindowWidth)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.updateWindowWidth)
+  }
+
+  numberOfColumns (
+    windowWidth,
+    minColumnCount = this.props.minColumnCount,
+    maxThumbnailWidth = this.props.maxThumbnailWidth
+  ) {
+    const calculatedColumnCount = Math.round(windowWidth / maxThumbnailWidth)
+    if (calculatedColumnCount > minColumnCount) {
       return calculatedColumnCount
     } else {
-      return this.props.minColumnCount
+      return minColumnCount
     }
   }
 
@@ -21,7 +44,7 @@ class GridView extends Component {
     const currentSequence = params.sequence * 1
     const canvases = data.sequences[currentSequence].canvases
     const canvasCount = canvases.length
-    const columnCount = this.numberOfColumns()
+    const columnCount = this.numberOfColumns(this.state.windowWidth)
     const rowCount = Math.ceil(canvasCount / columnCount)
     // const currentCanvas = params.pageId * 1
     let remainingCanvases = canvasCount
