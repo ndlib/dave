@@ -2,6 +2,7 @@ import React from 'react'
 import TitleToolbar from 'components/TitleToolbar'
 import { Toolbar, ToolbarTitle } from 'material-ui'
 import { shallow } from 'enzyme'
+import SequenceSelector from 'components/SequenceSelector'
 
 describe('(View) TitleToolbar', () => {
   let _component
@@ -25,5 +26,8 @@ describe('(View) TitleToolbar', () => {
     expect(_component.find(ToolbarTitle)).to.exist
   })
 
-  // need to render sequence selector component after it's written
+  it('Renders a <SequenceSelector/> component', () => {
+    expect(_component.find(SequenceSelector)).to.exist
+  })
+
 })
