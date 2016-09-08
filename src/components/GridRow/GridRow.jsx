@@ -24,7 +24,7 @@ class GridRow extends Component {
         />
       )
     }
-    const imageRange = '(' + this.props.start + '\u200A–\u200A' + end + ')'
+    const imageRange = '(' + (this.props.start + 1) + '\u200A–\u200A' + end + ')'
     return (
       <div>
         <div className={classes.row}>
