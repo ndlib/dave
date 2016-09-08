@@ -1,3 +1,4 @@
+// Build an object that contains all the data an ArtifactImage needs
 function buildArtifactImage (data, params, offset = 0) {
   const pageId = parseInt(params.pageId) + offset
   const sequence = parseInt(params.sequence)

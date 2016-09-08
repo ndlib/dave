@@ -1,3 +1,5 @@
+// Build first, last, next, previous links based on the current page (or
+// whatever data and params are passed)
 function linkBuilder (data, params) {
   var increment = parseInt(params.view)
   var firstPage = 0
