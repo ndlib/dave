@@ -32,35 +32,47 @@ export const HomeView = () => (
       <h1>D.a.v.e.</h1>
       <h2>The Digital Artifact Viewing Experience</h2>
     </div>
-    <div className={classes.description}>
-      <div className={classes.fancyIcon}>
-        <FontIcon
-          className='material-icons'
-          style={fancyIconStyle}
-        >chrome_reader_mode</FontIcon>
+    <div className={classes.body}>
+      <div className={classes.description}>
+        <div className={classes.fancyIcon}>
+          <FontIcon
+            className='material-icons'
+            style={fancyIconStyle}
+          >chrome_reader_mode</FontIcon>
+        </div>
+        <h3>About D.a.v.e.</h3>
+        <p>The Digital Artifact Viewing Experience, or <span className={classes.smCap}>D.a.v.e.</span> for short, is a viewing experience built using <a href='https://facebook.github.io/react/'>React</a> and <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files and creates a unique viewing experience based on the JSON data.</p>
+        <p>Dave is being developed by the <i>Web and Software Engineering</i> and <i>Digital Library Technologies</i> groups at the <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.</p>
       </div>
-      <h3>About D.a.v.e.</h3>
-      <p>The Digital Artifact Viewing Experience, or <span className={classes.smCap}>D.a.v.e.</span> for short, is a viewing experience built using <a href='https://facebook.github.io/react/'>React</a> and <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files and creates a unique viewing experience based on the JSON data.</p>
-      <p>Dave is being developed by the <i>Web and Software Engineering</i> and <i>Digital Library Technologies</i> groups at the <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.</p>
-    </div>
-    <div className={classes.description}>
-      <div className={classes.fancyIcon}>
-        <FontIcon
-          className='material-icons'
-          style={fancyIconStyle}
-        >link</FontIcon>
+      <div className={classes.description}>
+        <div className={classes.fancyIcon}>
+          <FontIcon
+            className='material-icons'
+            style={fancyIconStyle}
+          >link</FontIcon>
+        </div>
+        <h3>Testing D.a.v.e.</h3>
+        <p>So how does <span className={classes.smCap}>D.a.v.e.</span> work? Obviously this page probably isn't what you were expecting. <span className={classes.smCap}>D.a.v.e.</span> uses the url to determine the following:</p>
+        <ul>
+          <li>Referring Source</li>
+          <li>Manifest file to use</li>
+          <li>Current sequence of the manifest</li>
+          <li>Current view type of the manifest</li>
+          <li>Current page of the manifest</li>
+          <li>Whether or not it should be zoomable</li>
+        </ul>
+        <p>An example link is here: <Link to='/x/manifest-1/0/2/0'>Demo</Link>.</p>
       </div>
-      <h3>Testing D.a.v.e.</h3>
-      <p>So how does <span className={classes.smCap}>D.a.v.e.</span> work? Obviously this page isn't what you were expecting. Dave uses the url to determine the following:</p>
-      <ul>
-        <li>Referring Source</li>
-        <li>Manifest file to use</li>
-        <li>Current sequence of the manifest</li>
-        <li>Current view type of the manifest</li>
-        <li>Current page of the manifest</li>
-        <li>Whether or not it should be zoomable</li>
-      </ul>
-      <p>An example link is here: <Link to='/x/manifest-1/0/2/0'>Test URL</Link></p>
+      <div className={classes.description}>
+        <div className={classes.fancyIcon}>
+          <FontIcon
+            className='material-icons'
+            style={fancyIconStyle}
+          >copyright</FontIcon>
+        </div>
+        <h3>Licensing</h3>
+        <p><span className={classes.smCap}>D.a.v.e.</span> is Copyright 2016 to the University of Notre Dame. It is licensed under the <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache License, Version 2.0</a></p>
+      </div>
     </div>
     <Branding />
   </div>

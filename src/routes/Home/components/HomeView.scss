@@ -45,33 +45,39 @@
   }
 }
 
-.description {
-  color: #444;
-  display: inline-block;
-  margin: 0;
-  padding: 10px 60px;
-  vertical-align: top;
-  width: 50vw;
+.body {
 
-  a {
-    color: #246e82;
-    text-decoration: none;
-  }
+  text-align: center;
+  .description {
+    color: #444;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 2vw;
+    text-align: left;
+    vertical-align: top;
+    width: 32vw;
 
-  h3 {
-    font-size: 28px;
-    font-weight: normal;
-    font-variant: small-caps;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-bottom: 0;
-  }
+    a {
+      color: #246e82;
+      text-decoration: none;
+    }
 
-  .fancyIcon {
-    text-align: center;
-  }
+    h3 {
+      font-size: 28px;
+      font-weight: normal;
+      font-variant: small-caps;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-bottom: 0;
+    }
 
-  .smCap {
-    font-variant: small-caps;
+    .fancyIcon {
+      text-align: center;
+    }
+
+    .smCap {
+      font-variant: small-caps;
+    }
   }
 }
