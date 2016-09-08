@@ -13,7 +13,7 @@ class GridRow extends Component {
     let i = this.props.start
     let end = this.props.start + this.props.count
     for (i; i < end; i++) {
-      const imageObject = buildArtifactImage(this.props.data, this.props.params, i)
+      const imageObject = buildArtifactImage(this.props.data, this.props.params, 0, i)
       artifactImages.push(
         <ArtifactImage
           imageObject={imageObject}
