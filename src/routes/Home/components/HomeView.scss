@@ -1,0 +1,72 @@
+.toolbarTitle {
+  color: #61dafb;
+  font-size: 30px;
+  font-variant: small-caps;
+  line-height: 56px;
+  padding-left: 10px;
+}
+.toolbarLink {
+
+  line-height: 56px;
+  padding-right: 20px;
+
+  a {
+    color: #dedede;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+.hero {
+  background-color: #2d2d2d;
+
+  font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  text-align: center;
+
+  h1 {
+    color: #61dafb;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+
+  }
+
+  h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+.description {
+  color: #444;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 60px;
+  vertical-align: top;
+  width: 50vw;
+
+  a {
+    color: #246e82;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: normal;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+  }
+
+  .smCap {
+    font-variant: small-caps;
+  }
+}
