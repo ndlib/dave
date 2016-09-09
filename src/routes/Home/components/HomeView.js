@@ -5,8 +5,8 @@ import Branding from '../../../components/Branding/'
 import classes from './HomeView.scss'
 
 const fancyIconStyle = {
-  color: '#555',
-  fontSize: '36px'
+  color: '#e28d05',
+  fontSize: '72px'
 }
 export const HomeView = () => (
   <div>
@@ -40,7 +40,7 @@ export const HomeView = () => (
             style={fancyIconStyle}
           >chrome_reader_mode</FontIcon>
         </div>
-        <h3>About D.a.v.e.</h3>
+        <h3>What is D.a.v.e.?</h3>
         <p>The Digital Artifact Viewing Experience, or <span className={classes.smCap}>D.a.v.e.</span> for short, is a viewing experience built using <a href='https://facebook.github.io/react/'>React</a> and <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files and creates a unique viewing experience based on the JSON data.</p>
         <p>Dave is being developed by the <i>Web and Software Engineering</i> and <i>Digital Library Technologies</i> groups at the <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.</p>
       </div>
@@ -51,7 +51,7 @@ export const HomeView = () => (
             style={fancyIconStyle}
           >link</FontIcon>
         </div>
-        <h3>Testing D.a.v.e.</h3>
+        <h3>Testing</h3>
         <p>So how does <span className={classes.smCap}>D.a.v.e.</span> work? Obviously this page probably isn't what you were expecting. <span className={classes.smCap}>D.a.v.e.</span> uses the url to determine the following:</p>
         <ul>
           <li>Referring Source</li>
