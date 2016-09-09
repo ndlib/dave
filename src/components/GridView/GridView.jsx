@@ -10,22 +10,27 @@ class GridView extends Component {
   }
 
   updateWindowWidth (e) {
-    this.setState({windowWidth: window.innerWidth})
+    const windowWidth = window.innerWidth
+    this.setState({windowWidth: windowWidth})
+    this.setState({columnCount: this.findNumberOfColumns(windowWidth)})
   }
 
   componentWillMount () {
+    const currentSequence = this.props.params.sequence * 1
+    this.setState({canvasCount: this.props.data.sequences[currentSequence].canvases.length})
     this.updateWindowWidth()
   }
 
   componentDidMount () {
     window.addEventListener('resize', this.updateWindowWidth)
+    this.scrollToActiveRow()
   }
 
   componentWillUnmount () {
     window.removeEventListener('resize', this.updateWindowWidth)
   }
 
-  numberOfColumns (
+  findNumberOfColumns (
     windowWidth,
     minColumnCount = this.props.minColumnCount,
     maxThumbnailWidth = this.props.maxThumbnailWidth
@@ -38,14 +43,24 @@ class GridView extends Component {
     }
   }
 
+  componentWillUpdate () {
+    this.scrollToActiveRow()
+  }
+
+  scrollToActiveRow (
+    canvasId = parseInt(this.props.params.pageId),
+    columnCount = this.state.columnCount
+  ) {
+    const activeRowNumber = Math.floor(canvasId / columnCount)
+    const activeRowRef = 'gridRow' + activeRowNumber
+    const activeRow = this.refs[activeRowRef]
+    activeRow.scrollIntoView()
+  }
+
   render () {
-    const data = this.props.data
-    const params = this.props.params
-    const currentSequence = params.sequence * 1
-    const canvasCount = data.sequences[currentSequence].canvases.length
-    const columnCount = this.numberOfColumns(this.state.windowWidth)
+    const columnCount = this.state.columnCount
+    const canvasCount = this.state.canvasCount
     const rowCount = Math.ceil(canvasCount / columnCount)
-    // const currentCanvas = params.pageId * 1
     let count = columnCount
     let gridRows = []
     let i = 0
@@ -56,14 +71,15 @@ class GridView extends Component {
         count = remainingCanvases
       }
       gridRows.push(
-        <GridRow
-          data={data}
-          params={params}
-          start={rowStart}
-          key={i}
-          maxColumns={columnCount}
-          count={count}
-        />
+        <div key={i} ref={'gridRow' + i}>
+          <GridRow
+            data={this.props.data}
+            params={this.props.params}
+            start={rowStart}
+            maxColumns={columnCount}
+            count={count}
+          />
+        </div>
       )
     }
     return (
