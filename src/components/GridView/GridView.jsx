@@ -9,12 +9,6 @@ class GridView extends Component {
     this.updateWindowWidth = this.updateWindowWidth.bind(this)
   }
 
-  updateWindowWidth (e) {
-    const windowWidth = window.innerWidth
-    this.setState({windowWidth: windowWidth})
-    this.setState({columnCount: this.findNumberOfColumns(windowWidth)})
-  }
-
   componentWillMount () {
     const currentSequence = this.props.params.sequence * 1
     this.setState({canvasCount: this.props.data.sequences[currentSequence].canvases.length})
@@ -26,8 +20,18 @@ class GridView extends Component {
     this.scrollToActiveRow()
   }
 
+  componentWillUpdate () {
+    this.scrollToActiveRow()
+  }
+
   componentWillUnmount () {
     window.removeEventListener('resize', this.updateWindowWidth)
+  }
+
+  updateWindowWidth (e) {
+    const windowWidth = window.innerWidth
+    this.setState({windowWidth: windowWidth})
+    this.setState({columnCount: this.findNumberOfColumns(windowWidth)})
   }
 
   findNumberOfColumns (
@@ -43,18 +47,18 @@ class GridView extends Component {
     }
   }
 
-  componentWillUpdate () {
-    this.scrollToActiveRow()
-  }
-
   scrollToActiveRow (
     canvasId = parseInt(this.props.params.pageId),
-    columnCount = this.state.columnCount
+    columnCount = this.state.columnCount,
+    container = this.refs['gridView']
   ) {
     const activeRowNumber = Math.floor(canvasId / columnCount)
-    const activeRowRef = 'gridRow' + activeRowNumber
-    const activeRow = this.refs[activeRowRef]
-    activeRow.scrollIntoView()
+    let scrollAmount = 0
+    let i = 0
+    for (i; i < activeRowNumber; i++) {
+      scrollAmount = scrollAmount + this.refs['gridRow' + i].offsetHeight
+    }
+    container.scrollTop = scrollAmount
   }
 
   render () {
@@ -83,7 +87,7 @@ class GridView extends Component {
       )
     }
     return (
-      <div className={classes.gridview}>
+      <div className={classes.gridview} ref={'gridView'}>
         {gridRows}
       </div>
     )
