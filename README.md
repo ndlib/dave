@@ -1,4 +1,5 @@
 # D.A.V.E. - The Digital Artifact Viewing Experience
+[![Build Status](https://travis-ci.org/ndlib/dave.svg?branch=master)](https://travis-ci.org/ndlib/dave)
 
 ## Installing and running for development
 
@@ -37,7 +38,7 @@ Files will be compiled to `~/dist`.
  * :sequence = `[ 0, 1, 2 ... ]` = current sequence
  * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
  * :pageId = `[ 0, 1, 2 ... ]` = current page of artifact
- * detail = Openseadragon Mode enabled
+ * detail = OpenSeadragon Mode enabled
 
 Example:
 
