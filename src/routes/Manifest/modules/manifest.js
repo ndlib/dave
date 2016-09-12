@@ -16,7 +16,6 @@ export function requestManifest (): Action {
   }
 }
 
-let availableId = 0
 export function recieveManifest (value: string): Action {
   return {
     type: RECIEVE_MANIFEST,
@@ -25,7 +24,10 @@ export function recieveManifest (value: string): Action {
 }
 
 export const fetchManifest = (manifestId): Function => {
-  var manifestUrl = 'http://dave.manifests.test.library.nd.edu.s3.amazonaws.com/sample_data/manifests/' + manifestId + '.json';
+  var manifestUrl =
+    'http://dave.manifests.test.library.nd.edu.s3.amazonaws.com/sample_data/manifests/' +
+    manifestId +
+    '.json'
   return (dispatch: Function): Promise => {
     dispatch(requestManifest())
     return fetch(manifestUrl)
@@ -56,7 +58,9 @@ const MANIFEST_ACTION_HANDLERS = {
 // Reducers
 // ------------------------------------
 const initialState: ManifestStateObject = { fetching: false, data: null }
-export default function manifestReducer (state: ManifestStateObject = initialState, action: Action): ManifestStateObject {
+export default function manifestReducer (
+  state: ManifestStateObject = initialState,
+  action: Action): ManifestStateObject {
   const handler = MANIFEST_ACTION_HANDLERS[action.type]
 
   return handler ? handler(state, action) : state
