@@ -41,8 +41,19 @@ export const HomeView = () => (
           >chrome_reader_mode</FontIcon>
         </div>
         <h3>What is D.a.v.e.?</h3>
-        <p>The Digital Artifact Viewing Experience, or <span className={classes.smCap}>D.a.v.e.</span> for short, is a viewing experience built using <a href='https://facebook.github.io/react/'>React</a> and <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files and creates a unique viewing experience based on the JSON data.</p>
-        <p>Dave is being developed by the <i>Web and Software Engineering</i> and <i>Digital Library Technologies</i> groups at the <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.</p>
+        <p>
+          The Digital Artifact Viewing Experience, or
+          <span className={classes.smCap}>D.a.v.e.</span> for short, is a
+          viewing experience built using
+          <a href='https://facebook.github.io/react/'>React</a> and
+          <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files
+          and creates a unique viewing experience based on the JSON data.
+        </p>
+        <p>
+          Dave is being developed by the <i>Web and Software Engineering</i> and
+          <i>Digital Library Technologies</i> groups at the
+          <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.
+        </p>
       </div>
       <div className={classes.description}>
         <div className={classes.fancyIcon}>
@@ -52,7 +63,12 @@ export const HomeView = () => (
           >link</FontIcon>
         </div>
         <h3>Testing</h3>
-        <p>So how does <span className={classes.smCap}>D.a.v.e.</span> work? Obviously this page probably isn't what you were expecting. <span className={classes.smCap}>D.a.v.e.</span> uses the url to determine the following:</p>
+        <p>
+          So how does <span className={classes.smCap}>D.a.v.e.</span> work?
+          Obviously this page probably isn't what you were expecting.
+          <span className={classes.smCap}>D.a.v.e.</span> uses the url to
+          determine the following:
+        </p>
         <ul>
           <li>Referring Source</li>
           <li>Manifest file to use</li>
@@ -71,7 +87,11 @@ export const HomeView = () => (
           >copyright</FontIcon>
         </div>
         <h3>Licensing</h3>
-        <p><span className={classes.smCap}>D.a.v.e.</span> is Copyright 2016 to the University of Notre Dame. It is licensed under the <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache License, Version 2.0</a></p>
+        <p>
+          <span className={classes.smCap}>D.a.v.e.</span> is Copyright 2016 by
+          the University of Notre Dame. It is an open source project released under an
+          <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2 license</a>
+        </p>
       </div>
     </div>
     <Branding />
