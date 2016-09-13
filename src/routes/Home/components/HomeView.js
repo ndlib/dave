@@ -19,7 +19,7 @@ export const HomeView = () => (
             fontSize: '48px',
             lineHeight: '56px'
           }}
-        >local_activity</FontIcon>
+        >face</FontIcon>
         <div className={classes.toolbarTitle}>D.a.v.e.</div>
       </ToolbarGroup>
       <ToolbarGroup lastChild>
