@@ -14,11 +14,11 @@ class TwoUpView extends Component {
   render () {
     // If we are on the first page or the last page of an even numbered
     // sequence return the single page view instead.
-    var pageId = parseInt(this.props.params.pageId)
-    var lastPageId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
-    var pageIsEven = (pageId % 2 === 1)
+    var canvasId = parseInt(this.props.params.canvasId)
+    var lastcanvasId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
+    var pageIsEven = (canvasId % 2 === 1)
 
-    if (pageId === 0 || ((pageId === lastPageId) && pageIsEven)) {
+    if (canvasId === 0 || ((canvasId === lastcanvasId) && pageIsEven)) {
       return (
         <OneUpView
           data={this.props.data}

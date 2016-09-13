@@ -10,7 +10,7 @@ describe('(View) OpenSeaDragonPage', () => {
 
   const _params = {
     sequence: 0,
-    pageId: 1
+    canvasId: 1
   }
 
   beforeEach(() => {

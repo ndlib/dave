@@ -15,7 +15,7 @@ describe('(View) SwipeArea', () => {
   const _params = {
     sequence: '0',
     view: '1',
-    pageId: '3'
+    canvasId: '3'
   }
 
   beforeEach(() => {

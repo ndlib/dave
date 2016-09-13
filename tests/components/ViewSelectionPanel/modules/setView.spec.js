@@ -8,7 +8,7 @@ describe('(Module) setView', () => {
       manifest: 'manifest',
       sequence: '0',
       view: '1',
-      pageId: '42'
+      canvasId: '42'
     }
     const _targetView = 'g'
     let _path = setView(_params, _targetView)

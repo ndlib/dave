@@ -28,7 +28,7 @@ describe('(View) OneUpView', () => {
     manifest: 'manifest',
     sequence: '0',
     view: '1',
-    pageId: '2'
+    canvasId: '2'
   }
   beforeEach(() => {
     _component = shallow(<OneUpView data={ _data } params={ _params }/>)

@@ -21,7 +21,7 @@ describe('(Module) targetPath', () => {
       manifest: 'manifest',
       sequence: '0',
       view: '1',
-      pageId: '42'
+      canvasId: '42'
     }
 
     let _path = targetPath(_params)
@@ -36,7 +36,7 @@ describe('(Module) targetPath', () => {
       manifest: 'manifest',
       sequence: '0',
       view: '1',
-      pageId: '42',
+      canvasId: '42',
       detail: 'detail'
     }
 

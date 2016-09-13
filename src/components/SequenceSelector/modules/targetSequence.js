@@ -5,8 +5,8 @@ import _ from 'underscore'
 import setSequence from '../../../modules/setSequence.js'
 function targetSequence (data, params, target) {
   let pageAtId = data.sequences[target].startCanvas
-  let pageID = _.indexOf(_.pluck(data.sequences[target].canvases, '@id'), pageAtId)
-  return setSequence(params, target, pageID)
+  let canvasId = _.indexOf(_.pluck(data.sequences[target].canvases, '@id'), pageAtId)
+  return setSequence(params, target, canvasId)
 }
 
 export default targetSequence

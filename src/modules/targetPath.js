@@ -5,7 +5,7 @@
   * :manifest = currently manifest `id`
   * :sequence = `[ 0, 1, 2 ... ]` = current sequence
   * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
-  * :pageId = `[ 0, 1, 2 ... ]` = current page of artifact
+  * :canvasId = `[ 0, 1, 2 ... ]` = current page of artifact
   * detail = Openseadragon Mode enabled
 
  */
@@ -25,8 +25,8 @@ function targetPath (params) {
     path += '/g'
   }
 
-  if (params.pageId) {
-    path += '/' + params.pageId
+  if (params.canvasId) {
+    path += '/' + params.canvasId
   } else {
     path += '/0'
   }
