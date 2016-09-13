@@ -1,6 +1,5 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import { routerMiddleware } from 'react-router-redux'
-import persistState from 'redux-localstorage'
 import thunk from 'redux-thunk'
 import makeRootReducer from './reducers'
 
@@ -14,7 +13,6 @@ export default (initialState = {}, history) => {
   // Store Enhancers
   // ======================================================
   const enhancers = [
-    //persistState()
   ]
   if (__DEBUG__) {
     const devToolsExtension = window.devToolsExtension
