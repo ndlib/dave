@@ -42,7 +42,7 @@ export const HomeView = () => (
         </div>
         <h3>What is D.a.v.e.?</h3>
         <p>
-          The Digital Artifact Viewing Experience, or
+          The Digital Artifact Viewing Experience, or&nbsp;
           <span className={classes.smCap}>D.a.v.e.</span> for short, is a
           viewing experience built using&nbsp;
           <a href='https://facebook.github.io/react/'>React</a> &nbsp;and&nbsp;
@@ -50,7 +50,7 @@ export const HomeView = () => (
           and creates a unique viewing experience based on the JSON data.
         </p>
         <p>
-          Dave is being developed by the <i>Web and Software Engineering</i> and
+          Dave is being developed by the <i>Web and Software Engineering</i> and&nbsp;
           <i>Digital Library Technologies</i> groups at the&nbsp;
           <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.
         </p>
@@ -65,7 +65,7 @@ export const HomeView = () => (
         <h3>Testing</h3>
         <p>
           So how does <span className={classes.smCap}>D.a.v.e.</span> work?
-          Obviously this page probably isn't what you were expecting.
+          Obviously this page probably isn't what you were expecting.&nbsp;
           <span className={classes.smCap}>D.a.v.e.</span> uses the url to
           determine the following:
         </p>
