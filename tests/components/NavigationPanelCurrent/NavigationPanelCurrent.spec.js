@@ -25,6 +25,6 @@ describe('(View) NavigationPanelCurrent', () => {
   })
 
   it('Renders human readable page X of Y', () => {
-    expect(_component.text()).to.equal('4 of 6')
+    expect(_component.text()).to.equal('4 / 6')
   })
 })
