@@ -1,5 +1,7 @@
 import type { ManifestObject, ManifestStateObject } from '../interfaces/manifest.js'
 import jsonClean from './jsonClean.js'
+import { Action } from 'redux'
+
 // ------------------------------------
 // Constants
 // ------------------------------------
