@@ -12,8 +12,4 @@ cd ./dist
 
 aws s3 sync . s3://${BUCKET} --exclude '.*' --exclude '*.md' --delete --acl public-read
 
-cd ..
-
-npm run compile
-
 echo ${BUCKET}.s3-website-us-east-1.amazonaws.com

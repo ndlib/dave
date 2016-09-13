@@ -52,7 +52,7 @@ export const HomeView = () => (
         <p>
           Dave is being developed by the <i>Web and Software Engineering</i> and&nbsp;
           <i>Digital Library Technologies</i> groups at the&nbsp;
-          <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.
+          <a href='http://library.nd.edu'>Hesburgh Library of Notre Dame</a>.
         </p>
       </div>
       <div className={classes.description}>
