@@ -21,7 +21,7 @@ To run tests:
 
 To build for deployment:
 
-`npm run deploy`
+`npm run deploy:prod`
 
 Files will be compiled to `~/dist`.
 

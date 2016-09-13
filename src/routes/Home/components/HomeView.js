@@ -44,14 +44,14 @@ export const HomeView = () => (
         <p>
           The Digital Artifact Viewing Experience, or
           <span className={classes.smCap}>D.a.v.e.</span> for short, is a
-          viewing experience built using
-          <a href='https://facebook.github.io/react/'>React</a> and
+          viewing experience built using&nbsp;
+          <a href='https://facebook.github.io/react/'>React</a> &nbsp;and&nbsp;
           <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files
           and creates a unique viewing experience based on the JSON data.
         </p>
         <p>
           Dave is being developed by the <i>Web and Software Engineering</i> and
-          <i>Digital Library Technologies</i> groups at the
+          <i>Digital Library Technologies</i> groups at the&nbsp;
           <a href='http://library.nd.edu'>Hesburgh Library at Notre Dame</a>.
         </p>
       </div>
@@ -89,8 +89,8 @@ export const HomeView = () => (
         <h3>Licensing</h3>
         <p>
           <span className={classes.smCap}>D.a.v.e.</span> is Copyright 2016 by
-          the University of Notre Dame. It is an open source project released under an
-          <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2 license</a>
+          the University of Notre Dame. It is an open source project released under an&nbsp;
+          <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2 license</a>.
         </p>
       </div>
     </div>
