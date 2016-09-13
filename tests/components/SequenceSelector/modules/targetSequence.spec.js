@@ -19,7 +19,7 @@ describe('(Module) targetSequence', () => {
     manifest: 'manifest',
     sequence: '2',
     view: '1',
-    pageId: '42'
+    canvasId: '42'
   }
   const _targetSequence = '0'
 

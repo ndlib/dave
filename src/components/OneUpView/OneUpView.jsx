@@ -12,6 +12,7 @@ class OneUpView extends Component {
         <div className={classes.display}>
           <ArtifactImage
             imageObject={imageObject}
+            showTitle
           />
         </div>
       </div>

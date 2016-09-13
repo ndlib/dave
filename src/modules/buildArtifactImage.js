@@ -6,7 +6,7 @@ function buildArtifactImage (
   canvas = null,
   sequence = null
 ) {
-  canvas === null ? canvas = params.pageId : true
+  canvas === null ? canvas = params.canvasId : true
   sequence === null ? sequence = params.sequence : true
   const canvasId = parseInt(canvas) + offset
   const sequenceId = parseInt(sequence)
@@ -19,7 +19,7 @@ function buildArtifactImage (
               '/' + canvasId +
               '/detail'
   return {
-    pageId: canvasId,
+    canvasId: canvasId,
     alt: canvasObject.label,
     imageUri: imageUri,
     zoomLink: zoomLink

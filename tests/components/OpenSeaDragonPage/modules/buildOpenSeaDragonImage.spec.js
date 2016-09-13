@@ -9,7 +9,7 @@ describe('(Module) buildOpenSeaDragonImage', () => {
     manifest: 'manifest',
     sequence: '0',
     view: '1',
-    pageId: '1'
+    canvasId: '1'
   }
 
   const _img = buildOpenSeaDragonImage(_data, _params)

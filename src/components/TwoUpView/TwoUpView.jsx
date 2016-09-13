@@ -1,5 +1,5 @@
 'use strict'
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
 import ArtifactImage from '../ArtifactImage/'
 import buildArtifactImage from '../../modules/buildArtifactImage.js'
 import classes from './TwoUpView.scss'
@@ -7,52 +7,54 @@ import OneUpView from '../OneUpView/'
 
 class TwoUpView extends Component {
 
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     // If we are on the first page or the last page of an even numbered
     // sequence return the single page view instead.
-    var pageId = parseInt(this.props.params.pageId);
-    var lastPageId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
-    var pageIsEven = (pageId % 2 === 1)
+    var canvasId = parseInt(this.props.params.canvasId)
+    var lastcanvasId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
+    var pageIsEven = (canvasId % 2 === 1)
 
-    if(pageId === 0 || ((pageId === lastPageId) && pageIsEven)) {
+    if (canvasId === 0 || ((canvasId === lastcanvasId) && pageIsEven)) {
       return (
         <OneUpView
-          data={ this.props.data }
-          params={ this.props.params }
+          data={this.props.data}
+          params={this.props.params}
         />
       )
     }
 
-    var imageObject1;
-    var imageObject2;
+    var imageObject1
+    var imageObject2
 
-    if(!pageIsEven) {
-      imageObject1 = buildArtifactImage(this.props.data, this.props.params, -1);
-      imageObject2 = buildArtifactImage(this.props.data, this.props.params);
+    if (!pageIsEven) {
+      imageObject1 = buildArtifactImage(this.props.data, this.props.params, -1)
+      imageObject2 = buildArtifactImage(this.props.data, this.props.params)
     }
     else {
-      imageObject1 = buildArtifactImage(this.props.data, this.props.params);
-      imageObject2 = buildArtifactImage(this.props.data, this.props.params, 1);
+      imageObject1 = buildArtifactImage(this.props.data, this.props.params)
+      imageObject2 = buildArtifactImage(this.props.data, this.props.params, 1)
     }
 
     return (
-      <div className={ classes.outer }>
-        <div className={ classes.splitDisplay }>
+      <div className={classes.outer}>
+        <div className={classes.splitDisplay}>
           <ArtifactImage
-            imageObject={ imageObject1 }
+            imageObject={imageObject1}
+            showTitle
           />
         </div>
-      <div className={ classes.splitDisplay }>
+      <div className={classes.splitDisplay}>
           <ArtifactImage
-            imageObject={ imageObject2 }
+            imageObject={imageObject2}
+            showTitle
           />
         </div>
       </div>
-     );
+     )
   }
 }
 
@@ -61,4 +63,4 @@ TwoUpView.propTypes = {
   params: React.PropTypes.object.isRequired
 }
 
-export default TwoUpView;
+export default TwoUpView

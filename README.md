@@ -29,15 +29,15 @@ Files will be compiled to `~/dist`.
 
 :source/:manifestId/:sequence/:view/
 
-:source/:manifestId/:sequence/:view/:pageID
+:source/:manifestId/:sequence/:view/:canvasId
 
-:source/:manifestId/:sequence/:view/:pageID/detail
+:source/:manifestId/:sequence/:view/:canvasId/detail
 
  * :source = `encodeURIComponent(referring url)`
  * :manifest = currently manifest `id`
  * :sequence = `[ 0, 1, 2 ... ]` = current sequence
  * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
- * :pageId = `[ 0, 1, 2 ... ]` = current page of artifact
+ * :canvasId = `[ 0, 1, 2 ... ]` = current page of artifact
  * detail = OpenSeadragon Mode enabled
 
 Example:

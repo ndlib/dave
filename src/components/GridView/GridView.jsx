@@ -48,7 +48,7 @@ class GridView extends Component {
   }
 
   scrollToActiveRow (
-    canvasId = parseInt(this.props.params.pageId),
+    canvasId = parseInt(this.props.params.canvasId),
     columnCount = this.state.columnCount,
     container = this.refs['gridView']
   ) {

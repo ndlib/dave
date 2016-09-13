@@ -1,15 +1,18 @@
 import React, { Component, PropTypes } from 'react'
 import { FontIcon, Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
 import SequenceSelector from '../SequenceSelector/'
+import style from '../../styles/material-ui/style.js'
 
 class TitleToolbar extends Component {
   render () {
     return (
-      <Toolbar>
+      <Toolbar style={style().toolbar}>
         <ToolbarGroup firstChild>
           <FontIcon className='material-icons'>keyboard_backspace</FontIcon>
-          <ToolbarTitle text={this.props.data.label} />
-
+          <ToolbarTitle
+            text={this.props.data.label}
+            style={style().toolbarTitle}
+          />
         </ToolbarGroup>
         <ToolbarGroup lastChild>
           <SequenceSelector

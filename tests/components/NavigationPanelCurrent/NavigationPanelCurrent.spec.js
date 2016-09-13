@@ -16,7 +16,7 @@ describe('(View) NavigationPanelCurrent', () => {
     manifest: 'manifest',
     sequence: '0',
     view: '1',
-    pageId: '3'
+    canvasId: '3'
   }
 
   beforeEach(() => {

@@ -6,7 +6,7 @@ describe('(Module) setSequence', () => {
     manifest: 'manifest',
     sequence: '0',
     view: '1',
-    pageId: '42'
+    canvasId: '42'
   }
 
   it('Changes sequence and defaults to the first page', () => {

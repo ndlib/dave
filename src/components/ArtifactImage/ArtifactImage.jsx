@@ -6,6 +6,10 @@ import classes from './Artifact.scss'
 class ArtifactImage extends Component {
   render () {
     const wrapperClass = this.props.useFlexLayout ? classes.flexwrapper : classes.wrapper
+    let title = null
+    if (this.props.showTitle && this.props.imageObject.alt) {
+      title = (<h2 className={classes.title}>{this.props.imageObject.alt}</h2>)
+    }
     return (
       <div
         className={wrapperClass}
@@ -22,6 +26,7 @@ class ArtifactImage extends Component {
             style={{ height: '100%' }}
           />
         </Link>
+        {title}
       </div>
     )
   }
@@ -31,13 +36,15 @@ ArtifactImage.propTypes = {
   imageObject: PropTypes.object.isRequired,
   imageContainerWidth: PropTypes.number,
   imageContainerLeftPadding: PropTypes.number,
-  useFlexLayout: PropTypes.bool
+  useFlexLayout: PropTypes.bool,
+  showTitle: PropTypes.bool
 }
 
 ArtifactImage.defaultProps = {
   imageContainerWidth: 100,
   imageContainerLeftPadding: 0,
-  useFlexLayout: false
+  useFlexLayout: false,
+  showTitle: false
 }
 
 export default ArtifactImage

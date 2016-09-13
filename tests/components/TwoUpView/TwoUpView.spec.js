@@ -62,7 +62,7 @@ describe('(View) TwoUpView', () => {
     manifest: 'manifest',
     sequence: '0',
     view: '2',
-    pageId: '1'
+    canvasId: '1'
   }
 
   beforeEach(() => {
@@ -79,13 +79,13 @@ describe('(View) TwoUpView', () => {
   })
 
   it('Renders the <OneUpView/> on the first page', () => {
-    _params.pageId = '0'
+    _params.canvasId = '0'
     _component = shallow(<TwoUpView data={ _data } params={ _params }/>)
     expect(_component.find('OneUpView')).to.exist
   })
 
   it('Renders the <OneUpView/> on the last page with even sequence length', () => {
-    _params.pageId = '3'
+    _params.canvasId = '3'
     _component = shallow(<TwoUpView data={ _data } params={ _params }/>)
     expect(_component.find('OneUpView')).to.exist
   })
@@ -129,7 +129,7 @@ describe('(View) TwoUpView', () => {
         }
       ]
     }
-    _params.pageId = '2'
+    _params.canvasId = '2'
     _component = shallow(<TwoUpView data={ _data } params={ _params }/>)
     expect(_component.find('ArtifactImage')).to.have.length(2)
   })

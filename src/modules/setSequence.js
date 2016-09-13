@@ -4,7 +4,7 @@ import targetPath from './targetPath'
 function setSequence (currentParams, targetSequence, targetPage = 0) {
   var newParams = Object.assign({}, currentParams)
   newParams.sequence = targetSequence
-  newParams.pageId = targetPage
+  newParams.canvasId = targetPage
   return targetPath(newParams)
 }
 export default setSequence
