@@ -44,3 +44,8 @@ Example:
 
 ` http://dave.library.nd.edu/source/manifest-1/0/1/3/detail
 `
+
+## Deploy Pre Production
+
+1.  Assume a role that can write to the bucket.
+2.  Run ./awsbuild.sh
