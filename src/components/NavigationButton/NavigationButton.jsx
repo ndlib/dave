@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import { FontIcon } from 'material-ui'
 import setPage from '../../modules/setPage.js'
+import style from '../../styles/material-ui/style.js'
 
 class NavigationButton extends Component {
 
@@ -15,7 +16,10 @@ class NavigationButton extends Component {
     this._target = setPage(this.props.params, this.props.target)
     return (
       <Link to={this._target}>
-        <FontIcon className='material-icons'>{this.props.icon}</FontIcon>
+        <FontIcon
+          className='material-icons'
+          style={style().viewIcons}
+          >{this.props.icon}</FontIcon>
       </Link>
     )
   }

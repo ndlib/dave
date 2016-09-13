@@ -1,12 +1,13 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
+import style from '../../styles/material-ui/style.js'
 
 class NavigationPanelCurrent extends Component {
   render () {
-    var currentDisplayPage = parseInt(this.props.params.pageId) + 1
-
+    let currentDisplayPage = parseInt(this.props.params.pageId) + 1
+    let length = this.props.data.sequences[this.props.params.sequence].canvases.length
     return (
-      <div>{currentDisplayPage} of {this.props.data.sequences[this.props.params.sequence].canvases.length}</div>
+      <div style={style().toolbarTitle}>{currentDisplayPage} / {length}</div>
     )
   }
 }
