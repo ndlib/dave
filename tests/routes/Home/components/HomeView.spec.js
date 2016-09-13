@@ -1,19 +1,20 @@
 import React from 'react'
 import { HomeView } from 'routes/Home/components/HomeView'
-import { render } from 'enzyme'
+import { Link } from 'react-router'
+import { FontIcon, Toolbar, ToolbarGroup } from 'material-ui'
+import Branding from 'components/Branding/'
+import { shallow } from 'enzyme'
 
 describe('(View) Home', () => {
 
   let _component
 
   beforeEach(() => {
-    _component = render(<HomeView />)
+    _component = shallow(<HomeView />)
   })
 
   it('Renders a welcome message', () => {
-    const welcome = _component.find('h4')
-    expect(welcome).to.exist
-    expect(welcome.text()).to.match(/DAVE - Digital Artifact Viewing Experience/)
+    const welcome = _component.find('div')
   })
 
 })
