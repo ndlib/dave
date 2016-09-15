@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: rgba(55, 55, 55, 0.5);
+  bottom: 56px;
+  display: block;
+  height: calc(10vh + 4px);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 100vw;
+}
+
+.imageWrapper {
+  display: inline-block;
+  height: 10vh;
+  opacity: 0.3;
+  overflow: hidden;
+  width: 10vh;
+
+  &:hover {
+    opacity: 1.0;
+  }
+
+  &.active {
+    opacity: 1.0;
+  }
+}
+
+.clickButton {
+  position: absolute;
+  bottom: 0;
+  height: calc(10vh + 4px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 1.0)
+  }
+}
+
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}

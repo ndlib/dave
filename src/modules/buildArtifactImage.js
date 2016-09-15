@@ -4,7 +4,8 @@ function buildArtifactImage (
   params,
   offset = 0,
   canvas = null,
-  sequence = null
+  sequence = null,
+  zoom = true
 ) {
   canvas === null ? canvas = params.canvasId : true
   sequence === null ? sequence = params.sequence : true
@@ -12,17 +13,17 @@ function buildArtifactImage (
   const sequenceId = parseInt(sequence)
   const canvasObject = data.sequences[sequenceId].canvases[canvasId]
   const imageUri = canvasObject.images[0].resource['@id']
-  const zoomLink = '/' + params.source +
+  const objectLink = '/' + params.source +
               '/' + params.manifest +
               '/' + params.sequence +
               '/' + params.view +
               '/' + canvasId +
-              '/detail'
+              (zoom ? '/detail' : '')
   return {
     canvasId: canvasId,
     alt: canvasObject.label,
     imageUri: imageUri,
-    zoomLink: zoomLink
+    objectLink: objectLink
   }
 }
 
