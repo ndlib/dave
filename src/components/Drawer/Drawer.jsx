@@ -35,11 +35,11 @@ class Drawer extends Component {
 
   centerCurrent () {
     const { scrollbars } = this.refs
-    const canvasId = parseInt(this.props.params.canvasId)
+    const canvasId = parseInt(this.props.params.canvasId) + 1
     const sequence = parseInt(this.props.params.sequence)
     const canvases = this.props.data.sequences[sequence].canvases
-    const offsetPercent = canvasId / canvases.length * 0.5
-    scrollbars.scrollLeft(scrollbars.getScrollWidth() * offsetPercent)
+    const offsetPercent = (canvasId / canvases.length)
+    scrollbars.scrollLeft((scrollbars.getScrollWidth() * offsetPercent) - (window.innerWidth / 2))
   }
 
   componentDidMount () {
@@ -48,6 +48,16 @@ class Drawer extends Component {
 
   componentDidUpdate () {
     this.centerCurrent()
+  }
+
+  buttonIconStyle () {
+    return {
+      margin: 0,
+      padding: 0,
+      textAlign: 'center',
+      verticalAlign: 'middle',
+      width: '100%'
+    }
   }
 
   render () {
@@ -60,20 +70,20 @@ class Drawer extends Component {
         <SpringScrollbars
           ref='scrollbars'
           autoHide
-          style={{overflowY: 'hidden'}}
+          style={{overflowY: 'hidden', width: 'calc(100vw - 80px)', margin: '0 auto'}}
         >
           {drawerImages(this.props.data, this.props.params)}
         </SpringScrollbars>
-        <button
+        <div
           className={classes.clickButton + ' ' + classes.left}
           onClick={this.handleClickBack}>
-          <FontIcon className='material-icons'>chevron_left</FontIcon>
-        </button>
-        <button
+          <FontIcon className='material-icons' style={this.buttonIconStyle()}>chevron_left</FontIcon>
+        </div>
+        <div
           className={classes.clickButton + ' ' + classes.right}
           onClick={this.handleClickForward}>
-          <FontIcon className='material-icons'>chevron_right</FontIcon>
-        </button>
+          <FontIcon className='material-icons' style={this.buttonIconStyle()}>chevron_right</FontIcon>
+        </div>
       </div>
     )
   }

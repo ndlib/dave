@@ -1,5 +1,4 @@
 .wrapper {
-  background-color: rgba(55, 55, 55, 0.5);
   bottom: 56px;
   display: block;
   height: calc(10vh + 4px);
@@ -27,20 +26,30 @@
 }
 
 .clickButton {
-  position: absolute;
-  bottom: 0;
-  height: calc(10vh + 4px);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f0f0e1;
   border: none;
+  border-radius: 100px;
+  bottom: calc(5vh - 20px);
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  position: absolute;
+  vertical-align: middle;
+  width: 40px;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 1.0)
+    background-color: white;
   }
 }
 
 .left {
-  left: 0;
+  left: 8px;
 }
 .right {
-  right: 0;
+  right: 8px;
+}
+
+.buttonIcon {
+  vertical-align: middle;
 }
