@@ -5,6 +5,7 @@ import MobileDetect from 'mobile-detect'
 import SpringScrollbars from 'react-custom-scrollbars'
 import drawerImages from './modules/drawerImages.js'
 import classes from './Drawer.scss'
+import style from './modules/style.js'
 
 class Drawer extends Component {
 
@@ -15,6 +16,43 @@ class Drawer extends Component {
     this.handleClickForward = this.handleClickForward.bind(this)
     this.handleClickBack = this.handleClickBack.bind(this)
     this.centerCurrent = this.centerCurrent.bind(this)
+  }
+
+  componentDidMount () {
+    this.centerCurrent()
+  }
+
+  componentDidUpdate () {
+    this.centerCurrent()
+  }
+
+  render () {
+    // Do not render on mobile on for grid view.
+    if (this.props.params.view === 'g' || this._mobile) {
+      return null
+    }
+
+    return (
+      <div className={classes.wrapper}>
+        <SpringScrollbars
+          ref='scrollbars'
+          autoHide
+          style={style.scrollBar()}
+        >
+          {drawerImages(this.props.data, this.props.params)}
+        </SpringScrollbars>
+        <button
+          className={classes.clickButton + ' ' + classes.left}
+          onClick={this.handleClickBack}>
+          <FontIcon className='material-icons' style={style.buttonIcon()}>chevron_left</FontIcon>
+        </button>
+        <button
+          className={classes.clickButton + ' ' + classes.right}
+          onClick={this.handleClickForward}>
+          <FontIcon className='material-icons' style={style.buttonIcon()}>chevron_right</FontIcon>
+        </button>
+      </div>
+    )
   }
 
   handleClickForward () {
@@ -29,63 +67,20 @@ class Drawer extends Component {
     scrollbars.scrollLeft(position - this.scrollIncrement())
   }
 
+  // Scroll by 60% of window width.
   scrollIncrement () {
     return window.innerWidth * 0.6
   }
 
+  // Attempt to center the current thumbnail. Scrollbar will clamp ends.
   centerCurrent () {
     const { scrollbars } = this.refs
     const canvasId = parseInt(this.props.params.canvasId) + 1
     const sequence = parseInt(this.props.params.sequence)
     const canvases = this.props.data.sequences[sequence].canvases
     const offsetPercent = (canvasId / canvases.length)
+
     scrollbars.scrollLeft((scrollbars.getScrollWidth() * offsetPercent) - (window.innerWidth / 2))
-  }
-
-  componentDidMount () {
-    this.centerCurrent()
-  }
-
-  componentDidUpdate () {
-    this.centerCurrent()
-  }
-
-  buttonIconStyle () {
-    return {
-      margin: 0,
-      padding: 0,
-      textAlign: 'center',
-      verticalAlign: 'middle',
-      width: '100%'
-    }
-  }
-
-  render () {
-    if (this.props.params.view === 'g' || this._mobile) {
-      return null
-    }
-
-    return (
-      <div className={classes.wrapper}>
-        <SpringScrollbars
-          ref='scrollbars'
-          autoHide
-          style={{overflowY: 'hidden', width: 'calc(100vw - 80px)', margin: '0 auto'}}
-        >
-          {drawerImages(this.props.data, this.props.params)}
-        </SpringScrollbars>
-        <div
-          className={classes.clickButton + ' ' + classes.left}
-          onClick={this.handleClickBack}>
-          <FontIcon className='material-icons' style={this.buttonIconStyle()}>chevron_left</FontIcon>
-        </div>
-        <div
-          className={classes.clickButton + ' ' + classes.right}
-          onClick={this.handleClickForward}>
-          <FontIcon className='material-icons' style={this.buttonIconStyle()}>chevron_right</FontIcon>
-        </div>
-      </div>
-    )
   }
 }
 

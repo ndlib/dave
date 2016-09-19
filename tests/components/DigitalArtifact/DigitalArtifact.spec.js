@@ -3,6 +3,7 @@ import DigitalArtifact from 'components/DigitalArtifact'
 import TitleToolbar from 'components/TitleToolbar'
 import CurrentView from 'components/CurrentView'
 import SecondaryToolbar from 'components/SecondaryToolbar'
+import Drawer from 'components/Drawer'
 import { shallow } from 'enzyme'
 
 describe('(View) DigitalArtifact', () => {
@@ -26,6 +27,10 @@ describe('(View) DigitalArtifact', () => {
 
   it('Renders a <CurrentView/> component', () => {
     expect(_component.find(CurrentView)).to.exist
+  })
+
+  it('Renders a <Drawer/> component', () => {
+    expect(_component.find(Drawer)).to.exist
   })
 
   it('Renders a <SecondaryToolbar/> component', () => {

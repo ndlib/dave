@@ -10,15 +10,16 @@ function drawerImage (data, params) {
 
   for (let i = 0; i < canvases.length; i++) {
     let imageObject = buildArtifactImage(data, params, 0, i, null, false)
+
+    // Highlight if current image
     let highlight = (i === parseInt(params.canvasId))
 
-    if (!highlight) {
-      if (parseInt(params.view) === 2) {
-        if (parseInt(params.canvasId) % 2 === 0) {
-          highlight = (i === parseInt(params.canvasId) - 1)
-        } else if (parseInt(params.canvasId) % 2 === 1) {
-          highlight = (i === parseInt(params.canvasId) + 1)
-        }
+    // If on TwoUpView and not highlighted, highlight other displayed image.
+    if (!highlight && parseInt(params.view) === 2) {
+      if (parseInt(params.canvasId) % 2 === 0) {
+        highlight = (i === parseInt(params.canvasId) - 1)
+      } else if (parseInt(params.canvasId) % 2 === 1) {
+        highlight = (i === parseInt(params.canvasId) + 1)
       }
     }
 
@@ -33,6 +34,7 @@ function drawerImage (data, params) {
       </div>
     )
   }
+
   return images
 }
 
