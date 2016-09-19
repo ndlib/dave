@@ -75,12 +75,13 @@ class Drawer extends Component {
   // Attempt to center the current thumbnail. Scrollbar will clamp ends.
   centerCurrent () {
     const { scrollbars } = this.refs
-    const canvasId = parseInt(this.props.params.canvasId) + 1
-    const sequence = parseInt(this.props.params.sequence)
-    const canvases = this.props.data.sequences[sequence].canvases
-    const offsetPercent = (canvasId / canvases.length)
-
-    scrollbars.scrollLeft((scrollbars.getScrollWidth() * offsetPercent) - (window.innerWidth / 2))
+    if (scrollbars) {
+      const canvasId = parseInt(this.props.params.canvasId) + 1
+      const sequence = parseInt(this.props.params.sequence)
+      const canvases = this.props.data.sequences[sequence].canvases
+      const offsetPercent = (canvasId / canvases.length)
+      scrollbars.scrollLeft((scrollbars.getScrollWidth() * offsetPercent) - (window.innerWidth / 2))
+    }
   }
 }
 
