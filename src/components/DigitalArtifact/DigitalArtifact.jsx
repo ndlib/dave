@@ -5,6 +5,7 @@ import CurrentView from '../CurrentView'
 import SecondaryToolbar from '../SecondaryToolbar'
 import classes from './DigitalArtifact.scss'
 import SwipeArea from '../SwipeArea'
+import Drawer from '../Drawer'
 
 class DigitalArtifact extends Component {
 
@@ -23,6 +24,10 @@ class DigitalArtifact extends Component {
             data={this.props.data}
             params={this.props.params}
           />
+          <Drawer
+            data={this.props.data}
+            params={this.props.params}
+          />
           <div className={classes.bottomBar}>
             <SecondaryToolbar
               data={this.props.data}
@@ -30,6 +35,7 @@ class DigitalArtifact extends Component {
             />
           </div>
         </div>
+
       </SwipeArea>
      )
   }

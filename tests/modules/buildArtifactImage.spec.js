@@ -43,7 +43,7 @@ describe('(Module) buildArtifactImage', () => {
     expect(_img.canvasId).to.equal(2)
     expect(_img.alt).to.equal('label 1')
     expect(_img.imageUri).to.equal('/uri-1/img.png')
-    expect(_img.zoomLink).to.equal('/source/manifest/0/1/2/detail')
+    expect(_img.objectLink).to.equal('/source/manifest/0/1/2/detail')
   })
 
   it('Returns the current image when passed 0', () => {
@@ -51,7 +51,7 @@ describe('(Module) buildArtifactImage', () => {
     expect(_img.canvasId).to.equal(2)
     expect(_img.alt).to.equal('label 1')
     expect(_img.imageUri).to.equal('/uri-1/img.png')
-    expect(_img.zoomLink).to.equal('/source/manifest/0/1/2/detail')
+    expect(_img.objectLink).to.equal('/source/manifest/0/1/2/detail')
   })
 
   it('Returns the correct image when passed any other number', () => {
@@ -59,7 +59,8 @@ describe('(Module) buildArtifactImage', () => {
     expect(_img.canvasId).to.equal(4)
     expect(_img.alt).to.equal('label 2')
     expect(_img.imageUri).to.equal('/uri-2/img.png')
-    expect(_img.zoomLink).to.equal('/source/manifest/0/1/4/detail')
+    expect(_img.objectLink).to.equal('/source/manifest/0/1/4/detail')
   })
 
+  // TODO add additional tests
 })

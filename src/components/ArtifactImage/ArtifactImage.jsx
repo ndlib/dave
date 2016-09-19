@@ -18,7 +18,7 @@ class ArtifactImage extends Component {
           marginLeft: this.props.imageContainerLeftPadding + '%'
         }}
        >
-        <Link to={this.props.imageObject.zoomLink}>
+        <Link to={this.props.imageObject.objectLink}>
           <img
             src={this.props.imageObject.imageUri}
             alt={this.props.imageObject.alt}
