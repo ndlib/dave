@@ -11,8 +11,4 @@ describe('(Module) findNumberOfColumns', () => {
     let _columnCount = findNumberOfColumns(800, 3, 100)
     expect(_columnCount).to.equal(8)
   })
-
-  it('should raise an ArgumentError unless it is passed integers', () => {
-    expect(findNumberOfColumns(false, 'family', 100)).to.throw(ArgumentError)
-  })
 })
