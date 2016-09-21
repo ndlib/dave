@@ -1,6 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import GridRow from '../GridRow/'
+import findNumberOfColumns from '../../modules/findNumberOfColumns'
 import classes from './GridView.scss'
 
 class GridView extends Component {
@@ -31,20 +32,11 @@ class GridView extends Component {
   updateWindowWidth (e) {
     const windowWidth = window.innerWidth
     this.setState({windowWidth: windowWidth})
-    this.setState({columnCount: this.findNumberOfColumns(windowWidth)})
-  }
-
-  findNumberOfColumns (
-    windowWidth,
-    minColumnCount = this.props.minColumnCount,
-    maxThumbnailWidth = this.props.maxThumbnailWidth
-  ) {
-    const calculatedColumnCount = Math.round(windowWidth / maxThumbnailWidth)
-    if (calculatedColumnCount > minColumnCount) {
-      return calculatedColumnCount
-    } else {
-      return minColumnCount
-    }
+    this.setState({columnCount: findNumberOfColumns(
+      windowWidth,
+      this.props.minColumnCount,
+      this.props.maxThumbnailWidth
+    )})
   }
 
   scrollToActiveRow (
