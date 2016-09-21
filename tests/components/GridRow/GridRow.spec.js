@@ -1,6 +1,7 @@
 import React from 'react'
 import GridRow from 'components/GridRow'
 import ArtifactImage from 'components/ArtifactImage'
+import GridRowAnnotation from 'components/GridRowAnnotation'
 import { shallow } from 'enzyme'
 
 describe('(View) GridRow', () => {
@@ -67,5 +68,9 @@ describe('(View) GridRow', () => {
 
   it('Contains a <ArtifactImage/> component', () => {
     expect(_component.find(ArtifactImage)).to.exist
+  })
+
+  it('Has annotations for each row', () => {
+    expect(_component.find(GridRowAnnotation)).to.exist
   })
 })

@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from 'react'
 import ArtifactImage from '../ArtifactImage/'
 import buildArtifactImage from '../../modules/buildArtifactImage.js'
+import GridRowAnnotation from '../GridRowAnnotation'
 import classes from './GridRow.scss'
 
 class GridRow extends Component {
@@ -24,15 +25,12 @@ class GridRow extends Component {
         />
       )
     }
-    const imageRange = '(' + (this.props.start + 1) + '\u200A–\u200A' + end + ')'
     return (
       <div>
         <div className={classes.row}>
           {artifactImages}
         </div>
-        <div className={classes.annotation}>
-          {imageRange}
-        </div>
+        <GridRowAnnotation start={this.props.start + 1} end={end} />
       </div>
     )
   }
