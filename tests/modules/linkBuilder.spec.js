@@ -75,4 +75,19 @@ describe('(Module) linkBuilder', () => {
     let _result = linkBuilder(_data, _params)
     expect(_result.nextPage).to.equal(5)
   })
+
+  it('Returns correct results when passed the optional increment parameter', () => {
+    const _params = {
+      sequence: '0',
+      view: '2',
+      canvasId: '3'
+    }
+    
+    let _result = linkBuilder(_data, _params, 3)
+    expect(_result.increment).to.equal(3)
+    expect(_result.firstPage).to.equal(0)
+    expect(_result.lastPage).to.equal(5)
+    expect(_result.nextPage).to.equal(5)
+    expect(_result.prevPage).to.equal(0)
+  })
 })

@@ -39,10 +39,24 @@ describe('(View) NavigationPanel', () => {
   })
 
   it('Does not render for the grid view', () => {
-    let params = { view: 'g' }
+    let params = {
+      view: 'g',
+      sequence: '1'
+    }
     let component = shallow(<NavigationPanel data={ _data } params={ params }/>)
     expect(component.find(ToolbarGroup)).to.not.exist
     expect(component.find('NavigationButton')).to.have.lengthOf(0)
     expect(component.find('NavigationPanelCurrent')).to.not.exist
+  })
+
+  it('Renders when passed optional parameter even on grid view', () => {
+    let params = {
+      view: 'g',
+      sequence: '1'
+    }
+    let component = shallow(<NavigationPanel data={ _data } params={ params } increment={ true } />)
+    expect(component.find(ToolbarGroup)).to.exist
+    expect(component.find('NavigationButton')).to.have.lengthOf(4)
+    expect(component.find('NavigationPanelCurrent')).to.exist
   })
 })
