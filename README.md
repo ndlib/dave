@@ -27,22 +27,23 @@ Files will be compiled to `~/dist`.
 
 ## React Routes
 
-:source/:manifestId/:sequence/:view/
+:manifestId/:sequence/:view
 
-:source/:manifestId/:sequence/:view/:canvasId
+:manifestId/:sequence/:view/:canvasId
 
-:source/:manifestId/:sequence/:view/:canvasId/detail
+:manifestId/:sequence/:view/:canvasId/detail
 
- * :source = `encodeURIComponent(referring url)`
  * :manifest = currently manifest `id`
  * :sequence = `[ 0, 1, 2 ... ]` = current sequence
  * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
  * :canvasId = `[ 0, 1, 2 ... ]` = current page of artifact
  * detail = OpenSeadragon Mode enabled
 
+Source may be passed by appending ?ref=URI which will be retained while navigating within the interface.
+
 Example:
 
-` http://dave.library.nd.edu/source/manifest-1/0/1/3/detail
+` http://dave.library.nd.edu/manifest-1/0/1/3/detail?ref=http://google.com
 `
 
 ## Deploy Pre Production

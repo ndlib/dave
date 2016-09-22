@@ -3,6 +3,7 @@ import TitleToolbar from 'components/TitleToolbar'
 import { Toolbar, ToolbarTitle } from 'material-ui'
 import { shallow } from 'enzyme'
 import SequenceSelector from 'components/SequenceSelector'
+import ReferralButton from 'components/ReferralButton'
 
 describe('(View) TitleToolbar', () => {
   let _component
@@ -30,4 +31,7 @@ describe('(View) TitleToolbar', () => {
     expect(_component.find(SequenceSelector)).to.exist
   })
 
+  it('Renders a <ReferralButton/> component', () => {
+    expect(_component.find(ReferralButton)).to.exist
+  })
 })
