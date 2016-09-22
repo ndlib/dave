@@ -2,7 +2,8 @@
 import React, { Component, PropTypes } from 'react'
 import { Toolbar, ToolbarGroup, ToolbarTitle, FontIcon } from 'material-ui'
 import { browserHistory, Link } from 'react-router'
-
+import style from '../../styles/material-ui/style.js'
+import NavigationPanel from '../NavigationPanel/'
 import OpenSeaDragon from '../OpenSeaDragon/'
 import classes from './OpenSeaDragonPage.scss'
 import buildOpenSeaDragonImage from './modules/buildOpenSeaDragonImage.js'
@@ -23,12 +24,14 @@ class OpenSeaDragonPage extends Component {
     document.removeEventListener('keydown', this.handleKeyPress)
   }
 
+  componentWillUpdate (nextProps, nextState) {
+    this._image = buildOpenSeaDragonImage(nextProps.data, nextProps.params)
+  }
+
   handleKeyPress (e) {
     // 27 is keycode for escape
     if (e.keyCode === 27) {
-      // perform the navigation
-      browserHistory.goBack()
-      // update the url
+      this.context.router.push(this._image.closeUri)
       browserHistory.push(this._image.closeUri)
     }
   }
@@ -36,14 +39,18 @@ class OpenSeaDragonPage extends Component {
   render () {
     return (
       <div className={classes.outer}>
-        <Toolbar>
+        <Toolbar style={style().toolbar}>
           <ToolbarGroup firstChild>
-            <ToolbarTitle text={this._image.label} />
+            <FontIcon className='material-icons' />
+            <ToolbarTitle
+              text={this._image.label}
+              style={style().toolbarTitle}
+              />
           </ToolbarGroup>
 
           <ToolbarGroup>
-            <Link to={this._image.closeUri}>
-              <FontIcon className='material-icons'>close</FontIcon>
+            <Link to={this._image.closeUri} style={style().toolbarTitle}>
+              <FontIcon className={classes.hoverSpin + ' material-icons'} style={{fontSize: '18px'}}>close</FontIcon>
             </Link>
           </ToolbarGroup>
         </Toolbar>
@@ -54,6 +61,15 @@ class OpenSeaDragonPage extends Component {
             image={this._image.imageUri}
           />
         </div>
+        <div className={classes.navigationOuterWrapper}>
+          <div className={classes.navigationInnerWrapper}>
+            <NavigationPanel
+              data={this.props.data}
+              params={this.props.params}
+              increment={1}
+            />
+          </div>
+        </div>
       </div>
      )
   }
@@ -62,6 +78,10 @@ class OpenSeaDragonPage extends Component {
 OpenSeaDragonPage.propTypes = {
   data: PropTypes.object.isRequired,
   params: PropTypes.object.isRequired
+}
+
+OpenSeaDragonPage.contextTypes = {
+  router: React.PropTypes.object.isRequired
 }
 
 export default OpenSeaDragonPage

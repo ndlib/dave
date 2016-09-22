@@ -2,13 +2,20 @@
 import React, { Component, PropTypes } from 'react'
 import { FontIcon } from 'material-ui'
 
+const style = {
+  fontSize: '36px'
+}
+
 class OpenSeaDragonButton extends Component {
 
   render () {
     return (
       <li>
         <a id={this.props.id}>
-          <FontIcon className='material-icons'>{this.props.icon}</FontIcon>
+          <FontIcon
+            className='material-icons'
+            style={style}
+          >{this.props.icon}</FontIcon>
         </a>
       </li>
      )
