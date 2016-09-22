@@ -1,7 +1,6 @@
 /*
 
   Return the default path
-  * :source = `encodeURIComponent(referring url)`
   * :manifest = currently manifest `id`
   * :sequence = `[ 0, 1, 2 ... ]` = current sequence
   * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
@@ -11,7 +10,7 @@
  */
 
 function targetPath (params) {
-  var path = '/' + params.source + '/' + params.manifest
+  var path = '/' + params.manifest
 
   if (params.sequence) {
     path += '/' + params.sequence
@@ -33,6 +32,10 @@ function targetPath (params) {
 
   if (params.detail) {
     path += '/detail'
+  }
+
+  if (window.location.search) {
+    path += window.location.search
   }
 
   return path

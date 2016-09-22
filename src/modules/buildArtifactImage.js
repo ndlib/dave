@@ -1,4 +1,5 @@
 // Build an object that contains all the data an ArtifactImage needs
+import targetPath from './targetPath.js'
 function buildArtifactImage (
   data,
   params,
@@ -13,12 +14,17 @@ function buildArtifactImage (
   const sequenceId = parseInt(sequence)
   const canvasObject = data.sequences[sequenceId].canvases[canvasId]
   const imageUri = canvasObject.images[0].resource['@id']
-  const objectLink = '/' + params.source +
-              '/' + params.manifest +
-              '/' + params.sequence +
-              '/' + params.view +
-              '/' + canvasId +
-              (zoom ? '/detail' : '')
+
+  let newParams = Object.assign({}, params)
+  newParams.sequence = sequenceId
+  newParams.canvasId = canvasId
+
+  if (zoom) {
+    newParams.detail = '/detail'
+  }
+
+  let objectLink = targetPath(newParams)
+
   return {
     canvasId: canvasId,
     alt: canvasObject.label,

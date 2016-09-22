@@ -77,7 +77,7 @@ export const HomeView = () => (
           <li>Current page of the manifest</li>
           <li>Whether or not it should be zoomable</li>
         </ul>
-        <p>An example link is here: <Link to='/x/manifest-1/0/2/0'>Demo</Link>.</p>
+        <p>An example link is here: <Link to='/manifest-1/0/2/0?ref=http://google.com'>Demo</Link>.</p>
       </div>
       <div className={classes.description}>
         <div className={classes.fancyIcon}>

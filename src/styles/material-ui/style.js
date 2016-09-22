@@ -16,6 +16,7 @@ function style () {
       fontSize: '16px',
       fontWeight: 'bold',
       lineHeight: '52px',
+      margin: '0 4px',
       verticalAlign: 'middle'
     },
 

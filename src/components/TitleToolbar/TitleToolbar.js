@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { FontIcon, Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
+import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
 import SequenceSelector from '../SequenceSelector/'
+import ReferralButton from '../ReferralButton/'
 import style from '../../styles/material-ui/style.js'
 
 class TitleToolbar extends Component {
@@ -8,7 +9,7 @@ class TitleToolbar extends Component {
     return (
       <Toolbar style={style().toolbar}>
         <ToolbarGroup firstChild>
-          <FontIcon className='material-icons'>keyboard_backspace</FontIcon>
+          <ReferralButton />
           <ToolbarTitle
             text={this.props.data.label}
             style={style().toolbarTitle}
