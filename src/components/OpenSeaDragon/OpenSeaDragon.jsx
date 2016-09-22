@@ -19,16 +19,24 @@ class OpenSeaDragon extends Component {
   componentDidMount () {
     this.initSeaDragon()
   }
+  componentWillReceiveProps (nextProps) {
+    this.initSeaDragon()
+  }
 
   initSeaDragon () {
     let self = this
-    let { id, image, type } = this.props
-    loadImage(image).then(data => {
+    loadImage(this.props.image).then(data => {
+      if (self.viewer) {
+        if (self.viewer.navigator) {
+          self.viewer.navigator.destroy()
+        }
+        self.viewer.destroy()
+      }
       self.viewer = OpenSeadragon({
-        id: id,
+        id: self.props.id,
         visibilityRatio: 1.0,
         constrainDuringPan: false,
-        defaultZoomLevel: 1,
+        defaultZoomLevel: 0,
         minZoomLevel: -2,
         maxZoomLevel: 10,
         zoomInButton: 'zoom-in',
@@ -38,21 +46,20 @@ class OpenSeaDragon extends Component {
         rotateRightButton: 'rotate-right',
         showRotationControl: true,
         fullPageButton: 'full-page',
-        showNavigator: this._mobile ? false : true,
+        showNavigator: self._mobile ? false : true,
         navigatorId: 'navigator',
         tileSources: {
-          type: type,
-          levels: [ { url: image, height: data.naturalHeight, width: data.naturalWidth } ]
+          type: self.props.type,
+          levels: [ { url: self.props.image, height: data.naturalHeight, width: data.naturalWidth } ]
         }
       })
     })
   }
 
   render () {
-    let { id } = this.props
     return (
       <div className={classes.ocd}>
-        <div className={classes.openseadragon} id={id}></div>
+        <div className={classes.openseadragon} id={this.props.id}></div>
         <OpenSeaDragonNavigator />
         <OpenSeaDragonControls />
       </div>

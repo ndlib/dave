@@ -8,12 +8,15 @@ import linkBuilder from '../../modules/linkBuilder.js'
 class NavigationPanel extends Component {
 
   render () {
+    let links
     // Do not render if we are in the grid display
-    if (this.props.params.view !== '1' && this.props.params.view !== '2') {
+    if (this.props.increment) {
+      links = linkBuilder(this.props.data, this.props.params, 1)
+    } else if (this.props.params.view !== '1' && this.props.params.view !== '2') {
       return null
+    } else {
+      links = linkBuilder(this.props.data, this.props.params)
     }
-
-    var links = linkBuilder(this.props.data, this.props.params)
 
     return (
       <ToolbarGroup>
@@ -47,7 +50,8 @@ class NavigationPanel extends Component {
 
 NavigationPanel.propTypes = {
   data: PropTypes.object.isRequired,
-  params: PropTypes.object.isRequired
+  params: PropTypes.object.isRequired,
+  increment: PropTypes.number
 }
 
 export default NavigationPanel

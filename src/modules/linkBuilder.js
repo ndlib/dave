@@ -1,7 +1,10 @@
 // Build first, last, next, previous links based on the current page (or
 // whatever data and params are passed)
-function linkBuilder (data, params) {
-  var increment = parseInt(params.view)
+function linkBuilder (data, params, increment) {
+  if (typeof increment === 'undefined') {
+    increment = parseInt(params.view)
+  }
+
   var firstPage = 0
   var lastPage = data.sequences[params.sequence].canvases.length - 1
 
