@@ -31,9 +31,7 @@ class OpenSeaDragonPage extends Component {
   handleKeyPress (e) {
     // 27 is keycode for escape
     if (e.keyCode === 27) {
-      // perform the navigation
-      browserHistory.goBack()
-      // update the url
+      this.context.router.push(this._image.closeUri)
       browserHistory.push(this._image.closeUri)
     }
   }
@@ -80,6 +78,10 @@ class OpenSeaDragonPage extends Component {
 OpenSeaDragonPage.propTypes = {
   data: PropTypes.object.isRequired,
   params: PropTypes.object.isRequired
+}
+
+OpenSeaDragonPage.contextTypes = {
+  router: React.PropTypes.object.isRequired
 }
 
 export default OpenSeaDragonPage
