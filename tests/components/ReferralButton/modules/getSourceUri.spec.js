@@ -5,8 +5,9 @@ describe('(Module) getSourceUri', () => {
     let validURLs = [
       'https://google.com',
       'https://www.nd.edu',
-      'http://nd.edu', // Fails
-      'https://osf.io' // Fails
+      'http://nd.edu',
+      'https://osf.io',
+      'https://collections.library.nd.edu/95e024022d/the-power-of-my-pen-to-describe/showcases/f657a53206/invading-canada?section=1175094da0'
     ]
     for (let _url of validURLs) {
       let _source = getSourceUri('?ref=' + _url)
