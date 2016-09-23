@@ -12,6 +12,7 @@
 .navigationOuterWrapper {
   position: absolute;
   bottom: 50%;
+  overflow-x: hidden;
 
   .leftNav, .rightNav {
     background-color: #f0f0e1;
@@ -20,7 +21,7 @@
     border-radius: 60px;
     line-height: 60px;
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
 
     &:hover {
       opacity: 1.0;
@@ -33,7 +34,7 @@
   }
 
   .rightNav {
-    right: calc(-30px - 100vw);
+    right: -30px;
     text-align: left;
   }
 }
