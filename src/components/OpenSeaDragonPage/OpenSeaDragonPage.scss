@@ -15,12 +15,12 @@
 
   .leftNav, .rightNav {
     background-color: #f0f0e1;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    line-height: 60px;
     opacity: 0.5;
     position: absolute;
-    text-align: center;
 
     &:hover {
       opacity: 1.0;
@@ -28,10 +28,12 @@
   }
 
   .leftNav {
-    left: 10px;
+    left: -30px;
+    text-align: right;
   }
 
   .rightNav {
-    right: calc(10px - 100vw);
+    right: calc(-30px - 100vw);
+    text-align: left;
   }
 }
