@@ -1,32 +1,27 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
-import { FontIcon, ToolbarGroup } from 'material-ui'
-import { Link } from 'react-router'
-import setView from './modules/setView.js'
-import style from '../../styles/material-ui/style.js'
+import { ToolbarGroup } from 'material-ui'
+import ViewSelectionButton from '../ViewSelectionButton/'
 
 class ViewSelectionPanel extends Component {
   render () {
     return (
       <ToolbarGroup firstChild>
-        <Link to={setView(this.props.params, '1')}>
-          <FontIcon
-            className='material-icons'
-            style={style().viewIcons}
-          >looks_one</FontIcon>
-        </Link>
-        <Link to={setView(this.props.params, '2')}>
-          <FontIcon
-            className='material-icons'
-            style={style().viewIcons}
-          >looks_two</FontIcon>
-        </Link>
-        <Link to={setView(this.props.params, 'g')}>
-          <FontIcon
-            className='material-icons'
-            style={style().viewIcons}
-          >view_module</FontIcon>
-        </Link>
+        <ViewSelectionButton
+          params={this.props.params}
+          icon='looks_one'
+          view='1'
+        />
+        <ViewSelectionButton
+          params={this.props.params}
+          icon='looks_two'
+          view='2'
+        />
+        <ViewSelectionButton
+          params={this.props.params}
+          icon='view_module'
+          view='g'
+        />
       </ToolbarGroup>
      )
   }
