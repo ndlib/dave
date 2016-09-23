@@ -1,7 +1,7 @@
 import React from 'react'
 import OpenSeaDragonPage from 'components/OpenSeaDragonPage'
 import OpenSeaDragon from 'components/OpenSeaDragon'
-import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui'
+import OpenSeaDragonToolbar from 'components/OpenSeaDragonToolbar'
 import { shallow } from 'enzyme'
 
 describe('(View) OpenSeaDragonPage', () => {
@@ -26,8 +26,7 @@ describe('(View) OpenSeaDragonPage', () => {
     expect(_component.find(OpenSeaDragon)).to.exist
   })
 
-  it('Renders a <Toolbar/> with a <ToolbarTitle/>', () => {
-    expect(_component.find(Toolbar)).to.exist
-    expect(_component.find(ToolbarTitle)).to.exist
+  it('Renders a <OpenSeaDragonToolbar/> component', () => {
+    expect(_component.find(OpenSeaDragonToolbar)).to.exist
   })
 })
