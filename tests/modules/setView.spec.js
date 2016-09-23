@@ -1,4 +1,4 @@
-import setView from 'components/ViewSelectionPanel/modules/setView.js'
+import setView from 'modules/setView.js'
 
 describe('(Module) setView', () => {
 

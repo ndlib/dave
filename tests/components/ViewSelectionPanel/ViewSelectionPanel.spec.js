@@ -1,5 +1,6 @@
 import React from 'react'
 import ViewSelectionPanel from 'components/ViewSelectionPanel'
+import ViewSelectionButton from 'components/ViewSelectionButton'
 import { ToolbarGroup, FontIcon } from 'material-ui'
 import { Link } from 'react-router'
 import { shallow } from 'enzyme'
@@ -23,11 +24,8 @@ describe('(View) ViewSelectionPanel', () => {
     expect(_component.find(ToolbarGroup)).to.exist
   })
 
-  it('Renders 3 <Link/> components', () => {
-    expect(_component.find('Link')).to.have.lengthOf(3);
+  it('Renders 3 <ViewSelectionButton/> components', () => {
+    expect(_component.find('ViewSelectionButton')).to.have.lengthOf(3);
   })
 
-  it('Renders 3 <FontIcon/> components', () => {
-    expect(_component.find('FontIcon')).to.have.lengthOf(3);
-  })
 })
