@@ -1,5 +1,4 @@
 import findNumberOfColumns from 'modules/findNumberOfColumns'
-import ArgumentError from 'errors/ArgumentError'
 
 describe('(Module) findNumberOfColumns', () => {
   it('should use the default number of columns on small viewports', () => {

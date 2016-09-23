@@ -1,5 +1,3 @@
-import ArgumentError from '../errors/ArgumentError.js'
-
 // Build an object that contains all the data an ArtifactImage needs
 import targetPath from './targetPath.js'
 function buildArtifactImage (
