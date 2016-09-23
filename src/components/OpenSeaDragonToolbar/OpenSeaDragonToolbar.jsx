@@ -36,7 +36,6 @@ class OpenSeaDragonToolbar extends Component {
             style={style().toolbarTitle}
             />
         </ToolbarGroup>
-
         <ToolbarGroup>
           <Link to={this.props.image.closeUri} style={style().toolbarTitle}>
             <FontIcon className={classes.hoverSpin + ' material-icons'} style={{fontSize: '18px'}}>close</FontIcon>

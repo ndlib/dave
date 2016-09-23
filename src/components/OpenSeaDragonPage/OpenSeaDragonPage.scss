@@ -9,41 +9,29 @@
   height: calc(100% - 56px);
 }
 
-.hoverSpin {
-  opacity: 0.6;
-  &:hover {
-    opacity: 1.0;
-    transform: rotate( -90deg );
-    -moz-transform: rotate( -90deg );
-    -ms-transform: rotate( -90deg );
-    -o-transform: rotate( -90deg );
-    -webkit-transform: rotate( -90deg );
-
-    transition: transform 750ms ease;
-    -moz-transition: -moz-transform 750ms ease;
-    -ms-transition: -ms-transform 750ms ease;
-    -o-transition: -o-transform 750ms ease;
-    -webkit-transition: -webkit-transform 750ms ease;
-  }
-}
-
 .navigationOuterWrapper {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  text-align: center;
-  margin: 0 auto;
-  opacity: 0.2;
+  position: absolute;
+  bottom: 50%;
 
-  &:hover {
-    opacity: 1.0;
+  .leftNav, .rightNav {
+    background-color: #f0f0e1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+
+    &:hover {
+      opacity: 1.0;
+    }
   }
-}
 
-.navigationInnerWrapper {
-  background-color: #f0f0e1;
-  border: 2px solid #656557;
-  border-bottom: none;
-  display: inline-block;
-  width: auto;
+  .leftNav {
+    left: 10px;
+  }
+
+  .rightNav {
+    right: calc(10px - 100vw);
+  }
 }

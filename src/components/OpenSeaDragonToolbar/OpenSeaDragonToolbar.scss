@@ -1,0 +1,17 @@
+.hoverSpin {
+  opacity: 0.6;
+  &:hover {
+    opacity: 1.0;
+    transform: rotate( -90deg );
+    -moz-transform: rotate( -90deg );
+    -ms-transform: rotate( -90deg );
+    -o-transform: rotate( -90deg );
+    -webkit-transform: rotate( -90deg );
+
+    transition: transform 750ms ease;
+    -moz-transition: -moz-transform 750ms ease;
+    -ms-transition: -ms-transform 750ms ease;
+    -o-transition: -o-transform 750ms ease;
+    -webkit-transition: -webkit-transform 750ms ease;
+  }
+}
