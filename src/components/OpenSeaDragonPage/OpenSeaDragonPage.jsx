@@ -41,7 +41,6 @@ class OpenSeaDragonPage extends Component {
       <div className={classes.outer}>
         <Toolbar style={style().toolbar}>
           <ToolbarGroup firstChild>
-            <FontIcon className='material-icons' />
             <ToolbarTitle
               text={this._image.label}
               style={style().toolbarTitle}
