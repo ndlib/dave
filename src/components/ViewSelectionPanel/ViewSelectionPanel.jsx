@@ -6,7 +6,10 @@ import ViewSelectionButton from '../ViewSelectionButton/'
 class ViewSelectionPanel extends Component {
   render () {
     return (
-      <ToolbarGroup firstChild>
+      <ToolbarGroup
+        firstChild
+        style={{position: 'absolute'}}
+      >
         <ViewSelectionButton
           params={this.props.params}
           icon='looks_one'
