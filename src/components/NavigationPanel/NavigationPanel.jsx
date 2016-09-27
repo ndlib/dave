@@ -19,7 +19,7 @@ class NavigationPanel extends Component {
     }
 
     return (
-      <ToolbarGroup>
+      <ToolbarGroup style={{margin: '0 auto'}}>
         <NavigationButton
           params={this.props.params}
           target={links.firstPage}

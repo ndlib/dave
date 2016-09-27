@@ -25,6 +25,14 @@ describe('(View) NavigationPanelCurrent', () => {
   })
 
   it('Renders human readable page X of Y', () => {
-    expect(_component.text()).to.equal('4 / 6')
+    expect(_component.text()).to.contain('/ 6')
+  })
+
+  it('Renders a <select/> component.', () => {
+    expect(_component.find('select')).to.exist
+  })
+
+  it('Renders 6 <option/> components', () => {
+    expect(_component.find('option')).to.have.length(6)
   })
 })
