@@ -1,6 +1,5 @@
 import React from 'react'
 import NavigationPanelCurrent from 'components/NavigationPanelCurrent'
-import { MenuItem, SelectField } from 'material-ui'
 import { shallow } from 'enzyme'
 
 describe('(View) NavigationPanelCurrent', () => {
@@ -29,11 +28,11 @@ describe('(View) NavigationPanelCurrent', () => {
     expect(_component.text()).to.contain('/ 6')
   })
 
-  it('Renders a <SelectField/> component.', () => {
-    expect(_component.find(SelectField)).to.exist
+  it('Renders a <select/> component.', () => {
+    expect(_component.find('select')).to.exist
   })
 
-  it('Renders 6 <MenuItem/> components', () => {
-    expect(_component.find(MenuItem)).to.have.length(6)
+  it('Renders 6 <option/> components', () => {
+    expect(_component.find('option')).to.have.length(6)
   })
 })

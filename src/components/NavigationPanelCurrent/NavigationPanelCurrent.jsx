@@ -1,9 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
-import { SelectField } from 'material-ui'
 import { browserHistory } from 'react-router'
 import style from '../../styles/material-ui/style.js'
-import selectFieldStyle from './modules/selectFieldStyle.js'
 import setPage from '../../modules/setPage.js'
 import options from './modules/options.js'
 
@@ -14,7 +12,8 @@ class NavigationPanelCurrent extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange (event, value) {
+  handleChange () {
+    let value = this.refs.select.value
     if (Number.isInteger(parseInt(value))) {
       let uri = setPage(this.props.params, value)
       this.context.router.push(uri)
@@ -23,19 +22,14 @@ class NavigationPanelCurrent extends Component {
   }
 
   render () {
-    let currentDisplayPage = parseInt(this.props.params.canvasId) + 1
-    let boxWidth = currentDisplayPage.toString().length * 24
+    let currentDisplayPage = parseInt(this.props.params.canvasId)
     return (
       <div style={style().toolbarTitle}>
-        <SelectField
-          hintText='Select a page...'
+        <select
+          ref='select'
           value={currentDisplayPage}
           onChange={this.handleChange}
-          iconStyle={selectFieldStyle().iconStyle}
-          labelStyle={selectFieldStyle().labelStyle}
-          style={selectFieldStyle(boxWidth).style}
-          underlineStyle={selectFieldStyle().underlineStyle}
-        >{options(this._length)}</SelectField> / {this._length}</div>
+        >{options(this._length)}</select> / {this._length}</div>
     )
   }
 }
