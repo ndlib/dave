@@ -12,12 +12,12 @@ class OpenSeaDragonPage extends Component {
   constructor (props) {
     super(props)
     this._image = buildOpenSeaDragonImage(this.props.data, this.props.params)
-    this._links = linkBuilder(this.props.data, this.props.params)
+    this._links = linkBuilder(this.props.data, this.props.params, 1)
   }
 
   componentWillUpdate (nextProps, nextState) {
     this._image = buildOpenSeaDragonImage(nextProps.data, nextProps.params)
-    this._links = linkBuilder(nextProps.data, nextProps.params)
+    this._links = linkBuilder(nextProps.data, nextProps.params, 1)
   }
 
   render () {
