@@ -1,11 +1,22 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
+import DocumentMetadata from '../DocumentMetadata/'
+import CanvasMetadata from '../CanvasMetadata/'
 import classes from './Metadata.scss'
 
 class Metadata extends Component {
   render () {
     return (
-      <div className={classes.content}>Metadata</div>
+      <div className={classes.content}>
+        <CanvasMetadata
+          data={this.props.data}
+          params={this.props.params}
+        />
+        <DocumentMetadata
+          data={this.props.data}
+          params={this.props.params}
+        />
+      </div>
     )
   }
 }
