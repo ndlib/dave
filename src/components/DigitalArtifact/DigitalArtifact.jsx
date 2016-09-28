@@ -11,11 +11,11 @@ class DigitalArtifact extends Component {
 
   render () {
     return (
-      <SwipeArea
-        data={this.props.data}
-        params={this.props.params}
-      >
-        <div className={classes.outer}>
+      <div className={classes.outer}>
+        <SwipeArea
+          data={this.props.data}
+          params={this.props.params}
+        >
           <TitleToolbar
             data={this.props.data}
             params={this.props.params}
@@ -34,9 +34,9 @@ class DigitalArtifact extends Component {
               params={this.props.params}
             />
           </div>
-        </div>
+        </SwipeArea>
+      </div>
 
-      </SwipeArea>
      )
   }
 }
