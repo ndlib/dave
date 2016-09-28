@@ -25,11 +25,11 @@ describe('(View) CanvasMetadata', () => {
   })
 
   it('Renders a title', () => {
-    expect(_component.find('h2')).to.exist
+    expect(_component.find('h2')).to.have.length(1)
   })
 
   it('Renders a <KeyPairMetadata/> component', () => {
-    expect(_component.find(KeyPairMetadata)).to.exist
+    expect(_component.find(KeyPairMetadata)).to.have.length(1)
   })
 
   it('Returns null on grid view', () => {

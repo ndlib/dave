@@ -4,21 +4,17 @@ import ArtifactImage from '../ArtifactImage/'
 import buildArtifactImage from '../../modules/buildArtifactImage.js'
 import classes from './TwoUpView.scss'
 import OneUpView from '../OneUpView/'
-
+import canvasIdIsOdd from '../../modules/canvasIdIsOdd.js'
 class TwoUpView extends Component {
-
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     // If we are on the first page or the last page of an even numbered
     // sequence return the single page view instead.
-    var canvasId = parseInt(this.props.params.canvasId)
-    var lastcanvasId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
-    var pageIsEven = (canvasId % 2 === 1)
-
-    if (canvasId === 0 || ((canvasId === lastcanvasId) && pageIsEven)) {
+    // We use canvasIdIsOdd because canvasId starts at 0
+    let canvasId = parseInt(this.props.params.canvasId)
+    let lastcanvasId = this.props.data.sequences[this.props.params.sequence].canvases.length - 1
+    let isOdd = canvasIdIsOdd(canvasId)
+    if (canvasId === 0 || ((canvasId === lastcanvasId) && isOdd)) {
       return (
         <OneUpView
           data={this.props.data}
@@ -30,11 +26,10 @@ class TwoUpView extends Component {
     var imageObject1
     var imageObject2
 
-    if (!pageIsEven) {
+    if (!isOdd) {
       imageObject1 = buildArtifactImage(this.props.data, this.props.params, -1)
       imageObject2 = buildArtifactImage(this.props.data, this.props.params)
-    }
-    else {
+    } else {
       imageObject1 = buildArtifactImage(this.props.data, this.props.params)
       imageObject2 = buildArtifactImage(this.props.data, this.props.params, 1)
     }
@@ -47,20 +42,20 @@ class TwoUpView extends Component {
             showTitle
           />
         </div>
-      <div className={classes.splitDisplay}>
+        <div className={classes.splitDisplay}>
           <ArtifactImage
             imageObject={imageObject2}
             showTitle
           />
         </div>
       </div>
-     )
+    )
   }
 }
 
 TwoUpView.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  params: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  params: PropTypes.object.isRequired
 }
 
 export default TwoUpView
