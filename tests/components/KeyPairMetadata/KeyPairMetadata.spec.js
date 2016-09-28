@@ -30,6 +30,6 @@ describe('(View) KeyPairMetadata', () => {
     _metadata = null
     _component = shallow(<KeyPairMetadata metadata={_metadata}/>)
     expect(_component.find('dl')).to.not.exist
-    expect(_component)to.be.an('undefined')
+    expect(_component.returnValue).to.be.an('undefined')
   })
 })
