@@ -1,6 +1,7 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import buildKeyPairs from '../../modules/buildKeyPairs.js'
+import classes from './KeyPairMetadata.scss'
 
 class KeyPairMetadata extends Component {
 
@@ -8,7 +9,7 @@ class KeyPairMetadata extends Component {
     if (this.props.metadata) {
       let pairs = buildKeyPairs(this.props.metadata)
       return (
-        <dl>
+        <dl className={classes.metadata}>
           {pairs}
         </dl>
       )

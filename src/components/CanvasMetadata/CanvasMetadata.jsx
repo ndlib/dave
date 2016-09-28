@@ -7,14 +7,18 @@ import additionalMetadata from '../../modules/additionalMetadata.js'
 class CanvasMetadata extends Component {
 
   render () {
-    let data = this.props.data.sequences[this.props.params.sequence].canvases[this.props.params.canvasId]
-    let metadata = concatMetadata(data.metadata, additionalMetadata(data))
-    return (
-      <div>
-        <h2>Metadata</h2>
-        <KeyPairMetadata metadata={metadata} />
-      </div>
-    )
+    if (this.props.params.view !== 'g') {
+      let data = this.props.data.sequences[this.props.params.sequence].canvases[this.props.params.canvasId]
+      let metadata = concatMetadata(data.metadata, additionalMetadata(data))
+      return (
+        <div>
+          <h2>Metadata</h2>
+          <KeyPairMetadata metadata={metadata} />
+        </div>
+      )
+    } else {
+      return null
+    }
   }
 }
 

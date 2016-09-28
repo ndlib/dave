@@ -11,8 +11,9 @@ describe('(View) CanvasMetadata', () => {
     label: 'Not technically in metadata'
   }
   let _params = {
-    sequence: '0',  
-    canvasId: '0'
+    sequence: '0',
+    canvasId: '0',
+    view: '1'
   }
   beforeEach(() => {
     _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
@@ -29,6 +30,16 @@ describe('(View) CanvasMetadata', () => {
 
   it('Renders a <KeyPairMetadata/> component', () => {
     expect(_component.find(KeyPairMetadata)).to.exist
+  })
+
+  it('Returns null on grid view', () => {
+    _params = {
+      sequence: '0',
+      canvasId: '0',
+      view: 'g'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.html()).to.equal(null)
   })
 
 })
