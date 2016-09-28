@@ -25,4 +25,11 @@ describe('(View) KeyPairMetadata', () => {
     expect(_component.find('dt')).to.have.length(3)
     expect(_component.find('dd')).to.have.length(4)
   })
+
+  it('Returns null when metadata is null', () => {
+    _metadata = null
+    _component = shallow(<KeyPairMetadata metadata={_metadata}/>)
+    expect(_component.find('dl')).to.not.exist
+    expect(_component)to.be.an('undefined')
+  })
 })
