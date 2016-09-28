@@ -8,5 +8,9 @@
   background-color: #444;
   height: 90vh;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
 }
