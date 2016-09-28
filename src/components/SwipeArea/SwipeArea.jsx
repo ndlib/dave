@@ -4,6 +4,7 @@ import { browserHistory } from 'react-router'
 import Swipeable from 'react-swipeable'
 import setPage from '../../modules/setPage.js'
 import linkBuilder from '../../modules/linkBuilder.js'
+import classes from './SwipeArea.scss'
 
 class SwipeArea extends Component {
 
@@ -67,6 +68,7 @@ class SwipeArea extends Component {
       <Swipeable
         onSwipedRight={this.swipeRight}
         onSwipedLeft={this.swipeLeft}
+        className={this.props.params.view !== 'g' ? 'swipeArea' : classes.gridStyle}
       >
         {this.props.children}
       </Swipeable>

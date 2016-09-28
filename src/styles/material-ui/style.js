@@ -9,7 +9,8 @@ function style () {
     toolbar: {
       backgroundColor: background1,
       borderBottom: '6px solid' + primary1,
-      borderTop: '2px solid' + primary1
+      borderTop: '2px solid' + primary1,
+      width: '100vw'
     },
     toolbarTitle: {
       color: primary1,

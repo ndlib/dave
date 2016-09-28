@@ -11,15 +11,15 @@ class DigitalArtifact extends Component {
 
   render () {
     return (
-      <div className={classes.outer}>
+      <div className={this.props.params.view !== 'g' ? classes.outer : classes.outerGridStyle}>
+        <TitleToolbar
+          data={this.props.data}
+          params={this.props.params}
+        />
         <SwipeArea
           data={this.props.data}
           params={this.props.params}
         >
-          <TitleToolbar
-            data={this.props.data}
-            params={this.props.params}
-          />
           <CurrentView
             data={this.props.data}
             params={this.props.params}

@@ -7,7 +7,7 @@ import classes from './Metadata.scss'
 class Metadata extends Component {
   render () {
     return (
-      <div className={classes.wrapper}>
+      <div className={this.props.params.view !== 'g' ? classes.wrapper : classes.wrapperGridStyle}>
         <div className={classes.content}>
           <CanvasMetadata
             data={this.props.data}
