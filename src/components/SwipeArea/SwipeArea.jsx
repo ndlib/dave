@@ -68,7 +68,6 @@ class SwipeArea extends Component {
       <Swipeable
         onSwipedRight={this.swipeRight}
         onSwipedLeft={this.swipeLeft}
-        className={this.props.params.view !== 'g' ? 'swipeArea' : classes.gridStyle}
       >
         {this.props.children}
       </Swipeable>
