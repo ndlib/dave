@@ -6,7 +6,7 @@ import { shallow } from 'enzyme'
 describe('(View) CanvasMetadata', () => {
   let _component
   let _data = {
-    sequences: [{ canvases: [{}]}],
+    sequences: [{ canvases: [{},{},{},{},{}]}],
     metadata: [{label: 'Label', value: 'Value'}, {}],
     label: 'Not technically in metadata'
   }
@@ -40,6 +40,60 @@ describe('(View) CanvasMetadata', () => {
     }
     _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
     expect(_component.html()).to.equal(null)
+  })
+
+  it('Renders 1 <KeyPairMetadata/> component on two up page for canvasID = 0', () => {
+    _params = {
+      sequence: '0',
+      canvasId: '0',
+      view: '2'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.find(KeyPairMetadata)).to.have.length(1)
+  })
+
+  it('Renders 2 <KeyPairMetadata/> components on two up page', () => {
+    _params = {
+      sequence: '0',
+      canvasId: '1',
+      view: '2'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.find(KeyPairMetadata)).to.have.length(2)
+  })
+
+  it('Renders 2 <KeyPairMetadata/> components on two up page', () => {
+    _params = {
+      sequence: '0',
+      canvasId: '2',
+      view: '2'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.find(KeyPairMetadata)).to.have.length(2)
+  })
+
+  it('Renders 2 <KeyPairMetadata/> components on two up page for last canvasID with odd length', () => {
+    _params = {
+      sequence: '0',
+      canvasId: '4',
+      view: '2'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.find(KeyPairMetadata)).to.have.length(2)
+  })
+  it('Renders 1 <KeyPairMetadata/> component on two up page for last canvasID with even length', () => {
+    _data = {
+      sequences: [{ canvases: [{},{},{},{},{},{}]}],
+      metadata: [{label: 'Label', value: 'Value'}, {}],
+      label: 'Not technically in metadata'
+    }
+    _params = {
+      sequence: '0',
+      canvasId: '5',
+      view: '2'
+    }
+    _component = shallow(<CanvasMetadata data={_data} params={_params}/>)
+    expect(_component.find(KeyPairMetadata)).to.have.length(1)
   })
 
 })
