@@ -17,7 +17,7 @@ class SpringScrollbars extends Component {
 
   componentDidMount () {
     this.springSystem = new SpringSystem()
-    this.spring = this.springSystem.createSpring()
+    this.spring = this.springSystem.createSpring(200, 15)
     this.spring.addListener({ onSpringUpdate: this.handleSpringUpdate })
   }
 
