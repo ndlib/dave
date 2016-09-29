@@ -2,7 +2,7 @@
 import React, { Component, PropTypes } from 'react'
 import { FontIcon } from 'material-ui'
 import MobileDetect from 'mobile-detect'
-import SpringScrollbars from 'react-custom-scrollbars'
+import SpringScrollbars from '../SpringScrollbars'
 import drawerImages from './modules/drawerImages.js'
 import classes from './Drawer.scss'
 import style from './modules/style.js'
