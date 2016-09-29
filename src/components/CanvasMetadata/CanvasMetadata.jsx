@@ -9,8 +9,12 @@ class CanvasMetadata extends Component {
 
   render () {
     let params = this.props.params
+    // return null for gridbiew otherwise show metadata for current canvasId(s)
     if (params.view !== 'g') {
       let isOdd = canvasIdIsOdd(params.canvasId)
+      // If we're in TwoUpView we need to display 2 sets of metadata, unless
+      // we are looking at the first canvasId OR the last canvasId when there
+      // is an even number of canvases
       if (
         (params.view === '2') &&
         (params.canvasId !== '0') &&
@@ -20,13 +24,16 @@ class CanvasMetadata extends Component {
         let data1, data2
         let metadata1, metadata2
 
+        // If we're looking at an even canvasId display it and the one before
         if (!isOdd) {
           data1 = data.sequences[params.sequence].canvases[parseInt(params.canvasId) - 1]
           data2 = data.sequences[params.sequence].canvases[params.canvasId]
+        // If we're looking at an odd canvasId display it and the one after
         } else {
           data1 = data.sequences[params.sequence].canvases[params.canvasId]
           data2 = data.sequences[params.sequence].canvases[parseInt(params.canvasId) + 1]
         }
+        // Build two metadata displays
         metadata1 = concatMetadata(data1.metadata, additionalMetadata(data1))
         metadata2 = concatMetadata(data2.metadata, additionalMetadata(data2))
         return (
@@ -37,6 +44,9 @@ class CanvasMetadata extends Component {
             <KeyPairMetadata metadata={metadata2} />
           </div>
         )
+      // If we're looking at the OneUpView, or one of the special cases for
+      // TwoUpView mentioned above, we display only the current canvasId
+      // metadata.
       } else {
         let data = this.props.data.sequences[params.sequence].canvases[params.canvasId]
         let metadata = concatMetadata(data.metadata, additionalMetadata(data))
