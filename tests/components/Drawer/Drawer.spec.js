@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontIcon } from 'material-ui'
 import Drawer from 'components/Drawer'
-import SpringScrollbars from 'react-custom-scrollbars'
+import SpringScrollbars from 'components/SpringScrollbars'
 import { shallow } from 'enzyme'
 
 describe('(View) Drawer', () => {
