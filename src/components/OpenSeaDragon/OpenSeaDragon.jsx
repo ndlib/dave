@@ -15,17 +15,31 @@ class OpenSeaDragon extends Component {
     let _mobileDetect = new MobileDetect(navigator.userAgent)
     // mobile() will return null for desktop browsers or a string for mobile devices
     this._mobile = _mobileDetect.mobile()
-    this.state = {loading: true}
+    this.state = {
+      loading: true,
+      zoom: 0
+    }
+    this.viewer = null
+    this.resetViewer = this.resetViewer.bind(this)
   }
 
   componentDidMount () {
-    this.initSeaDragon(this.props.image)
-  }
-  componentWillReceiveProps (nextProps) {
-    this.initSeaDragon(nextProps.image)
+    this.viewer = this.initSeaDragon(this.props.image, this.state.zoom)
   }
 
-  initSeaDragon (image) {
+  componentWillReceiveProps (nextProps) {
+    let zoom = this.viewer.viewport.getZoom()
+    this.viewer = this.initSeaDragon(nextProps.image, zoom)
+  }
+
+  resetViewer () {
+    // TODO
+    // pass this method down and make a custom button
+
+    this.viewer = this.initSeaDragon(this.props.image, 0)
+  }
+
+  initSeaDragon (image, zoom) {
     let self = this
     loadImage(image).then(data => {
       if (self.viewer) {
@@ -35,13 +49,14 @@ class OpenSeaDragon extends Component {
         id: self.props.id,
         visibilityRatio: 1.0,
         constrainDuringPan: false,
-        defaultZoomLevel: 0,
+        defaultZoomLevel: zoom,
         showFullPageControl: false,
-        minZoomLevel: -2,
+        minZoomLevel: 0.02,
         maxZoomLevel: 10,
         zoomInButton: 'zoom-in',
         zoomOutButton: 'zoom-out',
-        homeButton: 'reset',
+        showHomeControl: false,
+        // homeButton: 'reset',
         showNavigator: false,
         navigatorId: 'navigator',
         tileSources: {
@@ -57,9 +72,13 @@ class OpenSeaDragon extends Component {
         options.rotateLeftButton = 'rotate-left'
         options.rotateRightButton = 'rotate-right'
       }
-      self.setState({loading: false})
+      self.setState({
+        loading: false,
+        zoom: zoom
+      })
       self.viewer = OpenSeadragon(options)
     })
+    return self.viewer
   }
 
   render () {
@@ -70,7 +89,7 @@ class OpenSeaDragon extends Component {
       <div className={classes.ocd}>
         <div className={classes.openseadragon} id={this.props.id}></div>
         <OpenSeaDragonNavigator />
-        <OpenSeaDragonControls />
+        <OpenSeaDragonControls reset={this.resetViewer} />
       </div>
     )
   }
