@@ -1,7 +1,8 @@
 'use strict'
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import MobileDetect from 'mobile-detect'
 import OpenSeaDragonButton from '../OpenSeaDragonButton/'
+import OpenSeaDragonResetButton from '../OpenSeaDragonResetButton/'
 import classes from './OpenSeaDragonControls.scss'
 
 class OpenSeaDragonControls extends Component {
@@ -32,11 +33,15 @@ class OpenSeaDragonControls extends Component {
       <ul className={classes.controls}>
         <OpenSeaDragonButton id='zoom-in' icon='zoom_in' />
         <OpenSeaDragonButton id='zoom-out' icon='zoom_out' />
-        <OpenSeaDragonButton id='reset' icon='find_replace' />
+        <OpenSeaDragonResetButton reset={this.props.reset} />
         {this.desktopOnlyButtons()}
       </ul>
      )
   }
+}
+
+OpenSeaDragonControls.propTypes = {
+  reset: PropTypes.func
 }
 
 export default OpenSeaDragonControls
