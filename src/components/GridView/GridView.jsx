@@ -11,7 +11,7 @@ class GridView extends Component {
   }
 
   componentWillMount () {
-    const currentSequence = this.props.params.sequence * 1
+    const currentSequence = parseInt(this.props.params.sequence)
     this.setState({canvasCount: this.props.data.sequences[currentSequence].canvases.length})
     this.updateWindowWidth()
   }
@@ -27,6 +27,11 @@ class GridView extends Component {
 
   componentWillUnmount () {
     window.removeEventListener('resize', this.updateWindowWidth)
+  }
+
+  componentWillReceiveProps (nextProps) {
+    const currentSequence = parseInt(nextProps.params.sequence)
+    this.setState({canvasCount: nextProps.data.sequences[currentSequence].canvases.length})
   }
 
   updateWindowWidth (e) {
