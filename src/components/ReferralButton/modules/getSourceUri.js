@@ -14,7 +14,7 @@ function getSourceUri (queryString) {
       // http://stackoverflow.com/questions/8765453/regex-expression-for-a-url-whitelist
       for (let i = 0; i < whitelist.length; i++) {
         //
-        let regex = '^([a-z|A-Z])+?:\/\/([^/]+[.])?(' + whitelist[i] + ')?(\/.*)?$'
+        let regex = '^([a-z|A-Z])+?://([^/]+[.])?(' + whitelist[i] + ')?(/.*)?$'
         if (sourceCandidate.match(regex)) {
           source = sourceCandidate
           break

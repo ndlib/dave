@@ -21,7 +21,8 @@ describe('(Module) getSourceUri', () => {
       'https://www.nd.edu',
       'http://nd.edu',
       'https://osf.io',
-      'http://library.nd.edu.co'
+      'http://library.nd.edu.co',
+      'https:library.nd.edu'
     ]
 
     for (let _url of invalidURLs) {
