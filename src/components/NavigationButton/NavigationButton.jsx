@@ -7,13 +7,8 @@ import style from '../../styles/material-ui/style.js'
 
 class NavigationButton extends Component {
 
-  constructor (props) {
-    super(props)
-    this._target = setPage(this.props.params, this.props.target)
-  }
-
   render () {
-    this._target = setPage(this.props.params, this.props.target)
+    this._target = setPage(this.props.params, this.props.data, this.props.target)
     return (
       <Link to={this._target}>
         <FontIcon
@@ -26,6 +21,7 @@ class NavigationButton extends Component {
 }
 
 NavigationButton.propTypes = {
+  data: PropTypes.object.isRequired,
   params: PropTypes.object.isRequired,
   target: PropTypes.oneOfType([
     PropTypes.number,

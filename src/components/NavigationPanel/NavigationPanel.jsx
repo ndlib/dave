@@ -21,11 +21,13 @@ class NavigationPanel extends Component {
     return (
       <ToolbarGroup style={{margin: '0 auto'}}>
         <NavigationButton
+          data={this.props.data}
           params={this.props.params}
           target={links.firstPage}
           icon={'first_page'}
         />
         <NavigationButton
+          data={this.props.data}
           params={this.props.params}
           target={links.prevPage}
           icon={'navigate_before'}
@@ -35,10 +37,12 @@ class NavigationPanel extends Component {
           params={this.props.params}
         />
         <NavigationButton
+          data={this.props.data}
           params={this.props.params}
           target={links.nextPage}
           icon={'navigate_next'}
         /><NavigationButton
+          data={this.props.data}
           params={this.props.params}
           target={links.lastPage}
           icon={'last_page'}

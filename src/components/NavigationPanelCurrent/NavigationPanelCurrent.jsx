@@ -15,7 +15,7 @@ class NavigationPanelCurrent extends Component {
   handleChange () {
     let value = this.refs.select.value
     if (Number.isInteger(parseInt(value))) {
-      let uri = setPage(this.props.params, value)
+      let uri = setPage(this.props.params, this.props.data, value)
       this.context.router.push(uri)
       browserHistory.push(uri)
     }
