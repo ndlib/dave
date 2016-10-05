@@ -5,7 +5,14 @@ function sequenceMenu (data) {
   let sequences = data.sequences
   let menu = []
   for (var i = 0; i < sequences.length; i++) {
-    menu.push(<MenuItem value={i} primaryText={sequences[i].label} key={i} />)
+    menu.push(
+      <MenuItem
+        value={i}
+        primaryText={sequences[i].label}
+        key={i}
+        innerDivStyle={{background: 'white'}}
+      />
+    )
   }
   return menu
 }
