@@ -6,6 +6,12 @@
 .splitDisplay {
   display: inline-block;
   height: 100%;
+  margin: 0 5px;
   overflow: hidden;
-  width: 50%;
+  width: calc(50% - 10px);
+}
+
+.splitDisplayInner {
+  width: 100%;
+  height: 100%;
 }

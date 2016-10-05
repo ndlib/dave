@@ -37,16 +37,20 @@ class TwoUpView extends Component {
     return (
       <div className={classes.outer}>
         <div className={classes.splitDisplay}>
-          <ArtifactImage
-            imageObject={imageObject1}
-            showTitle
-          />
+          <div className={classes.splitDisplayInner}>
+            <ArtifactImage
+              imageObject={imageObject1}
+              showTitle
+            />
+          </div>
         </div>
         <div className={classes.splitDisplay}>
-          <ArtifactImage
-            imageObject={imageObject2}
-            showTitle
-          />
+          <div className={classes.splitDisplayInner}>
+            <ArtifactImage
+              imageObject={imageObject2}
+              showTitle
+            />
+          </div>
         </div>
       </div>
     )
