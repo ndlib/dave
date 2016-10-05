@@ -9,12 +9,13 @@ class NavigationButton extends Component {
 
   render () {
     this._target = setPage(this.props.params, this.props.data, this.props.target)
+    let targetIsSame = (this._target === window.location.pathname + window.location.search)
     return (
       <Link to={this._target}>
         <FontIcon
           className='material-icons'
-          style={style().viewIcons}
-          >{this.props.icon}</FontIcon>
+          style={targetIsSame ? style().viewIconsInactive : style().viewIcons}
+        >{this.props.icon}</FontIcon>
       </Link>
     )
   }

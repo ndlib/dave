@@ -27,6 +27,15 @@ function style () {
       fontSize: '32px',
       lineHeight: '52px',
       verticalAlign: 'middle'
+    },
+
+    viewIconsInactive: {
+      color: background2,
+      cursor: 'default',
+      fontSize: '32px',
+      lineHeight: '52px',
+      opacity: '0.5',
+      verticalAlign: 'middle'
     }
   }
 }
