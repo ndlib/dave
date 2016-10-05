@@ -2,9 +2,9 @@ import { colors } from '../../configuration/variables.js'
 const background1 = colors.background1
 const background2 = colors.background2
 const primary1 = colors.primary1
-const primary2 = colors.primary2
-const secondary1 = colors.secondary1
-const secondary2 = colors.secondary2
+// const primary2 = colors.primary2
+// const secondary1 = colors.secondary1
+// const secondary2 = colors.secondary2
 
 function style () {
   return {
