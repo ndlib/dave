@@ -1,6 +1,6 @@
 'use strict'
 import React, { Component } from 'react'
-import Logo from './assets/library.logo.png'
+import { logo } from '../../configuration/variables.js'
 import classes from './Branding.scss'
 
 class Branding extends Component {
@@ -9,7 +9,7 @@ class Branding extends Component {
     return (
       <div className={classes.branding}>
         <a href='http://library.nd.edu'>
-          <img src={Logo} />
+          <img src={logo} />
         </a>
       </div>
      )
