@@ -1,7 +1,6 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
 import { FontIcon } from 'material-ui'
-import MobileDetect from 'mobile-detect'
 import SpringScrollbars from '../SpringScrollbars'
 import drawerImages from './modules/drawerImages.js'
 import classes from './Drawer.scss'
@@ -11,8 +10,6 @@ class Drawer extends Component {
 
   constructor (props) {
     super(props)
-    let _mobileDetect = new MobileDetect(navigator.userAgent)
-    this._mobile = _mobileDetect.mobile()
     this.handleClickForward = this.handleClickForward.bind(this)
     this.handleClickBack = this.handleClickBack.bind(this)
     this.centerCurrent = this.centerCurrent.bind(this)
@@ -28,7 +25,7 @@ class Drawer extends Component {
 
   render () {
     // Do not render on mobile on for grid view.
-    if (this.props.params.view === 'g' || this._mobile) {
+    if (this.props.params.view === 'g') {
       return null
     }
 
