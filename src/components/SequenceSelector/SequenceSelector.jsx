@@ -21,7 +21,10 @@ class SequenceSelector extends Component {
 
   render () {
     return (
-      <DropDownMenu value={parseInt(this.props.params.sequence)} onChange={this.handleChange}>
+      <DropDownMenu
+        value={parseInt(this.props.params.sequence)}
+        onChange={this.handleChange}
+      >
         {sequenceMenu(this.props.data)}
       </DropDownMenu>
      )

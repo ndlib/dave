@@ -13,7 +13,11 @@ const style = {
     return {
       overflowY: 'hidden',
       width: 'calc(100vw - 80px)',
-      margin: '0 auto'
+      margin: '0 auto',
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'flex-start',
+      padding: '.5% .5% .5% 0'
     }
   }
 }

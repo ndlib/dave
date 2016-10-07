@@ -6,11 +6,17 @@ import { shallow } from 'enzyme'
 
 describe('(View) NavigationButton', () => {
   let _component
-  let _params = {}
+  let _data = {
+    sequences:[{canvases: [{},{}]}]
+  }
+  let _params = {
+    sequence: 0
+  }
 
   beforeEach(() => {
     _component = shallow(
       <NavigationButton
+        data={ _data }
         params={ _params }
         target='someplace'
         icon='icon'

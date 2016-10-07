@@ -1,6 +1,7 @@
 import type { ManifestObject, ManifestStateObject } from '../interfaces/manifest.js'
 import jsonClean from './jsonClean.js'
 import { Action } from 'redux'
+import { manifestBaseUrl } from '../../../configuration/variables.js'
 
 // ------------------------------------
 // Constants
@@ -26,7 +27,7 @@ export function recieveManifest (value: string): Action {
 }
 
 export const fetchManifest = (manifestId): Function => {
-  const baseUrl = 'http://dave.manifests.test.library.nd.edu.s3.amazonaws.com/sample_data/manifests/'
+  const baseUrl = manifestBaseUrl
 
   let manifestUrl = baseUrl + manifestId + '.json'
   return (dispatch: Function): Promise => {

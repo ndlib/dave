@@ -34,6 +34,7 @@ class OpenSeaDragonPage extends Component {
         <div className={classes.navigationOuterWrapper}>
           <div className={classes.leftNav}>
             <NavigationButton
+              data={this.props.data}
               params={this.props.params}
               target={this._links.prevPage}
               icon={'navigate_before'}
@@ -41,6 +42,7 @@ class OpenSeaDragonPage extends Component {
           </div>
           <div className={classes.rightNav}>
             <NavigationButton
+              data={this.props.data}
               params={this.props.params}
               target={this._links.nextPage}
               icon={'navigate_next'}

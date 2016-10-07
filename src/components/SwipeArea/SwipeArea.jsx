@@ -49,7 +49,7 @@ class SwipeArea extends Component {
   }
 
   navigate (target) {
-    let uri = setPage(this.props.params, target)
+    let uri = setPage(this.props.params, this.props.data, target)
     this.context.router.push(uri)
     browserHistory.push(uri)
   }

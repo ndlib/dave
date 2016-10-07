@@ -5,4 +5,4 @@ dist/**
 *.spec.js
 src/index.html
 src/components/OpenSeaDragon/library/openseadragon.min.js
-src/routes/Manifest/modules/Base64.js
+src/routes/Home/components/HomeView.js
