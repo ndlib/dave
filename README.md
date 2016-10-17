@@ -27,11 +27,11 @@ Files will be compiled to `~/dist`.
 
 ## React Routes
 
-:manifestId/:sequence/:view
+:base/:manifestId/:sequence/:view
 
-:manifestId/:sequence/:view/:canvasId
+:base/:manifestId/:sequence/:view/:canvasId
 
-:manifestId/:sequence/:view/:canvasId/detail
+:base/:manifestId/:sequence/:view/:canvasId/detail
 
  * :base = `[ 0, 1, 2 ... ]` = base uri for the manifest file
  * :manifest = currently manifest filename without `.json` extension
