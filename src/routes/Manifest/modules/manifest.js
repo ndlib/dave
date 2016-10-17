@@ -1,7 +1,7 @@
 import type { ManifestObject, ManifestStateObject } from '../interfaces/manifest.js'
 import jsonClean from './jsonClean.js'
 import { Action } from 'redux'
-import { manifestBaseUrl } from '../../../configuration/variables.js'
+import { manifestBaseUrls } from '../../../configuration/variables.js'
 
 // ------------------------------------
 // Constants
@@ -26,8 +26,8 @@ export function recieveManifest (value: string): Action {
   }
 }
 
-export const fetchManifest = (manifestId): Function => {
-  const baseUrl = manifestBaseUrl
+export const fetchManifest = (base, manifestId): Function => {
+  const baseUrl = manifestBaseUrls[parseInt(base)]
 
   let manifestUrl = baseUrl + manifestId + '.json'
   return (dispatch: Function): Promise => {

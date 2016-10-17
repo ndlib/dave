@@ -10,7 +10,7 @@
  */
 
 function targetPath (params) {
-  var path = '/' + params.manifest
+  var path = '/' + params.base + '/' + params.manifest
 
   if (params.sequence) {
     path += '/' + params.sequence

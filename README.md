@@ -27,13 +27,14 @@ Files will be compiled to `~/dist`.
 
 ## React Routes
 
-:manifestId/:sequence/:view
+:base/:manifestId/:sequence/:view
 
-:manifestId/:sequence/:view/:canvasId
+:base/:manifestId/:sequence/:view/:canvasId
 
-:manifestId/:sequence/:view/:canvasId/detail
+:base/:manifestId/:sequence/:view/:canvasId/detail
 
- * :manifest = currently manifest `id`
+ * :base = `[ 0, 1, 2 ... ]` = base uri for the manifest file
+ * :manifest = currently manifest filename without `.json` extension
  * :sequence = `[ 0, 1, 2 ... ]` = current sequence
  * :view = `[ 1, 2, g ]` = 1-up, 2-up, or grid
  * :canvasId = `[ 0, 1, 2 ... ]` = current page of artifact
@@ -43,7 +44,7 @@ Source may be passed by appending ?ref=URI which will be retained while navigati
 
 Example:
 
-` http://dave.library.nd.edu/manifest-1/0/1/3/detail?ref=http://google.com
+` http://dave.library.nd.edu/0/manifest-1/0/1/3/detail?ref=http://google.com
 `
 
 ## Deploy Pre Production
