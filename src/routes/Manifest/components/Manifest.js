@@ -6,7 +6,7 @@ import { CircularProgress } from 'material-ui'
 class Manifest extends Component {
 
   componentWillMount () {
-    this.props.fetchManifest(this.props.params.manifest)
+    this.props.fetchManifest(this.props.params.base, this.props.params.manifest)
   }
 
   render () {

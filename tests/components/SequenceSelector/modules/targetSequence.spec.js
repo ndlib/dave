@@ -15,6 +15,7 @@ describe('(Module) targetSequence', () => {
 
   }
   const _params = {
+    base: '1',
     manifest: 'manifest',
     sequence: '2',
     view: '1',
@@ -25,6 +26,6 @@ describe('(Module) targetSequence', () => {
   it('Changes sequence and and sets start page', () => {
 
     let _path = targetSequence(_data, _params, _targetSequence)
-    expect(_path).to.equal('/manifest/0/1/2')
+    expect(_path).to.equal('/1/manifest/0/1/2')
   })
 })
