@@ -24,6 +24,7 @@ class SequenceSelector extends Component {
       <DropDownMenu
         value={parseInt(this.props.params.sequence)}
         onChange={this.handleChange}
+        style={{overflow: 'hidden'}}
       >
         {sequenceMenu(this.props.data)}
       </DropDownMenu>
