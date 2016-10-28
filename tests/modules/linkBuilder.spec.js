@@ -82,12 +82,34 @@ describe('(Module) linkBuilder', () => {
       view: '2',
       canvasId: '3'
     }
-    
+
     let _result = linkBuilder(_data, _params, 3)
     expect(_result.increment).to.equal(3)
     expect(_result.firstPage).to.equal(0)
     expect(_result.lastPage).to.equal(5)
     expect(_result.nextPage).to.equal(5)
     expect(_result.prevPage).to.equal(0)
+  })
+
+  it('Advances 1 at a time when it is continuous', () => {
+    const _data_continuous = {
+      sequences: {
+        '0': {
+          canvases: [0, 1, 2, 3, 4, 5],
+          viewingHint: 'continuous'
+        }
+      }
+    }
+    const _params = {
+      sequence: '0',
+      view: '2',
+      canvasId: '3'
+    }
+    let _result = linkBuilder(_data_continuous, _params)
+    expect(_result.increment).to.equal(1)
+    expect(_result.firstPage).to.equal(0)
+    expect(_result.lastPage).to.equal(5)
+    expect(_result.nextPage).to.equal(4)
+    expect(_result.prevPage).to.equal(2)
   })
 })

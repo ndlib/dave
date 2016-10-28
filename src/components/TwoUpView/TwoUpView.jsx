@@ -5,6 +5,8 @@ import buildArtifactImage from '../../modules/buildArtifactImage.js'
 import classes from './TwoUpView.scss'
 import OneUpView from '../OneUpView/'
 import canvasIdIsOdd from '../../modules/canvasIdIsOdd.js'
+import isContinuous from '../../modules/isContinuous.js'
+
 class TwoUpView extends Component {
 
   render () {
@@ -26,7 +28,7 @@ class TwoUpView extends Component {
     var imageObject1
     var imageObject2
 
-    if (!isOdd) {
+    if (!isOdd || isContinuous(this.props.data, this.props.params)) {
       imageObject1 = buildArtifactImage(this.props.data, this.props.params, -1)
       imageObject2 = buildArtifactImage(this.props.data, this.props.params)
     } else {
