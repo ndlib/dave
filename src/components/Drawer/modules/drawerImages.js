@@ -21,7 +21,7 @@ function drawerImage (data, params) {
       let isOdd = canvasIdIsOdd(params.canvasId)
       if (!isOdd || isContinuous(data, params)) {
         highlight = (i === parseInt(params.canvasId) - 1)
-      } else if (parseInt(params.canvasId) % 2 === 1) {
+      } else {
         highlight = (i === parseInt(params.canvasId) + 1)
       }
     }
