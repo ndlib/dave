@@ -82,6 +82,7 @@ export const HomeView = () => (
           <li><Link to='/0/manifest-1/1/2/0?ref=http://onesearch.library.nd.edu/primo_library/libweb/action/search.do;jsessionid=EA0BCCC11BE18F49EF29576941A3A97E?mode=Basic&vid=NDU&tab=onesearch&'>Example 1</Link></li>
           <li><Link to='/0/manifest-3/1/1/16?ref=http://google.com'>Example 2</Link></li>
           <li><Link to='/0/manifest-single/0/1/0'>Example 3</Link></li>
+          <li><Link to='/0/rbsc/0/1/0?ref=http://rarebooks.library.nd.edu'>RBSC Example</Link></li>
           </ul>
       </div>
       <div className={classes.description}>

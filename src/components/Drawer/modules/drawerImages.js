@@ -1,6 +1,8 @@
 import React from 'react'
 import buildArtifactImage from '../../../modules/buildArtifactImage.js'
 import ArtifactImage from '../../ArtifactImage/'
+import canvasIdIsOdd from '../../../modules/canvasIdIsOdd.js'
+import isContinuous from '../../../modules/isContinuous.js'
 import classes from '../Drawer.scss'
 
 function drawerImage (data, params) {
@@ -16,9 +18,10 @@ function drawerImage (data, params) {
 
     // If on TwoUpView and not highlighted, highlight other displayed image.
     if (!highlight && parseInt(params.view) === 2) {
-      if (parseInt(params.canvasId) % 2 === 0) {
+      let isOdd = canvasIdIsOdd(params.canvasId)
+      if (!isOdd || isContinuous(data, params)) {
         highlight = (i === parseInt(params.canvasId) - 1)
-      } else if (parseInt(params.canvasId) % 2 === 1) {
+      } else {
         highlight = (i === parseInt(params.canvasId) + 1)
       }
     }

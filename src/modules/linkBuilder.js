@@ -1,16 +1,21 @@
 // Build first, last, next, previous links based on the current page (or
 // whatever data and params are passed)
+import isContinuous from './isContinuous.js'
 function linkBuilder (data, params, increment) {
   if (typeof increment === 'undefined') {
-    increment = parseInt(params.view)
+    if (isContinuous(data, params)) {
+      increment = 1
+    } else {
+      increment = parseInt(params.view)
+    }
   }
 
-  var firstPage = 0
-  var lastPage = data.sequences[params.sequence].canvases.length - 1
+  const firstPage = 0
+  const lastPage = data.sequences[params.sequence].canvases.length - 1
 
   // Go back by the increment amount, but do not overshoot the first page
-  var prevPage = Math.max(parseInt(params.canvasId) - increment, firstPage)
-  var nextPage
+  let prevPage = Math.max(parseInt(params.canvasId) - increment, firstPage)
+  let nextPage
 
   // If on 2up display on even numbered page only advance one page to fix sequence
   if (parseInt(params.canvasId) % 2 === 0 && parseInt(params.view) === 2) {
