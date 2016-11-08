@@ -3,7 +3,7 @@
 # see sean to get this setup.
 
 ENV=pprd
-BUCKET=davepprd.library.nd.edu
+BUCKET=testlibnd-dave
 
 git pull
 npm run deploy:prod
