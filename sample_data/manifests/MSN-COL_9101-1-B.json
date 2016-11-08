@@ -1,0 +1,5698 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "http://example.com/manifest",
+  "@type": "sc:Manifest",
+  "label": "John Curtice Diary",
+  "description": "An eighteenth-century manuscript copy of a diary kept by Capt. John Curtice of the Massachusetts militia in 1745-1745/6, during the siege and occupation of the French fortress of Louisbourg.",
+  "license": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "attribution": "John Curtice Diary, Department of Special Collections, Hesburgh Libraries of Notre Dame. ",
+  "metadata": [
+    {
+      "label": "Biographical Note",
+      "value": "John Curtice was born in Essex County, Massachusetts in 1709, the son of Thomas Curtice and Phebe Gould. In 1734/5 he married Hepsibah Hale, with whom he had six children; the couple appears to have settled in Dudley, Worcester County, Massachusetts. Curtice served as captain in the Massachusetts militia in both King George's War (1744-1748) and the French and Indian War (1754-1763). He died at Dudley in 1800."
+    },
+    {
+      "label": "Scope and Content Note",
+      "value": "<p>The manuscript is titled, on 2v, \"Diarie of the Transactions for the expedition against the French in the yeare 1745-from April the 6th till January 1746 by me. / John Curtice / Captn 8th Co Mass R. / of Worcester New Engld\". It is Curtice's first-hand account of the siege and occupation of the fortified seaport of Louisbourg, on Cape Breton Island in Nova Scotia. The text of the diary is written in the margins of a printed book: Francis Gentleman's The History of the Robinhood Society, published in London in 1764. The content of the book is of no relevance to the content of the diary. Thus, this copy of the diary necessarily postdates the events described by at least nineteen years. Nothing in the existing volume suggests why, when, or by whom the copy was made. Still, there is no reason to doubt its status as a transcription of a lost original, kept by Curtice during the Louisbourg siege. Relevant to this is the fact that a second copy diary of Curtice's exists, recording his experiences in the Montreal campaign of 1760, during the French and Indian War. This, too, is copied in a printed book, published in 1776; its formatting is like that of the Louisbourg diary in every respect, and it is written in the same scrupulous eighteenth century hand. It seems probable that the two volumes were copied on the same occasion. If this is so, the Louisbourg manuscript would almost certainly date from the last quarter of the eighteenth century. An attribution to Curtice himself seems likely, though this cannot be proved.</p><p>The diary is a single volume (17 cm.) of 131 leaves, with 96 pages of entries in a single hand. There are also four paper slips tipped into the gutters of the volume, bearing additional journal text written in the same hand; these describe events for 18 May, 6 June (?), 9 June, and 21 and 22 December 1745. Why these slips were added, or whether they are survivals of the original manuscript, is not clear. Entries uniformly begin in the lower left corner of the rectos of the book's leaves, and run perpendicular to the printed text through the inner, tail, and outer margins, without crossing the text block. In addition to the diary entries, the volume includes a roster of the men under Curtice's command in the 8th Massachusetts Company (1v), as well as a list of the soldiers in Col. Samuel Willard's 4th Massachusetts Regiment who died during the occupation (130v).</p><p>With the advent of war between France and Great Britain, the commander at Louisbourg attacked the fishing stations and boats of Nova Scotia, and unleashed his privateers to seize New English ships. In the winter of 1744-1745, Governor William Shirley of Massachusetts proposed an expedition to take Louisbourg. The plan was approved by the Massachusetts General Court and received support from other colonies and from the British, in the form of a naval squadron commanded by Commodore Peter Warren. The expedition embarked on 24 March 1744/5, when roughly 4000 colonial militia under Col. William Pepperrell sailed from Boston to Canso, in Nova Scotia. Curtice's diary entries begin on 6 April 1745, when he and the men of his command were at Canso, and continue through the siege, capture, and occupation of Louisbourg, until 2 February 1746. Entries appear on a near daily basis, except for a significant gap between 6 September and 14 November 1745 when Curtice was \"taken sick.\" Entry length and content vary considerably during and after the siege. Before Louisbourg's surrender on 16 June, entries range from as few as 15 to as many as 125 words and are more or less confined to military operations: (1 May) \"Last night I went to the top of the hill where we fired 15 shots at the French & they fired from the city battery at us - last night our watch killed several French & took some Prisoners. They burned several of their houses.\" Following the surrender, entries are briefer and more varied in content: typical topics include the weather, the illnesses and deaths of colonial soldiers, and difficulties in preserving order among the men. Many in Willard's regiment had volunteered expressly to capture Louisbourg, for the attendant plunder. Following the surrender they believed their duty to be done, yet they were kept at the fort to maintain a British presence while the greater war continued. Disciplinary measures were harsh: \"A soldier was whipped 39 lashes for robbing a dead corpse & leaving ye body unburied\" (10 August); \"A man whipt 5 lashes for prophane swearing & etc. and drawing his sword & threatning a man.\" (14 August); \"Another man whipt 21 lashes at the wipping post on the parade for striking his superior officer.\" (15 August).</p>"
+    }
+  ],
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "viewingDirection": "left-to-right",
+      "viewingHint": "continuous",
+      "canvases": [
+        {
+          "@id": "http://example.com/canvas/0",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[i]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/0",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000a.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/1",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[ii]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/1",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/2",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[iii]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/2",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/3",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[iv]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/3",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000d.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/4",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[v]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/4",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000e.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/5",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "vi",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/5",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000f-vi.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/6",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "vii",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/6",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000g-vii.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/7",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "viii",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/7",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000h-viii.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/8",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "ix",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/8",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000i-ix.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/9",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "x",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/9",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000j-x.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/10",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "xi",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/10",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000k-xi.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/11",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "xii",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/11",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_000l-xii.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/12",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[1]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/12",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_001.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/13",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "2",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/13",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_002.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/14",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "3",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/14",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_003.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/15",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "4",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/15",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_004.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/16",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "5",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/16",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_005.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/17",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "6",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/17",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_006.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/18",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "7",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/18",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_007.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/19",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "8",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/19",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_008.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/20",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "9",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/20",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_009.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/21",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "10",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/21",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_010.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/22",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "11",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/22",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_011.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/23",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "12",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/23",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_012.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/24",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "13",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/24",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_013.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/25",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "14",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/25",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_014.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/26",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "15",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/26",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_015.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/27",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "16",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/27",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_016.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/28",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "17",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/28",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_017.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/29",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "18",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/29",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_018.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/30",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "19",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/30",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_019.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/31",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "20",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/31",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_020.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/32",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "21",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/32",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_021.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/33",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "22",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/33",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_022.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/34",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[22a] (front of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/34",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_022b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/35",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[22b] (back of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/35",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_022c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/36",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "23",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/36",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_023.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/37",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "24",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/37",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_024.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/38",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "25",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/38",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_025.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/39",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "26",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/39",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_026.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/40",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "27",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/40",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_027.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/41",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "28",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/41",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_028.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/42",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "29",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/42",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_029.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/43",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "30",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/43",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_030.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/44",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "31",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/44",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_031.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/45",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "32",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/45",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_032.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/46",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "33",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/46",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_033.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/47",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "34",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/47",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_034.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/48",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "35",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/48",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_035.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/49",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "36",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/49",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_036.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/50",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "37",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/50",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_037.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/51",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "38",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/51",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_038.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/52",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "39",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/52",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_039.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/53",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "40",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/53",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_040.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/54",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "41",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/54",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_041.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/55",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "42",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/55",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_042.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/56",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "43",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/56",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_043.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/57",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "44",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/57",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_044.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/58",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "45",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/58",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_045.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/59",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "46",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/59",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_046.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/60",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "47",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/60",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_047.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/61",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "48",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/61",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_048.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/62",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "49",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/62",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_049.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/63",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "50",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/63",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_050.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/64",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "51",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/64",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_051.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/65",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "52",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/65",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_052.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/66",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[52a] (front of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/66",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_052b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/67",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[52b] (back of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/67",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_052c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/68",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "53",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/68",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_053.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/69",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "54",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/69",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_054.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/70",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "55",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/70",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_055.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/71",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "56",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/71",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_056.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/72",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "57",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/72",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_057.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/73",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "58",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/73",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_058.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/74",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "59",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/74",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_059.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/75",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "60",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/75",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_060.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/76",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "61",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/76",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_061.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/77",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "62",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/77",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_062.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/78",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "63",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/78",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_063.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/79",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "64",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/79",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_064.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/80",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "65",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/80",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_065.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/81",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "66",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/81",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_066.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/82",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "67",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/82",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_067.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/83",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "68",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/83",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_068.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/84",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "69",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/84",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_069.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/85",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "70",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/85",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_070.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/86",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[70a] (front of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/86",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_070b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/87",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[70b] (back of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/87",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_070c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/88",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "71",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/88",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_071.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/89",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "72",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/89",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_072.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/90",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "73",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/90",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_073.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/91",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "74",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/91",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_074.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/92",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "75",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/92",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_075.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/93",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "76",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/93",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_076.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/94",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "77",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/94",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_077.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/95",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "78",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/95",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_078.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/96",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "79",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/96",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_079.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/97",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "80",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/97",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_080.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/98",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "81",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/98",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_081.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/99",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "82",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/99",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_082.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/100",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "83",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/100",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_083.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/101",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "84",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/101",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_084.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/102",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "85",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/102",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_085.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/103",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "86",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/103",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_086.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/104",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "87",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/104",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_087.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/105",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "88",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/105",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_088.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/106",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "89",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/106",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_089.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/107",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "90",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/107",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_090.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/108",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "91",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/108",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_091.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/109",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "92",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/109",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_092.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/110",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "93",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/110",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_093.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/111",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "94",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/111",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_094.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/112",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "95",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/112",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_095.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/113",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "96",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/113",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_096.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/114",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "97",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/114",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_097.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/115",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "98",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/115",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_098.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/116",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "99",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/116",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_099.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/117",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "100",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/117",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_100.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/118",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "101",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/118",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_101.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/119",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "102",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/119",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_102.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/120",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "103",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/120",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_103.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/121",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "104",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/121",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_104.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/122",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "105",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/122",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_105.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/123",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "106",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/123",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_106.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/124",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "107",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/124",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_107.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/125",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "108",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/125",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_108.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/126",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "109",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/126",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_109.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/127",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "110",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/127",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_110.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/128",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "111",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/128",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_111.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/129",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "112",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/129",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_112.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/130",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "113",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/130",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_113.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/131",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "114",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/131",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_114.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/132",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "115",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/132",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_115.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/133",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "116",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/133",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_116.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/134",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "117",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/134",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_117.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/135",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "118",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/135",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_118.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/136",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "119",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/136",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_119.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/137",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "120",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/137",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_120.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/138",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "121",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/138",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_121.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/139",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "122",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/139",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_122.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/140",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "123",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/140",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_123.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/141",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "124",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/141",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_124.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/142",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "125",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/142",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_125.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/143",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "126",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/143",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_126.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/144",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "127",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/144",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_127.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/145",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "128",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/145",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_128.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/146",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "129",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/146",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_129.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/147",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "130",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/147",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_130.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/148",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "131",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/148",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_131.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/149",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "132",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/149",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_132.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/150",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "133",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/150",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_133.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/151",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "134",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/151",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_134.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/152",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "135",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/152",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_135.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/153",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "136",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/153",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_136.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/154",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "137",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/154",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_137.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/155",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "138",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/155",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_138.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/156",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "139",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/156",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_139.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/157",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "140",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/157",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_140.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/158",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "141",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/158",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_141.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/159",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "142",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/159",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_142.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/160",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "143",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/160",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_143.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/161",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "144",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/161",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_144.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/162",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "145",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/162",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_145.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/163",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "146",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/163",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_146.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/164",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "147",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/164",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_147.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/165",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "148",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/165",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_148.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/166",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "149",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/166",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_149.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/167",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "150",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/167",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_150.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/168",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[150a] (front of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/168",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_150b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/169",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[150b] (back of insert)",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/169",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_150c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/170",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "151",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/170",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_151.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/171",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "152",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/171",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_152.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/172",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "153",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/172",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_153.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/173",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "154",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/173",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_154.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/174",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "155",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/174",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_155.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/175",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "156",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/175",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_156.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/176",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "157",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/176",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_157.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/177",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "158",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/177",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_158.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/178",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "159",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/178",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_159.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/179",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "160",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/179",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_160.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/180",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "161",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/180",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_161.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/181",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "162",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/181",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_162.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/182",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "163",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/182",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_163.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/183",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "164",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/183",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_164.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/184",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "165",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/184",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_165.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/185",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "166",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/185",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_166.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/186",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "167",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/186",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_167.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/187",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "168",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/187",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_168.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/188",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "169",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/188",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_169.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/189",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "170",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/189",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_170.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/190",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "171",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/190",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_171.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/191",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "172",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/191",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_172.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/192",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "173",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/192",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_173.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/193",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "174",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/193",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_174.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/194",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "175",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/194",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_175.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/195",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "176",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/195",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_176.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/196",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "177",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/196",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_177.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/197",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "178",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/197",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_178.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/198",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "179",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/198",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_179.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/199",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "180",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/199",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_180.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/200",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "181",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/200",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_181.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/201",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "182",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/201",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_182.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/202",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "183",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/202",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_183.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/203",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "184",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/203",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_184.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/204",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "185",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/204",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_185.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/205",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "186",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/205",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_186.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/206",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "187",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/206",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_187.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/207",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "188",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/207",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_188.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/208",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "189",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/208",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_189.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/209",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "190",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/209",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_190.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/210",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "191",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/210",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_191.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/211",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "192",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/211",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_192.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/212",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "193",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/212",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_193.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/213",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "194",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/213",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_194.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/214",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "195",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/214",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_195.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/215",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "196",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/215",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_196.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/216",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "197",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/216",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_197.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/217",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "198",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/217",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_198.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/218",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "199",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/218",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_199.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/219",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "200",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/219",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_200.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/220",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "201",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/220",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_201.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/221",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "202",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/221",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_202.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/222",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "203",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/222",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_203.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/223",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "204",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/223",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_204.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/224",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "205",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/224",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_205.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/225",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "206",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/225",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_206.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/226",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "207",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/226",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_207.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/227",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "208",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/227",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_208.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/228",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "209",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/228",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_209.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/229",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "210",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/229",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_210.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/230",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "211",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/230",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_211.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/231",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "212",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/231",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_212.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/232",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "213",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/232",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_213.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/233",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "214",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/233",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_214.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/234",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "215",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/234",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_215.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/235",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "216",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/235",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_216.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/236",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "217",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/236",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_217.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/237",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "218",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/237",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_218.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/238",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "219",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/238",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_219.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/239",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "220",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/239",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_220.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/240",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "221",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/240",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_221.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/241",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "222",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/241",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_222.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/242",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "223",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/242",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_223.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/243",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "224",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/243",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_224.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/244",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "225",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/244",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_225.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/245",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "226",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/245",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_226.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/246",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "227",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/246",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_227.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/247",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "228",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/247",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_228.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/248",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "229",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/248",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_229.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/249",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "230",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/249",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_230.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/250",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "231",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/250",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_231.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/251",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "232",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/251",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_232.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/252",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "233",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/252",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_233.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/253",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "234",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/253",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_234.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/254",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "235",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/254",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_235.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/255",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "236",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/255",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_236.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/256",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "237",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/256",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_237.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/257",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "238",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/257",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_238.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/258",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "239",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/258",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_239.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/259",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "240",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/259",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_240.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/260",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "241",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/260",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_241.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/261",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "242",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/261",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_242.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/262",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "243",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/262",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_243.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/263",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "244",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/263",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_244.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/264",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "245",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/264",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_245.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/265",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "246",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/265",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_246.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/266",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[247]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/266",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_999a.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/267",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[248]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/267",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_999b.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/268",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[249]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/268",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_999c.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        },
+        {
+          "@id": "http://example.com/canvas/269",
+          "@type": "sc:Canvas",
+          "width": 2750,
+          "height": 1800,
+          "label": "[250]",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "on": "http://example.com/canvas/269",
+              "resource": {
+                "@id": "http://rarebooks.library.nd.edu/digital/bookreader/MSN-COL_9101-1-B/images/MSN-COL_9101-1-B_999d.jpg",
+                "@type": "dcterms:Image",
+                "width": 2750,
+                "height": 1800,
+                "format": "image/jpeg"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

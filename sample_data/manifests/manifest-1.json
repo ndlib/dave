@@ -36,7 +36,6 @@
       "label": "Main Reading Order",
 
       "viewingDirection": "left-to-right",
-      "viewingHint": "continuous",
       "startCanvas": "https://dave.library.nd.edu/curate/PID/canvas/3",
 
     "canvases":[
@@ -53,7 +52,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-1.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-1.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -80,7 +79,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-2.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-2.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -106,7 +105,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-3.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-3.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -130,7 +129,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-4.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-4.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -153,7 +152,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-5.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-5.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -175,7 +174,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-6.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-6.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -198,7 +197,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-7.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-7.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -221,7 +220,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-8.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-8.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -244,7 +243,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-9.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-9.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -267,7 +266,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-10.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-10.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -290,7 +289,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-11.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-11.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -313,7 +312,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-12.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-12.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -336,7 +335,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-13.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-13.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -359,7 +358,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-14.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-14.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -382,7 +381,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-15.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-15.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -405,7 +404,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-16.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-16.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -428,7 +427,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-17.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-17.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -451,7 +450,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-18.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-18.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -474,7 +473,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-19.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-19.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -497,7 +496,7 @@
             "@type": "oa:Annotation",
             "motivation": "sc:painting",
             "resource": {
-              "@id": "https://dave.library.nd.edu/curate/PID/actual-rendered-image-20.jpg",
+              "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/actual-rendered-image-20.jpg",
               "@type": "dctypes:Image",
               "format": "image/jpeg"
             },
@@ -512,7 +511,283 @@
     ]
 
 
+  },
+  {
+    "@id": "https://dave.library.nd.edu/curate/PID/sequence/normal",
+    "@type": "sc:Sequence",
+    "label": "Special Testing Kittens",
+
+    "viewingDirection": "left-to-right",
+    "viewingHint": "continuous",
+    "startCanvas": "https://dave.library.nd.edu/curate/PID/canvas/3",
+
+  "canvases":[
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/1",
+      "@type": "sc:Canvas",
+      "label": "Cover",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-1",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/001.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/1"
+        }
+      ],
+      "metadata" :[
+        {"label": "Test label", "value": "Test value so that we'll have something to work with in case there's actual description on any of these particular things at item level. Going to add a <b>description</b> here too. Will have description on a second one and metadata on a third."}
+      ],
+      "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
     }
+    ,
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/2",
+      "@type": "sc:Canvas",
+      "label": "",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-2",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/002.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/2"
+        }
+      ],
+      "metadata" : [
+        {"label": "One-off", "value": "What is value in life? This is a blank page."}
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/3",
+      "@type": "sc:Canvas",
+      "label": "p. 1",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-3",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/003.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/3"
+        }
+      ],
+
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+
+    },
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/4",
+      "@type": "sc:Canvas",
+      "label": "p. 2",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-4",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/004.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/4"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/5",
+      "@type": "sc:Canvas",
+      "label": "p. 3",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-5",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/005.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/5"
+        }
+      ]
+
+    },
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/6",
+      "@type": "sc:Canvas",
+      "label": "p. 4",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-6",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/006.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/6"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/7",
+      "@type": "sc:Canvas",
+      "label": "p. 5",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-7",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/007.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/7"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/8",
+      "@type": "sc:Canvas",
+      "label": "p. 6",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-8",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/008.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/8"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/9",
+      "@type": "sc:Canvas",
+      "label": "p. 7",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-9",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/009.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/9"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/10",
+      "@type": "sc:Canvas",
+      "label": "p. 8",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-10",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/010.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/10"
+        }
+      ]
+
+    },
+
+    {
+      "@id": "https://dave.library.nd.edu/curate/PID/canvas/11",
+      "@type": "sc:Canvas",
+      "label": "p. 9",
+      "width": 750,
+      "height": 1000,
+
+      "images" : [
+        {
+          "@id": "https://dave.library.nd.edu/curate/link-to-IIF-service-API-copy-if-desired-11",
+          "@type": "oa:Annotation",
+          "motivation": "sc:painting",
+          "resource": {
+            "@id": "https://s3.amazonaws.com/dave.manifests.test.library.nd.edu/sample_data/PID/011.jpg",
+            "@type": "dctypes:Image",
+            "format": "image/jpeg"
+          },
+          "on": "https://dave.library.nd.edu/curate/PID/canvas/11"
+        }
+      ]
+
+    }
+
+
+
+  ]
+
+
+  }
   ]
 
 }
