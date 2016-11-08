@@ -25,18 +25,19 @@ class DigitalArtifact extends Component {
               data={this.props.data}
               params={this.props.params}
             />
-            <Drawer
-              data={this.props.data}
-              params={this.props.params}
-            />
-            <div className={classes.bottomBar}>
-              <SecondaryToolbar
-                data={this.props.data}
-                params={this.props.params}
-              />
-            </div>
+
           </div>
         </SwipeArea>
+        <Drawer
+          data={this.props.data}
+          params={this.props.params}
+        />
+        <div className={classes.bottomBar}>
+          <SecondaryToolbar
+            data={this.props.data}
+            params={this.props.params}
+          />
+        </div>
       </div>
 
      )
