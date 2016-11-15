@@ -10,7 +10,7 @@ export const colors = {
 import Logo from './assets/library.logo.png'
 export const logo = Logo
 
-export const manifestBaseUrls = [ 'http://testlibnd-dave-manifests.s3.amazonaws.com/sample_data/manifests/'
+export const manifestBaseUrls = [ '//testlibnd-dave-manifests.s3.amazonaws.com/sample_data/manifests/'
 ]
 
 export const whitelist = [
