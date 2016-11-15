@@ -43,6 +43,7 @@ class TwoUpView extends Component {
             <ArtifactImage
               imageObject={imageObject1}
               showTitle
+              align={'left'}
             />
           </div>
         </div>
@@ -51,6 +52,7 @@ class TwoUpView extends Component {
             <ArtifactImage
               imageObject={imageObject2}
               showTitle
+              align={'right'}
             />
           </div>
         </div>

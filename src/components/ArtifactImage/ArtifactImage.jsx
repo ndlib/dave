@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import classes from './Artifact.scss'
+import StyleImage from './StyleImage.js'
 
 class ArtifactImage extends Component {
   constructor (props) {
@@ -62,7 +63,7 @@ class ArtifactImage extends Component {
             src={this.props.imageObject.imageUri}
             alt={this.props.imageObject.alt}
             title={this.props.imageObject.alt}
-            style={this.state.portrait ? {height: '100%'} : {width: '100%'}}
+            style={StyleImage(this.state.portrait, this.props.align)}
           />
         </Link>
         {title}
@@ -76,14 +77,16 @@ ArtifactImage.propTypes = {
   imageContainerWidth: PropTypes.number,
   imageContainerLeftPadding: PropTypes.number,
   useFlexLayout: PropTypes.bool,
-  showTitle: PropTypes.bool
+  showTitle: PropTypes.bool,
+  align: PropTypes.string
 }
 
 ArtifactImage.defaultProps = {
   imageContainerWidth: 100,
   imageContainerLeftPadding: 0,
   useFlexLayout: false,
-  showTitle: false
+  showTitle: false,
+  align: 'center'
 }
 
 export default ArtifactImage
