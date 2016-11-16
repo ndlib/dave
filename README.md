@@ -1,5 +1,6 @@
 # D.A.V.E. - The Digital Artifact Viewing Experience
 [![Build Status](https://travis-ci.org/ndlib/dave.svg?branch=master)](https://travis-ci.org/ndlib/dave)
+[![Coverage Status](https://img.shields.io/coveralls/ndlib/dave.svg)](https://coveralls.io/r/ndlib/dave?branch=master)
 
 ## Installing and running for development
 
