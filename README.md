@@ -1,6 +1,7 @@
 # D.A.V.E. - The Digital Artifact Viewing Experience
 [![Build Status](https://travis-ci.org/ndlib/dave.svg?branch=master)](https://travis-ci.org/ndlib/dave)
-[![Coverage Status](https://img.shields.io/coveralls/ndlib/dave.svg)](https://coveralls.io/r/ndlib/dave?branch=master)
+[![Test Coverage](https://codeclimate.com/github/ndlib/dave/badges/coverage.svg)](https://codeclimate.com/github/ndlib/dave/coverage)
+[![Code Climate](https://codeclimate.com/github/ndlib/dave/badges/gpa.svg)](https://codeclimate.com/github/ndlib/dave)
 
 ## Installing and running for development
 
