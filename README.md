@@ -2,6 +2,10 @@
 [![Build Status](https://travis-ci.org/ndlib/dave.svg?branch=master)](https://travis-ci.org/ndlib/dave)
 [![Code Climate](https://codeclimate.com/github/ndlib/dave/badges/gpa.svg)](https://codeclimate.com/github/ndlib/dave)
 
+## Demo Site
+
+[AWS Demo](http://testlibnd-dave.s3-website-us-east-1.amazonaws.com/)
+
 ## Installing and running for development
 
 Installation and running the application:
