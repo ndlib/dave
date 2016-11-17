@@ -10,7 +10,19 @@ class ArtifactImage extends Component {
     const wrapperClass = this.props.useFlexLayout ? classes.flexwrapper : classes.wrapper
     let title = null
     if (this.props.showTitle && this.props.imageObject.alt) {
-      title = (<h2 className={classes.title}>{this.props.imageObject.alt}</h2>)
+      let style = {}
+      if (this.props.align === 'right') {
+        style = {
+          position: 'absolute',
+          right: '0'
+        }
+      }
+      title = (
+        <h2
+          className={classes.title}
+          style={style}
+        >{this.props.imageObject.alt}</h2>
+      )
     }
     return (
       <div
