@@ -5,9 +5,6 @@ import classes from './Artifact.scss'
 import StyleImage from './StyleImage.js'
 
 class ArtifactImage extends Component {
-  constructor (props) {
-    super(props)
-  }
 
   render () {
     const wrapperClass = this.props.useFlexLayout ? classes.flexwrapper : classes.wrapper
