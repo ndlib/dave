@@ -1,6 +1,12 @@
 // Style the ArtifactImage img.
-function StyleImage (portrait, align) {
-  let orientation = portrait ? {height: '100%'} : {width: '100%'}
+function StyleImage (align) {
+  let orientation = {
+    maxHeight: '100%',
+    maxWidth: '100%',
+    top: '0',
+    bottom: '0',
+    margin: 'auto'
+  }
   let alignment = {}
   if (align === 'left') {
     alignment = {
