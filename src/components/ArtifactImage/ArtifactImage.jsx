@@ -7,40 +7,6 @@ import StyleImage from './StyleImage.js'
 class ArtifactImage extends Component {
   constructor (props) {
     super(props)
-    this.state = {
-      portrait: null
-    }
-    this.setOrientation = this.setOrientation.bind(this)
-  }
-
-  componentDidMount () {
-    this.setOrientation(this.props)
-  }
-
-  componentDidUpdate () {
-    if (typeof this.state.portrait !== 'boolean') {
-      this.setOrientation(this.props)
-    }
-  }
-
-  componentWillReceiveProps (nextProps) {
-    this.setOrientation(nextProps)
-  }
-
-  setOrientation (props) {
-    let ref = this.refs[this.props.imageObject.canvasId]
-
-    // Check if target image is loaded. If it is not we need to manually
-    // load it and set a callback to set state.
-    if (this.props !== props || ref.naturalWidth === 0 || ref.naturalHeight === 0) {
-      let img = new Image()
-      img.src = props.imageObject.imageUri
-      let self = this
-      img.onload = function () { self.setState({portrait: img.naturalWidth <= img.naturalHeight}) }
-    // If image IS loaded, we just check the width & height.
-    } else {
-      this.setState({portrait: ref.naturalWidth <= ref.naturalHeight})
-    }
   }
 
   render () {
@@ -63,7 +29,7 @@ class ArtifactImage extends Component {
             src={this.props.imageObject.imageUri}
             alt={this.props.imageObject.alt}
             title={this.props.imageObject.alt}
-            style={StyleImage(this.state.portrait, this.props.align)}
+            style={StyleImage(this.props.align)}
           />
         </Link>
         {title}
