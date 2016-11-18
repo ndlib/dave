@@ -4,7 +4,7 @@
 
 ## Demo Site
 
-[AWS Demo](http://testlibnd-dave.s3-website-us-east-1.amazonaws.com/)
+[AWS Demo](https://dave.library.nd.edu)
 
 ## Installing and running for development
 
@@ -49,10 +49,4 @@ Source may be passed by appending ?ref=URI which will be retained while navigati
 
 Example:
 
-` http://dave.library.nd.edu/0/manifest-1/0/1/3/detail?ref=http://google.com
-`
-
-## Deploy Pre Production
-
-1.  Assume a role that can write to the bucket.
-2.  Run ./awsbuild.sh
+` https://dave.library.nd.edu/0/manifest-1/0/1/3/detail?ref=http://google.com

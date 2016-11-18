@@ -46,8 +46,9 @@ export const HomeView = () => (
           <span className={classes.smCap}>D.a.v.e.</span> for short, is a
           viewing experience built using&nbsp;
           <a href='https://facebook.github.io/react/'>React</a> &nbsp;and&nbsp;
-          <a href='http://redux.js.org/'>Redux</a>. It reads IIIF Manifest files
-          and creates a unique viewing experience based on the JSON data.
+          <a href='http://redux.js.org/'>Redux</a>. It reads IIIF presentation
+             manifest files and creates a unique viewing experience based on
+             the JSON data.
         </p>
         <p>
           Dave is being developed by the <i>Web and Software Engineering</i> and&nbsp;
