@@ -1,11 +1,19 @@
+import { colors } from '../../../configuration/variables.js'
 const style = {
   buttonIcon: function () {
     return {
+      color: colors.primary1,
       margin: 0,
       padding: 0,
       textAlign: 'center',
       verticalAlign: 'middle',
       width: '100%'
+    }
+  },
+
+  buttonStyle: function () {
+    return {
+      backgroundColor: colors.background1
     }
   },
 

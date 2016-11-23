@@ -7,6 +7,7 @@ import OpenSeaDragonControls from '../OpenSeaDragonControls/'
 import OpenSeaDragonNavigator from '../OpenSeaDragonNavigator/'
 import classes from './OpenSeaDragon.scss'
 import loadImage from './modules/loadImage.js'
+import OpenSeaDragonToolbar from '../OpenSeaDragonToolbar/'
 
 class OpenSeaDragon extends Component {
 
@@ -24,19 +25,16 @@ class OpenSeaDragon extends Component {
   }
 
   componentDidMount () {
-    this.viewer = this.initSeaDragon(this.props.image, this.state.zoom)
+    this.viewer = this.initSeaDragon(this.props.image.imageUri, this.state.zoom)
   }
 
   componentWillReceiveProps (nextProps) {
     let zoom = this.viewer.viewport.getZoom()
-    this.viewer = this.initSeaDragon(nextProps.image, zoom)
+    this.viewer = this.initSeaDragon(nextProps.image.imageUri, zoom)
   }
 
   resetViewer () {
-    // TODO
-    // pass this method down and make a custom button
-
-    this.viewer = this.initSeaDragon(this.props.image, 0)
+    this.viewer = this.initSeaDragon(this.props.image.imageUri, 0)
   }
 
   initSeaDragon (image, zoom) {
@@ -87,6 +85,7 @@ class OpenSeaDragon extends Component {
     }
     return (
       <div className={classes.ocd}>
+        <OpenSeaDragonToolbar image={this.props.image} />
         <div className={classes.openseadragon} id={this.props.id}></div>
         <OpenSeaDragonNavigator />
         <OpenSeaDragonControls reset={this.resetViewer} />
@@ -96,7 +95,7 @@ class OpenSeaDragon extends Component {
 }
 
 OpenSeaDragon.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   id: PropTypes.string,
   type: PropTypes.string
 }

@@ -40,11 +40,13 @@ class Drawer extends Component {
         </SpringScrollbars>
         <button
           className={classes.clickButton + ' ' + classes.left}
+          style={style.buttonStyle()}
           onClick={this.handleClickBack}>
           <FontIcon className='material-icons' style={style.buttonIcon()}>chevron_left</FontIcon>
         </button>
         <button
           className={classes.clickButton + ' ' + classes.right}
+          style={style.buttonStyle()}
           onClick={this.handleClickForward}>
           <FontIcon className='material-icons' style={style.buttonIcon()}>chevron_right</FontIcon>
         </button>

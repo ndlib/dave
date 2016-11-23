@@ -1,54 +1,60 @@
 'use strict'
 import React, { Component, PropTypes } from 'react'
-import OpenSeaDragonToolbar from '../OpenSeaDragonToolbar/'
+import TitleToolbar from '../TitleToolbar/'
 import OpenSeaDragon from '../OpenSeaDragon/'
-import classes from './OpenSeaDragonPage.scss'
+import OpenSeaDragonPrevNext from '../OpenSeaDragonPrevNext/'
 import buildOpenSeaDragonImage from './modules/buildOpenSeaDragonImage.js'
-import NavigationButton from '../NavigationButton/'
-import linkBuilder from '../../modules/linkBuilder.js'
+import classes from './OpenSeaDragonPage.scss'
+import inIframe from '../../modules/inIframe.js'
 
 class OpenSeaDragonPage extends Component {
-
   constructor (props) {
     super(props)
     this._image = buildOpenSeaDragonImage(this.props.data, this.props.params)
-    this._links = linkBuilder(this.props.data, this.props.params, 1)
+    this.prevNext = this.prevNext.bind(this)
   }
 
   componentWillUpdate (nextProps, nextState) {
     this._image = buildOpenSeaDragonImage(nextProps.data, nextProps.params)
-    this._links = linkBuilder(nextProps.data, nextProps.params, 1)
   }
 
+  viewerHeight () {
+    if (inIframe()) {
+      return {height: '100%'}
+    } else {
+      return {height: 'calc(100% - 56px)'}
+    }
+  }
+
+  prevNext () {
+    if (inIframe()) {
+      return null
+    } else {
+      return (
+        <OpenSeaDragonPrevNext
+          data={this.props.data}
+          params={this.props.params}
+        />
+      )
+    }
+  }
   render () {
     return (
       <div className={classes.outer}>
-        <OpenSeaDragonToolbar image={this._image} />
-        <div className={classes.viewer}>
+        <TitleToolbar
+          data={this.props.data}
+          params={this.props.params}
+        />
+        <div
+          className={classes.viewer}
+          style={this.viewerHeight()}>
           <OpenSeaDragon
             id='ocd-viewer'
             type='legacy-image-pyramid'
-            image={this._image.imageUri}
+            image={this._image}
           />
         </div>
-        <div className={classes.navigationOuterWrapper}>
-          <div className={classes.leftNav}>
-            <NavigationButton
-              data={this.props.data}
-              params={this.props.params}
-              target={this._links.prevPage}
-              icon={'navigate_before'}
-            />
-          </div>
-          <div className={classes.rightNav}>
-            <NavigationButton
-              data={this.props.data}
-              params={this.props.params}
-              target={this._links.nextPage}
-              icon={'navigate_next'}
-            />
-          </div>
-        </div>
+        {this.prevNext()}
       </div>
      )
   }
