@@ -26,5 +26,6 @@ export const manifestBaseUrls = [ '//testlibnd-dave-manifests.s3.amazonaws.com/s
 ]
 
 export const whitelist = [
-  'library.nd.edu'
+  'library.nd.edu',
+  'localhost:3018'
 ]
