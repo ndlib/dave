@@ -9,7 +9,8 @@ let colors = {
   secondary1: '',
   secondary2: ''
 }
-if (location.search.includes('collections.library.nd.edu')) {
+if (location.search.includes('collections.library.nd.edu') ||
+location.search.includes('localhost:3018')) {
   colors = {
     background1: '#333',
     background2: '#444',
