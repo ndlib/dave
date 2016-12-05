@@ -5,7 +5,6 @@ import OpenSeaDragon from '../OpenSeaDragon/'
 import OpenSeaDragonPrevNext from '../OpenSeaDragonPrevNext/'
 import buildOpenSeaDragonImage from './modules/buildOpenSeaDragonImage.js'
 import classes from './OpenSeaDragonPage.scss'
-import inIframe from '../../modules/inIframe.js'
 
 class OpenSeaDragonPage extends Component {
   constructor (props) {
@@ -19,24 +18,16 @@ class OpenSeaDragonPage extends Component {
   }
 
   viewerHeight () {
-    if (inIframe()) {
-      return {height: '100%'}
-    } else {
-      return {height: 'calc(100% - 56px)'}
-    }
+    return {height: 'calc(100% - 56px)'}
   }
 
   prevNext () {
-    if (inIframe()) {
-      return null
-    } else {
-      return (
-        <OpenSeaDragonPrevNext
-          data={this.props.data}
-          params={this.props.params}
-        />
-      )
-    }
+    return (
+      <OpenSeaDragonPrevNext
+        data={this.props.data}
+        params={this.props.params}
+      />
+    )
   }
   render () {
     return (

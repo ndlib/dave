@@ -1,4 +1,3 @@
-import inIframe from '../modules/inIframe.js'
 import Logo from './assets/library.logo.png'
 export const logo = Logo
 
@@ -10,7 +9,7 @@ let colors = {
   secondary1: '',
   secondary2: ''
 }
-if (inIframe()) {
+if (location.search.includes('collections.library.nd.edu')) {
   colors = {
     background1: '#333',
     background2: '#444',
