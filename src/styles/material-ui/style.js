@@ -1,8 +1,8 @@
 import { colors } from '../../configuration/variables.js'
 const background1 = colors.background1
-const background2 = colors.background2
+// const background2 = colors.background2
 const primary1 = colors.primary1
-// const primary2 = colors.primary2
+const primary2 = colors.primary2
 // const secondary1 = colors.secondary1
 // const secondary2 = colors.secondary2
 
@@ -27,14 +27,14 @@ function style () {
 
     // ViewSelectionPanel, NavigationButton
     viewIcons: {
-      color: background2,
+      color: primary2,
       fontSize: '32px',
       lineHeight: '52px',
       verticalAlign: 'middle'
     },
 
     viewIconsInactive: {
-      color: background2,
+      color: primary2,
       cursor: 'default',
       fontSize: '32px',
       lineHeight: '52px',

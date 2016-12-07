@@ -29,16 +29,36 @@ class OpenSeaDragonToolbar extends Component {
 
   render () {
     return (
-      <Toolbar style={style().toolbar}>
+      <Toolbar style={{
+        backgroundColor: 'rgba(66,66,66,.4)',
+        position: 'absolute',
+        width: '100%',
+        zIndex: '2'
+      }}>
         <ToolbarGroup firstChild>
           <ToolbarTitle
             text={this.props.image.label}
-            style={style().toolbarTitle}
+            style={{
+              color: '#fff',
+              textShadow: '2px 2px #000',
+              fontSize: '16px',
+              fontWeight: '400',
+              margin: '0',
+              padding: '0 20px'
+            }}
             />
         </ToolbarGroup>
         <ToolbarGroup>
           <Link to={this.props.image.closeUri} style={style().toolbarTitle}>
-            <FontIcon className={classes.hoverSpin + ' material-icons'} style={{fontSize: '18px'}}>close</FontIcon>
+            <FontIcon
+              className={classes.hoverSpin + ' material-icons'}
+              style={{
+                color: '#fff',
+                textShadow: '2px 2px #000',
+                fontSize: '30px',
+                marginTop: '10px'
+              }}
+            >close</FontIcon>
           </Link>
         </ToolbarGroup>
       </Toolbar>

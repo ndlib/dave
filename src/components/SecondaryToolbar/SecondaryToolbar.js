@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import NavigationPanel from '../NavigationPanel/'
 import ViewSelectionPanel from '../ViewSelectionPanel/'
+import SequenceSelector from '../SequenceSelector/'
 import { Toolbar, ToolbarGroup } from 'material-ui'
 import style from '../../styles/material-ui/style.js'
 
@@ -16,7 +17,18 @@ class SecondaryToolbar extends Component {
           data={this.props.data}
           params={this.props.params}
         />
-        <ToolbarGroup lastChild />
+        <ToolbarGroup
+          style={{
+            right: '24px',
+            position: 'absolute'
+          }}
+          lastChild
+        >
+          <SequenceSelector
+            data={this.props.data}
+            params={this.props.params}
+          />
+        </ToolbarGroup>
       </Toolbar>
     )
   }

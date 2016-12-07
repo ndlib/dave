@@ -1,7 +1,7 @@
 import React from 'react'
 import OpenSeaDragonPage from 'components/OpenSeaDragonPage'
 import OpenSeaDragon from 'components/OpenSeaDragon'
-import OpenSeaDragonToolbar from 'components/OpenSeaDragonToolbar'
+import TitleToolbar from 'components/TitleToolbar'
 import NavigationButton from 'components/NavigationButton'
 import { shallow } from 'enzyme'
 
@@ -27,11 +27,7 @@ describe('(View) OpenSeaDragonPage', () => {
     expect(_component.find(OpenSeaDragon)).to.exist
   })
 
-  it('Renders a <OpenSeaDragonToolbar/> component', () => {
-    expect(_component.find(OpenSeaDragonToolbar)).to.exist
-  })
-
-  it('Renders two <NavigationButton/> components', () => {
-    expect(_component.find(NavigationButton)).to.have.length(2)
+  it('Renders a <TitleToolbar/> component', () => {
+    expect(_component.find(TitleToolbar)).to.exist
   })
 })

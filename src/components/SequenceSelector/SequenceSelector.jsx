@@ -4,6 +4,7 @@ import { DropDownMenu } from 'material-ui'
 import { browserHistory } from 'react-router'
 import sequenceMenu from './modules/sequenceMenu.js'
 import targetSequence from './modules/targetSequence.js'
+import { colors } from '../../configuration/variables.js'
 
 class SequenceSelector extends Component {
 
@@ -23,6 +24,7 @@ class SequenceSelector extends Component {
     return (
       <DropDownMenu
         value={parseInt(this.props.params.sequence)}
+        labelStyle={{color: colors.primary1}}
         onChange={this.handleChange}
         style={{overflow: 'hidden'}}
       >

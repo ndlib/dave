@@ -27,20 +27,21 @@
 }
 
 .clickButton {
-  background-color: #f0f0e1;
+
   border: none;
   border-radius: 100px;
   bottom: calc(5vh - 20px);
   cursor: pointer;
   height: 40px;
   line-height: 40px;
+  opacity: 80%;
   padding: 0;
   position: absolute;
   vertical-align: middle;
   width: 40px;
 
   &:hover {
-    background-color: white;
+    opacity: 100%;
   }
   &:focus {
     outline: none;

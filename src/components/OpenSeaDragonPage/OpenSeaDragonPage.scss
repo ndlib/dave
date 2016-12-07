@@ -5,36 +5,9 @@
 }
 
 .viewer {
-  width: 100%;
-  height: calc(100% - 56px);
+  width: 100%;;
 }
 
-.navigationOuterWrapper {
-  position: absolute;
-  bottom: 50%;
-  overflow-x: hidden;
-
-  .leftNav, .rightNav {
-    background-color: #f0f0e1;
-    height: 60px;
-    width: 60px;
-    border-radius: 60px;
-    line-height: 60px;
-    opacity: 0.5;
-    position: fixed;
-
-    &:hover {
-      opacity: 1.0;
-    }
-  }
-
-  .leftNav {
-    left: -30px;
-    text-align: right;
-  }
-
-  .rightNav {
-    right: -30px;
-    text-align: left;
-  }
+.ocd {
+  position: relative;
 }
