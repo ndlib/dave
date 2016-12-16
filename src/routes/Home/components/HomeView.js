@@ -80,8 +80,8 @@ export const HomeView = () => (
         </ul>
         <p>Example links are here:</p>
         <ul>
-          <li><Link to='/CodLat_b04/0/1/0'>Example 1</Link></li>
-          <li><Link to='/MSN-COL_9101-1-B/0/1/0'>Example 2</Link></li>
+          <li><Link to='/0/CodLat_b04/0/1/0'>Example 1</Link></li>
+          <li><Link to='/0/MSN-COL_9101-1-B/0/1/0'>Example 2</Link></li>
           </ul>
       </div>
       <div className={classes.description}>
