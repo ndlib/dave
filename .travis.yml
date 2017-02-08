@@ -1,4 +1,5 @@
 sudo: false
+cache: yarn
 language: node_js
 node_js:
   - "6"
@@ -8,7 +9,8 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - npm install -g yarn
+  - yarn
 
 script:
   - npm run lint
