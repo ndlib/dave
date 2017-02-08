@@ -3860,11 +3860,7 @@ lowercase-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
 
-lru-cache@2:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
-
-lru-cache@2.2.x:
+lru-cache@2, lru-cache@2.2.x:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.2.4.tgz#6c658619becf14031d0d0b594b16042ce4dc063d"
 
@@ -3887,9 +3883,9 @@ map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
-material-ui@^0.15.4:
-  version "0.15.4"
-  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-0.15.4.tgz#c66b210884f1584108526c498b2c462aee4c3dbb"
+material-ui@0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-0.15.3.tgz#7c426f493cdb80efb63c185d8cae5101394783f0"
   dependencies:
     inline-style-prefixer "^2.0.1"
     keycode "^2.1.1"
@@ -4972,13 +4968,9 @@ react-custom-scrollbars@^4.0.0:
     dom-css "^2.0.0"
     raf "^3.1.0"
 
-react-dom@^15.3.1:
-  version "15.4.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.1.tgz#d54c913261aaedb17adc20410d029dcc18a1344a"
-  dependencies:
-    fbjs "^0.8.1"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
+react-dom@15.3.1:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.1.tgz#6d42cd2b64c8c5e0b693f3ffaec301e6e627e24e"
 
 react-element-to-jsx-string@^3.0.0:
   version "3.2.0"
@@ -5031,9 +5023,9 @@ react-tap-event-plugin@^1.0.0:
   dependencies:
     fbjs "^0.2.1"
 
-react@^15.3.1:
-  version "15.4.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
+react@15.3.1:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.3.1.tgz#f78501ed8c2ec6e6e31c3223652e97f1369d2bd6"
   dependencies:
     fbjs "^0.8.4"
     loose-envify "^1.1.0"
