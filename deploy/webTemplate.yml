@@ -1,0 +1,137 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+
+
+Description: 'DAVE Website Stack'
+
+
+Parameters:
+
+    AcmCertificateArn:
+        Type: String
+        Description: Arn for ACM Certificate
+        Default: ''
+
+    FQDN:
+        Type: String
+        Description: DNS name for the website to publish
+        MaxLength: 63
+        AllowedPattern: ^$|(?!-)[a-zA-Z0-9-.]{1,63}(?<!-)
+        ConstraintDescription: must be a valid DNS zone name
+        Default: ''
+
+Conditions:
+
+    NoFQDN: !Equals
+    -   !Ref FQDN
+    -   ''
+
+    NoSSL: !Equals
+    -   !Ref AcmCertificateArn
+    -   ''
+
+Resources:
+
+    Bucket:
+        Type: AWS::S3::Bucket
+        Properties:
+            BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
+            # https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html
+            LoggingConfiguration:
+                DestinationBucketName: !ImportValue wse-web-logs
+                LogFilePrefix: !If
+                -   NoFQDN
+                -   s3/unknown/
+                -   !Sub s3/${FQDN}/
+
+    BucketPolicy:
+        Type: AWS::S3::BucketPolicy
+        Properties:
+            Bucket: !Ref Bucket
+            PolicyDocument:
+                Version: '2012-10-17'
+                Statement:
+                -   Effect: Allow
+                    Action:
+                    -   s3:GetObject
+                    Resource: !Sub ${Bucket.Arn}/*
+                    Principal:
+                        CanonicalUser: !ImportValue wse-web-canonical-user-id
+
+    Distribution:
+        Type: AWS::CloudFront::Distribution
+        Properties:
+            DistributionConfig:
+                Enabled: true
+                HttpVersion: http2
+                PriceClass: PriceClass_100
+                ViewerCertificate: !If
+                -   NoSSL
+                -   !Ref AWS::NoValue
+                -   AcmCertificateArn: !Ref AcmCertificateArn
+                    MinimumProtocolVersion: TLSv1.1_2016
+                    SslSupportMethod: sni-only
+                Comment: !If
+                -   NoFQDN
+                -   !Ref AWS::NoValue
+                -   !Ref FQDN
+                Aliases: !If
+                -   NoFQDN
+                -   !Ref AWS::NoValue
+                -   -   !Ref FQDN
+                DefaultRootObject: index.html
+                CustomErrorResponses:
+                -   ErrorCode: 404
+                    ResponseCode: 200
+                    ResponsePagePath: /index.html
+                    ErrorCachingMinTTL: 86400
+                -   ErrorCode: 403
+                    ResponseCode: 200
+                    ResponsePagePath: /index.html
+                    ErrorCachingMinTTL: 86400
+                DefaultCacheBehavior:
+                    ForwardedValues:
+                        QueryString: false
+                    AllowedMethods:
+                    -   HEAD
+                    -   GET
+                    -   OPTIONS
+                    Compress: true
+                    ViewerProtocolPolicy: !If
+                    -   NoSSL
+                    -   allow-all
+                    -   redirect-to-https
+                    TargetOriginId: Bucket
+                Origins:
+                -   Id: Bucket
+                    DomainName: !GetAtt Bucket.DomainName
+                    S3OriginConfig:
+                        OriginAccessIdentity: !Join
+                        -   /
+                        -   -   origin-access-identity
+                            -   cloudfront
+                            -   !ImportValue wse-web-origin-access-identity
+                # https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html#BasicDistributionFileFormat
+                Logging:
+                    Bucket: !Join
+                    -   .
+                    -   -   !ImportValue wse-web-logs
+                        -   s3
+                        -   !Ref AWS::URLSuffix
+                    Prefix: !If
+                    -   NoFQDN
+                    -   web/unknown/
+                    -   !Sub web/${FQDN}/
+                    IncludeCookies: true
+
+
+Outputs:
+
+    BucketName:
+        Description: Name of S3 bucket to hold website content
+        Value: !Ref Bucket
+
+    CNAME:
+        Description: Website CNAME target
+        Value: !GetAtt Distribution.DomainName
+...

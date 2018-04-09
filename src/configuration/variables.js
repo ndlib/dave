@@ -23,7 +23,7 @@ location.search.includes('localhost:3018')) {
 
 export { colors }
 
-export const manifestBaseUrls = [ '//testlibnd-dave-manifests.s3.amazonaws.com/sample_data/manifests/'
+export const manifestBaseUrls = [ 'https://raw.githubusercontent.com/ndlib/dave_manifests/master/manifests/'
 ]
 
 export const whitelist = [
