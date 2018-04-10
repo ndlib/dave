@@ -1,0 +1,23 @@
+Service: dave
+
+PreDeploy: preDeploy.py
+PostDeploy: postDeploy.py
+
+Stacks:
+  Global:
+    Tags:
+      Name: $SERVICE-$STAGE
+      Owner: wse
+      Contact: web-and-software-engineering-group@nd.edu
+  Single:
+    - Name: $SERVICE-$STAGE
+      Template: webTemplate.yml
+      Tags:
+        Description: DAVE Website Stack
+      Parameters:
+        AcmCertificateArn: ${CERT_ARN}
+        FQDN: ${FQDN}
+
+Artifacts:
+  Templates:
+    - webTemplate.yml
