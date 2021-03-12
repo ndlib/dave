@@ -25,5 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --no-lockfile #Without the --no-lockfile option, there are dependency issues with @babel/compat-data/corejs3-shipped-proposals not being accessible by the build step
+    - name: Add node-sass
+      run: yarn add node-sass
     - name: Build Project
       run: yarn
