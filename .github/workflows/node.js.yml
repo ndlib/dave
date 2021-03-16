@@ -26,7 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Add node-sass
       run: yarn add node-sass
-    - run: yarn install --no-lockfile #Without the --no-lockfile option, there are dependency issues with @babel/compat-data/corejs3-shipped-proposals not being accessible by the build step
+    # - run: yarn install --no-lockfile #Without the --no-lockfile option, there are dependency issues with @babel/compat-data/corejs3-shipped-proposals not being accessible by the build step
     - name: Build Project
       run: yarn
     - name: Run Linter
